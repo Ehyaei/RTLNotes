@@ -1,0 +1,21 @@
+
+```{r, child="01-dedication.Rmd",eval=FALSE}
+```
+
+```{r, child="02-aboutAuthor.Rmd",eval=FALSE}
+```
+
+```{r, child="03-preface.Rmd",eval=FALSE}
+```
+
+```{r, child="04-whyReadThisBook.Rmd",eval=FALSE}
+```
+
+```{r, child="05-bookStructure.Rmd",eval=FALSE}
+```
+
+```{r, child="06-softwareTools.Rmd",eval=FALSE}
+```
+
+```{r, child="07-acknowledgment.Rmd",eval=FALSE}
+```

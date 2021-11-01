@@ -1,0 +1,17 @@
+# Code and Formula
+
+We can simply execute R codes among text in chunk contexts using RMakrdown. There are several possibilities in each chunk. Set `echo=TRUE`, for example, if you want to show the code.
+
+```{r cars}
+summary(cars)
+```
+
+We can run inline R code `2^10=` `r 2^10`
+
+## Math Formula
+
+We can easily write math expressions by latex syntax. 
+Inline LateX equations can be written in a pair of dollar signs
+
+$$f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k}$$
+Also, we can write formulas by using dollar signs. For example, if we write `$\beta$` then we see $\beta$.

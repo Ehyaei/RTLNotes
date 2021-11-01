@@ -1,0 +1,4 @@
+name: pdf presentation (Latex)
+description: >
+   PDF presentation template custom for Max-Planck institute
+create_dir: FALSE

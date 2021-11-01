@@ -1,0 +1,29 @@
+bookdown::gitbook:
+  css:  [src/css/style.css,src/css/environments.css]
+  inludes:
+    in_header: src/html/mathjax-number.html
+  config:
+    sharing: null
+    info: no
+    fontsettings: null
+    toc:
+      collapse: section
+      before: |
+        <li class="toc-logo"><a href="./"><img src="src/icon/MPIBCGreen.png"></a></li>
+        <li class="toc-title"><a style="color: #116656;" href="./">Max-Planck Institute</a></li>
+      scroll_highlight: yes
+    download: ["pdf"]
+bookdown::pdf_book:
+    latex_engine: xelatex
+    keep_tex: true
+    toc_depth: 5
+    pandoc_args:
+    - "--top-level-division=chapter"
+    - "--wrap=preserve"
+    - "--lua-filter=src/tex/template.lua"
+    dev: "cairo_pdf"
+    template: "src/tex/template.tex"
+    includes:
+      in_header: "src/tex/preamble.tex"
+      before_body: "src/tex/before_body.tex"
+      after_body: "src/tex/after_body.tex"

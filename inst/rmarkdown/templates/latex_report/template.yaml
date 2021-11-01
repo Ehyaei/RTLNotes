@@ -1,0 +1,4 @@
+name: pdf report (Latex)
+description: >
+   PDF report template custom for Max-Planck institute
+create_dir: FALSE

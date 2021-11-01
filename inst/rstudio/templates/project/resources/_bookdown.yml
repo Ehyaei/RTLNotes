@@ -1,0 +1,12 @@
+delete_merged_file: true
+output_dir: "docs"
+tables: yes
+rmd_files:
+  - "index.Rmd"
+  - "chapters/Introduction.Rmd"
+  - "chapters/Markdown.Rmd"
+  - "chapters/Code_Formula.Rmd"
+  - "chapters/Figure.Rmd"
+  - "chapters/Table.Rmd"
+  - "chapters/Environment.Rmd"
+  - "chapters/Reference.Rmd"

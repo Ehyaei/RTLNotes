@@ -1,0 +1,14 @@
+pandoc: 2.14.2
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  articles/01_pdf_report_template_customization: 01_pdf_report_template_customization.html
+  articles/02_short_pdf_report: 02_short_pdf_report.html
+  articles/03_bookdown_document: 03_bookdown_document.html
+  articles/04_pdf_presentation: 04_pdf_presentation.html
+  articles/11_ggplot2_themes: 11_ggplot2_themes.html
+  articles/12_Add-Table-to-PDF-Reports: 12_Add-Table-to-PDF-Reports.html
+  articles/13_Latex-Environments: 13_Latex-Environments.html
+  articles/RTLNotes: RTLNotes.html
+last_built: 2021-11-01T17:58Z
+

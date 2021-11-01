@@ -1,0 +1,8 @@
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\node[above,align=center] at (page cs:0.0,0.6){
+{\Huge 
+Dedicated to my mother
+  }
+};
+\end{tikzpicture}

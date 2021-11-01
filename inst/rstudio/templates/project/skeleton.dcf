@@ -1,0 +1,4 @@
+Title: MPI Book Template
+Binding: book_skeleton
+OpenFiles: index.Rmd, _bookdown.yml, _output.yml
+Icon: logo-120x120.png

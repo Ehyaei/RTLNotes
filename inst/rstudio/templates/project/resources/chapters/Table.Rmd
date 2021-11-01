@@ -1,0 +1,105 @@
+# Table
+
+In data analysis, providing a summary of the data in the form of a table, in addition to generating a graph, is highly beneficial for expressing the results.
+
+To generate tables, you can use a variety of R packages.
+[kableExtra](https://haozhu233.github.io/kableExtra/) and [gt](https://gt.rstudio.com/) are the two main packages
+
+## gt
+
+To learn about the gt package features and see many examples, you can see
+An informative document, [gt-cookbook](https://themockup.blog/static/gt-cookbook.html#Introduction).
+
+```{r}
+head(mtcars) %>% 
+  gt(rownames_to_stub = TRUE) %>% 
+  opt_row_striping() %>% 
+  tab_header(
+    title = "Motor Trend Car Road Tests",
+    subtitle = "From the 1974 Motor Trend US magazine"
+  )
+
+```
+
+Many features of the `gt` package can be customized, including:
+
+-   Make changes to the table columns format, color, size and...
+-   Insert row information, including names and groups.
+-   Use headers, spanners, and footers to add extra information.
+-   Change table style.
+
+
+```{r}
+gtcars %>%
+    filter(ctry_origin %in% c("United States", "Japan")) %>%
+    select(mfr:year, mpg_c, mpg_h, ctry_origin, msrp) %>% 
+    gt(
+        rowname_col = "ctry_origin",
+        groupname_col = "year"
+    ) %>%
+    summary_rows(
+        groups = TRUE,
+        columns = c("msrp"),
+        fns = list(Total = ~sum(.))
+    ) %>%
+    grand_summary_rows(
+        columns = c("msrp"),
+        fns = list(Overall = ~sum(.))
+    ) %>% 
+  data_color(
+    columns = c("mpg_c", "mpg_h"),
+    colors = scales::col_numeric(
+      palette = c(
+        "white", "green"),
+      domain = c(10, 25))
+  ) %>% 
+  fmt_missing(
+        columns = contains("mpg"),
+        missing_text = ""
+    )
+```
+
+## kableExtra
+
+The `kableExtra` package is intended to enhance the basic functionality of `knitr::kable` tables.
+The most impressive aspect of `kableExtra` is that the majority of its table capabilities are compatible with both HTML and PDF. It's a good choice of `kableExtra` if you can generate a PDF (LaTex) report. For more example of use this package for PDF output see this 
+[manual](http://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf).
+Below, there are some examples from kableExtra documents that are shown.
+strongly recommends using the `booktabs = T` option for pdf output.
+In the HTML manual, this option is removed.
+
+```{r}
+dt <- mtcars[1:5, 1:6]
+dt %>% 
+kbl() %>%
+    kable_material(c("striped", "hover"))
+```
+
+```{r}
+mtcars[1:8, 1:8] %>%
+  kbl() %>%
+  kable_paper(full_width = F) %>%
+  column_spec(2, color = spec_color(mtcars$mpg[1:8]),
+              link = "https://haozhu233.github.io/kableExtra/") %>%
+  column_spec(6, color = "white",
+              background = spec_color(mtcars$drat[1:8], end = 0.7),
+              popover = paste("am:", mtcars$am[1:8]))
+```
+
+```{r}
+mpg_list <- split(mtcars$mpg, mtcars$cyl)
+disp_list <- split(mtcars$disp, mtcars$cyl)
+inline_plot <- data.frame(cyl = c(4, 6, 8), mpg_box = "", mpg_hist = "",
+                          mpg_line1 = "", mpg_line2 = "",
+                          mpg_points1 = "", mpg_points2 = "", mpg_poly = "")
+inline_plot %>%
+  kbl(booktabs = TRUE) %>%
+  kable_paper(full_width = FALSE) %>%
+  column_spec(2, image = spec_boxplot(mpg_list)) %>%
+  column_spec(3, image = spec_hist(mpg_list)) %>%
+  column_spec(4, image = spec_plot(mpg_list, same_lim = TRUE)) %>%
+  column_spec(5, image = spec_plot(mpg_list, same_lim = FALSE)) %>%
+  column_spec(6, image = spec_plot(mpg_list, type = "p")) %>%
+  column_spec(7, image = spec_plot(mpg_list, disp_list, type = "p")) %>%
+  column_spec(8, image = spec_plot(mpg_list, polymin = 5))
+```

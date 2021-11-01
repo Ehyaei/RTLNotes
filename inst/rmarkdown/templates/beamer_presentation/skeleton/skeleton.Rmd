@@ -1,0 +1,80 @@
+---
+title: Daily Report
+author: [Ahmad Ehyaei, Sara Ershadmanesh]
+date: "2012-01-19"
+affiliation: Max-Planck Institute 
+fontsize: 10pt
+titlepate-portrait: false
+titlepage-author-text-color: ffffff
+logo-primary: src/icon/MPILogoGray.eps
+frametitle-logo: src/icon/MPIBCNNWhite.eps
+output:
+  MPIThemes::latex_presentation
+...
+
+```{r,include=FALSE}
+source("manuscript/global.R")
+```
+
+# Introduction
+
+## Start Presentation
+
+This is simple an R Markdown document to show MPIThemes features.
+use `#` sign to define chapter.
+For definition subsection add `##` to first line and add name of sub chapter.
+
+## Code Embedding
+
+```{r cars,echo=TRUE}
+summary(cars)
+```
+
+We can run inline R code `2^10 = ` `r 2^10`
+
+## Markdown
+
+In RMarkdown we can use markdown syntax, such as unordered list items
+
+- item
+- item
+    - more item
+
+Or use block quotes are written after `>`, e.g.,
+
+> To be, or not to be, that is the question!
+
+## Math Formula
+
+We can easily write math expressions by latex syntax. 
+Inline LateX equations can be written in a pair of dollar signs
+$$f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k}$$
+
+## Plot
+
+
+```{r scatterPlot, echo=FALSE}
+ggplot(iris, aes(Sepal.Length, Petal.Length)) + 
+  labs(subtitle="Sepal Length vs Petal Length",
+       title="Bubble chart") + 
+  geom_point(aes(color=Species, size=Sepal.Width),alpha = 0.5) +
+  geom_smooth(aes(col=Species), method="lm", se=F)
+```
+
+## Block Environments
+
+:::: {.rmdThink data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+::::
+
+:::: {.rmdthink data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+::::
+
+:::: {.Theorem data-latex="{Pythagorean theorem}"}
+This is a theorem about right triangles and can be summarised in the next 
+equation 
+\[ x^2 + y^2 = z^2 \]
+::::
+
+

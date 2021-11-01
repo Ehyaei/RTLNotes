@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Univers";
+    src: url("../fonts/Univers-light-normal.ttf");
+}
+@font-face {
+    font-family: "Univers";
+    src: url("../fonts/UniversBlack.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Univers";
+    src: url("../fonts/UniversLTStd.otf");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Univers";
+    src: url("../fonts/UniversLTStd-Bold.otf");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+body {
+  font-family: 'Univers', Arial, Helvetica, sans-serif !important;
+  background-color: #f6f6f6 !important;
+  margin-top: 0;
+}
+.body-inner, .page-inner section.normal,.navigation,.book-body.fixed {
+  background-color: #f6f6f6 !important;
+}
+.book.font-family-1,.book-summary, {
+  font-family: 'Univers', Arial, Helvetica, sans-serif !important;
+}
+
+.book.font-size-1 .book-body .page-inner section {
+    font-size: 1.8rem;
+}
+
+/* ------------------------------------------ */
+/*                First Page Style            */
+/* ------------------------------------------ */
+
+.title, .subtitle,.author,.date {
+  color: #116656;
+  text-align: center;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 4rem !important;
+  margin-top: 0.275rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.subtitle {
+    text-transform: capitalize;
+    font-size: 3rem !important;
+    margin-top: 0.1rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+.author {
+    text-transform: capitalize;
+    font-size: 2rem !important;
+    margin-bottom: 0.2em !important;
+}
+
+.date {
+    text-transform: uppercase;
+    font-size: 1.5rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+/* ------------------------------------------ */
+/*                 Header Style               */
+/* ------------------------------------------ */
+
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5 {
+  padding-top: 3rem !important; /*adding so much padding because theme adds a margin-top: -65px by default */
+  margin-bottom: 0.75rem;
+  color:#E90649;
+  border-bottom-color: #E90649;
+  border-bottom-style: solid;
+  padding-bottom: 0.5rem;
+}
+
+
+/* ------------------------------------------ */
+/*                   TOC Style                */
+/* ------------------------------------------ */
+
+.toc-logo {
+  width: 120px !important;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.toc-logo img {
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
+.toc-title {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.book-header.fixed {
+    background-color: #f6f6f6 !important;
+    border-bottom: 0px !important;
+}
+
+.book-summary {
+  background: #f6f6f6 !important;
+  font-size: 1.8rem;
+
+}
+
+/* ------------------------------------------ */
+/*              Refrence Style                */
+/* ------------------------------------------ */
+
+#refs {
+    font-size: 90%;
+    column-count: 2;
+}
+#refs > .csl-entry {
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+.hanging-indent > .csl-entry {
+    padding-left: 15px ;
+    text-indent: -15px ;
+}

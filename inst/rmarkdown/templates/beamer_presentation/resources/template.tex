@@ -1,0 +1,735 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(handout)$handout,$endif$$if(beamer)$ignorenonframetext,$endif$$for(classoption)$$classoption$$sep$,$endfor$$if(make149)$,aspectratio=149$endif$]{$documentclass$}
+% ------------------------------ %
+% Add Some pacakges
+\usepackage[most]{tcolorbox}
+\usepackage{awesomebox}
+
+% Remode Defined Environments
+\let\Theorem\relax
+\let\endTheorem\relax
+
+\let\Definition\relax
+\let\endDefinition\relax
+
+\let\Lemma\relax
+\let\endLemma\relax
+
+\let\Corollary\relax
+\let\endCorollary\relax
+
+\let\Proposition\relax
+\let\endProposition\relax
+
+\let\Exercise\relax
+\let\endExercise\relax
+
+\let\Example\relax
+\let\endExample\relax
+
+\let\Remark\relax
+\let\endRemark\relax
+
+\let\Proof\relax
+\let\endProof\relax
+
+\let\Solution\relax
+\let\endSolution\relax
+
+% ------------------------------ %
+
+$if(theme)$
+\usetheme{$theme$}
+$endif$
+$if(colortheme)$
+\usecolortheme{$colortheme$}
+$endif$
+$if(fonttheme)$
+\usefonttheme{$fonttheme$}
+$endif$
+$if(mainfont)$
+\usefonttheme{serif}
+$endif$
+$if(innertheme)$
+\useinnertheme{$innertheme$}
+$endif$
+$if(outertheme)$
+\useoutertheme{$outertheme$}
+$endif$
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+$if(fontfamily)$
+\usepackage[$fontfamilyoptions$]{$fontfamily$}
+$else$
+\usepackage{lmodern}
+$endif$
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0
+  \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
+  \usepackage[utf8]{inputenc}
+$if(euro)$
+  \usepackage{eurosym}
+$endif$
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+$if(mainfont)$
+    \setmainfont[$mainfontoptions$]{$mainfont$}
+$endif$
+$if(sansfont)$
+    \setsansfont[$sansfontoptions$]{$sansfont$}
+$endif$
+$if(monofont)$
+    \setmonofont[Mapping=tex-ansi$if(monofontoptions)$,$monofontoptions$$endif$]{$monofont$}
+$endif$
+$if(mathfont)$
+    \setmathfont(Digits,Latin,Greek)[$mathfontoptions$]{$mathfont$}
+$endif$
+$if(CJKmainfont)$
+    \usepackage{xeCJK}
+    \setCJKmainfont[$CJKoptions$]{$CJKmainfont$}
+$endif$
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+$if(lang)$
+\ifxetex
+  \usepackage{polyglossia}
+  \setmainlanguage[$polyglossia-lang.options$]{$polyglossia-lang.name$}
+$for(polyglossia-otherlangs)$
+  \setotherlanguage[$polyglossia-otherlangs.options$]{$polyglossia-otherlangs.name$}
+$endfor$
+\else
+  \usepackage[shorthands=off,$babel-lang$]{babel}
+\fi
+$endif$
+$if(natbib)$
+\usepackage{natbib}
+\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+$endif$
+$if(biblatex)$
+\usepackage{biblatex}
+$for(bibliography)$
+\addbibresource{$bibliography$}
+$endfor$
+$endif$
+$if(listings)$
+\usepackage{listings}
+$endif$
+$if(lhs)$
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+$endif$
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+$if(tables)$
+\usepackage{longtable,booktabs}
+\usepackage{caption}
+% These lines are needed to make table captions work with longtable:
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+$endif$
+$if(graphics)$
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight0.8\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+$endif$
+
+\AtBeginPart{
+  \let\insertpartnumber\relax
+  \let\partname\relax
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \let\insertsectionnumber\relax
+  \let\sectionname\relax
+  \frame{\sectionpage}
+}
+\AtBeginSubsection{
+  \let\insertsubsectionnumber\relax
+  \let\subsectionname\relax
+  \frame{\subsectionpage}
+}
+
+$if(links-as-notes)$
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+$endif$
+$if(strikeout)$
+\usepackage[normalem]{ulem}
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+$endif$
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+$if(numbersections)$
+\setcounter{secnumdepth}{5}
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
+$if(dir)$
+\ifxetex
+  $if(latex-dir-rtl)$
+  \usepackage[RTLdocument]{bidi}
+  $else$
+  \usepackage{bidi}
+  $endif$
+\fi
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \TeXXeTstate=1
+  \newcommand{\RL}[1]{\beginR #1\endR}
+  \newcommand{\LR}[1]{\beginL #1\endL}
+  \newenvironment{RTL}{\beginR}{\endR}
+  \newenvironment{LTR}{\beginL}{\endL}
+\fi
+$endif$
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+\date{$date$}
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+% ----------------------------------------------- %
+% Start Customization
+% ----------------------------------------------- %
+
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usetikzlibrary{positioning}
+% ...................................................................... %
+% Add MPI Colors
+
+\usepackage{xcolor}
+\definecolor{MPIGreen}{HTML}{116656}
+\definecolor{MPIGray}{HTML}{DDDED6}
+\definecolor{MPIBlue}{HTML}{009EE2}
+\definecolor{MPIRed}{HTML}{E90649}
+\definecolor{MPILightBlue}{HTML}{40BDE8}
+\definecolor{MPIOrange}{HTML}{FF7300}
+\definecolor{MPIYellow}{HTML}{FFCE09}
+\definecolor{MPIPink}{HTML}{FA9FCC}
+\definecolor{MPILightGreen}{HTML}{62BD19}
+\definecolor{MPILivingCoral}{HTML}{FC766A}
+\definecolor{MPIPacificCoast}{HTML}{5B84B1}
+
+% Some optional color adjustments and features to Beamer.
+%------------------------------------------------------------------
+
+% Title Page
+% feature: titlepage-fg-color
+% feature: titlepage-bg-color
+
+
+$if(titlepage-fg-color)$
+\definecolor{titlepageFgColor}{HTML}{$titlepage-fg-color$}$else$\definecolor{titlepageFgColor}{HTML}{009EE2}
+$endif$
+
+$if(titlepage-bg-color)$
+\definecolor{titlepageBgColor}{HTML}{$titlepage-bg-color$}$else$\definecolor{titlepageBgColor}{HTML}{ffffff}
+$endif$
+
+\setbeamercolor{titlepage text}{fg=titlepageFgColor, bg=titlepageBgColor}
+
+\setbeamercolor{title}{use=titlepage text,parent=titlepage text}
+\setbeamercolor{subtitle}{use=titlepage text,parent=titlepage text}
+\setbeamercolor{author}{use=titlepage text,parent=titlepage text}
+\setbeamercolor{date}{use=titlepage text,parent=titlepage text}
+
+
+% feature: frametitle-fg-color
+% feature: frametitle-bg-color
+
+$if(frametitle-fg-color)$
+\definecolor{frametitleFgColor}{HTML}{$frametitle-fg-color$}$else$\definecolor{frametitleFgColor}{HTML}{ffffff}
+$endif$
+
+$if(frametitle-bg-color)$
+\definecolor{frametitleBgColor}{HTML}{$frametitle-bg-color$}$else$\definecolor{frametitleBgColor}{HTML}{009EE2}
+$endif$
+
+\setbeamercolor{frametitle}{fg=frametitleFgColor, bg=frametitleBgColor}
+
+% Section Page
+% feature: section-title-fg-color
+% feature: section-title-bg-color
+
+$if(section-title-fg-color)$
+\definecolor{sectionTitleFgColor}{HTML}{$section-title-fg-color$}$else$\definecolor{sectionTitleFgColor}{HTML}{ffffff}
+$endif$
+
+$if(section-title-bg-color)$
+\definecolor{sectionTitleBgColor}{HTML}{$section-title-bg-color$}$else$\definecolor{sectionTitleBgColor}{HTML}{009EE2}
+$endif$
+
+\setbeamercolor{section title}{fg=sectionTitleFgColor,bg=sectionTitleBgColor}
+
+%......................................................................%
+% Add Main Fonts
+
+\usepackage{fontspec}
+% set main font univers
+\setmainfont[ Path = src/fonts/]{Univers-light-normal.ttf}[
+BoldFont = UniversBlack.ttf,
+ItalicFont = UniversLTStd.otf,
+BoldItalicFont = UniversLTStd-Bold.otf
+]
+
+%......................................................................%
+%                                   Set Geometry                                %
+
+\makeatletter
+\def\parsecomma#1,#2\endparsecomma{\def\page@x{#1}\def\page@y{#2}}
+\tikzdeclarecoordinatesystem{page}{
+    \parsecomma#1\endparsecomma
+    \pgfpointanchor{current page}{north east}
+    % Save the upper right corner
+    \pgf@xc=\pgf@x%
+    \pgf@yc=\pgf@y%
+    % save the lower left corner
+    \pgfpointanchor{current page}{south west}
+    \pgf@xb=\pgf@x%
+    \pgf@yb=\pgf@y%
+    % Transform to the correct placement
+    \pgfmathparse{(\pgf@xc-\pgf@xb)/2.*\page@x+(\pgf@xc+\pgf@xb)/2.}
+    \expandafter\pgf@x\expandafter=\pgfmathresult pt
+    \pgfmathparse{(\pgf@yc-\pgf@yb)/2.*\page@y+(\pgf@yc+\pgf@yb)/2.}
+    \expandafter\pgf@y\expandafter=\pgfmathresult pt
+}
+\makeatother
+
+%......................................................................%
+%                         Design Title Page                            %
+
+% feature: titlepate-portrait: Boolean
+% feature: titlepage-top-color: Hex color witout #
+% feature: titlepage-bottom-color: Hex color witout #
+
+$if(titlepage-top-color)$
+\definecolor{titlepageTopColor}{HTML}{$titlepage-top-color$}$else$\definecolor{titlepageTopColor}{HTML}{DDDED6}
+$endif$
+
+$if(titlepage-bottom-color)$
+\definecolor{titlepageBottomColor}{HTML}{$titlepage-bottom-color$}$else$\definecolor{titlepageBottomColor}{HTML}{009EE2}
+$endif$
+
+% feature: titlepage-text-color
+% feature: titlepage-author-text-color
+
+$if(titlepage-text-color)$
+\definecolor{titlepageTextColor}{HTML}{$titlepage-text-color$}$else$\definecolor{titlepageTextColor}{HTML}{7F7F7F}
+$endif$
+
+$if(titlepage-author-text-color)$
+\definecolor{titlepageAuthorTextColor}{HTML}{$titlepage-author-text-color$}$else$\definecolor{titlepageAuthorTextColor}{HTML}{7F7F7F}
+$endif$
+
+
+$if(titlepate-portrait)$
+
+\setbeamertemplate{title page}{%
+\begin{tikzpicture}[remember picture,overlay]
+
+
+$if(titlepage-top-background)$
+\node[anchor=east] at ([xshift=0.1cm]current page.east) {\includegraphics[keepaspectratio=false,width=0.385\paperwidth,height =\paperheight]{$titlepage-top-background$}}
+$else$
+\fill[titlepageTopColor] (page cs:0.25,-1) rectangle (current page.north east);
+$endif$
+
+% feature: titlepage-bottom-background: image path
+$if(titlepage-bottom-background)$
+\node[anchor=west] at ([xshift=-0.15cm]current page.west) {\includegraphics[keepaspectratio=false,width=0.63\paperwidth,height =\paperheight]{$titlepage-bottom-background$}};
+
+;
+$else$
+\fill[titlepageBottomColor] (current page.south west) rectangle (page cs:0.25,1);
+$endif$
+
+% feature: logo-primary
+% add main logo
+\node[inner sep=0pt] at (page cs:0.8,0.78){$if(logo-primary)$\includegraphics[height=0.17\paperheight]{$logo-primary$}$endif$};
+
+% feature: logo-secondary
+% add secondary logo
+\node[inner sep=0pt] at (page cs:0.8,-0.78){$if(logo-secondary)$\includegraphics[height=0.17\paperheight]{$logo-secondary$}$endif$};
+
+% ------------------------ %
+%         Add Text         %
+% ------------------------ %
+
+% feature: title-vjust
+$if(title-vjust)$\def\titleVjust{$title-vjust$}$else$\def\titleVjust{-20}$endif$
+% feature: title-hjust
+$if(title-hjust)$\def\titleHjust{$title-hjust$}$else$\def\titleHjust{115}$endif$
+% feature: author-vjust
+$if(author-vjust)$\def\authorVjust{$author-vjust$}$else$\def\authorVjust{-115}$endif$
+% feature: author-hjust
+$if(author-hjust)$\def\authorHjust{$author-hjust$}$else$\def\authorHjust{115}$endif$
+
+\node[below,text width=0.35\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\titleHjust,0.0+\titleVjust) {
+
+  $if(title)$
+  \large{\uppercase{$title$}}
+  $endif$
+
+  $if(subtitle)$
+  \normalsize{$subtitle$}
+  $endif$
+
+  % add bodoni font to date
+  $if(date)$
+  \vspace{0.3cm}
+  \normalsize{\uppercase{$date$}}
+  $endif$
+
+  \vspace{1.3cm}
+  $if(affiliation)$
+  \scriptsize{ $affiliation$}
+  $endif$
+
+  $if(location)$
+  \small{$location$}
+  $endif$
+};
+
+\node[below,text width=0.35\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\authorHjust,0.0+\authorVjust) {
+  $if(author)$
+  \scriptsize{$for(author)$\textcolor{titlepageAuthorTextColor}{$author$}$sep$\textcolor{titlepageAuthorTextColor}{,} $endfor$}
+  $endif$
+};
+
+
+\end{tikzpicture}
+}
+
+$else$
+% --------------------------------------------------- %
+%                   Portrait
+% --------------------------------------------------- %
+
+\setbeamertemplate{title page}{%
+\begin{tikzpicture}[remember picture,overlay]
+
+
+% feature: titlepage-top-background: image path
+$if(titlepage-top-background)$
+\node[anchor=north] at ([yshift=0.07cm]current page.north) {\includegraphics[keepaspectratio=false,width=\paperwidth,height = 0.385\paperheight]{$titlepage-top-background$}};
+$else$
+\fill[titlepageTopColor] (page cs:-1,0.224) rectangle (current page.north east);
+$endif$
+
+% feature: titlepage-bottom-background: image path
+$if(titlepage-bottom-background)$
+\node[anchor=south] at ([yshift=-0.15cm]current page.south) {\includegraphics[keepaspectratio=false,width=\paperwidth,height = 0.616\paperheight]{$titlepage-bottom-background$}};
+$else$
+\fill[titlepageBottomColor] (current page.south west) rectangle (page cs:1,0.224);
+$endif$
+
+% add main logo
+\node[inner sep=0pt] at (page cs:0.8,0.78){$if(logo-primary)$\includegraphics[height=0.17\paperheight]{$logo-primary$}$endif$};
+% add secondary logo
+\node[inner sep=0pt] at (page cs:0.8,-0.78){$if(logo-secondary)$\includegraphics[height=0.17\paperheight]{$logo-secondary$}$endif$};
+
+% ------------------------ %
+%         Add Text         %
+% ------------------------ %
+
+% feature: title-vjust
+$if(title-vjust)$\def\titleVjust{$title-vjust$}$else$\def\titleVjust{95}$endif$
+% feature: title-hjust
+$if(title-hjust)$\def\titleHjust{$title-hjust$}$else$\def\titleHjust{0}$endif$
+% feature: author-vjust
+$if(author-vjust)$\def\authorVjust{$author-vjust$}$else$\def\authorVjust{-110}$endif$
+% feature: author-hjust
+$if(author-hjust)$\def\authorHjust{$author-hjust$}$else$\def\authorHjust{0}$endif$
+
+\node[below,text width=0.9\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\titleHjust,0.0+\titleVjust) {
+
+  $if(title)$
+  \Large{\uppercase{$title$}}
+  $endif$
+
+  $if(subtitle)$
+  \normalsize{$subtitle$}
+  $endif$
+
+  % add bodoni font to date
+  $if(date)$
+  \vspace{0.2cm}
+  \normalsize{\uppercase{$date$}}
+  $endif$
+
+  \vspace{0.3cm}
+  $if(affiliation)$
+  \scriptsize{ $affiliation$}
+  $endif$
+
+  $if(location)$
+  \scriptsize{$location$}
+  $endif$
+};
+
+\node[below,text width=0.9\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\authorHjust,0.0+\authorVjust) {
+  $if(author)$
+  \small{$for(author)$\textcolor{titlepageAuthorTextColor}{$author$}$sep$\textcolor{titlepageAuthorTextColor}{,} $endfor$}
+  \vspace{0.3cm}
+  $endif$
+};
+
+\end{tikzpicture}
+}
+$endif$
+
+% ----------------------------------------
+% paga number
+
+% feature: footline-color
+$if(footline-color)$
+\definecolor{footlineColor}{HTML}{$footline-color$}$else$\definecolor{footlineColor}{HTML}{009EE2}
+$endif$
+
+\setbeamercolor{footline}{fg=footlineColor}
+\setbeamerfont{footline}{size=\tiny}
+
+
+\setbeamertemplate{footline}{
+    \ifnum \theframenumber=1
+    \else
+        \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2ex,dp=2ex,leftskip=4ex,rightskip=4ex]{page footer}%
+        \usebeamerfont{title in head/foot}%
+        \insertsection \hfill
+        \insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}}%
+
+    \fi
+}
+
+% ----------------------------------------
+% Design Section Page
+
+
+
+
+% page background
+% feature: page-background-color
+
+$if(page-background-color)$
+\definecolor{pageBackgroundColor}{HTML}{$page-background-color$}$else$\definecolor{pageBackgroundColor}{HTML}{f6f6f6}
+$endif$
+\setbeamercolor{background canvas}{bg=pageBackgroundColor}
+
+
+% ------------------- Frametitle ---------------------
+% Add Logo to frame title
+% feature: frametitle-logo
+$if(frametitle-logo)$
+\makeatletter
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  \begin{beamercolorbox}[%
+      wd=\paperwidth,%
+      ht=4ex,
+      sep = 0.1cm,
+      leftskip=0.5cm,%
+      rightskip=0.5cm,%
+    ]{frametitle}%
+  \insertframetitle%
+  \nolinebreak%
+  \hfill
+  \raisebox{-0.9ex}{\includegraphics[height=3.3ex,keepaspectratio]{$frametitle-logo$}}
+  \end{beamercolorbox}%
+}
+\makeatother
+$endif$
+
+% ----------------------------------------------- %
+% Add Environments
+
+
+% Think
+\newenvironment{rmdThink}{
+\begin{tcolorbox}[enhanced, title={\textbf{\color{white}Think}},colback=MPIGreen!10!white, colframe=MPIGreen,boxrule=0.2mm]}{
+\end{tcolorbox}}
+
+\newtcolorbox{rmdthink}{colback=MPIGreen!10!white,colframe=MPIGreen,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
+
+% Note
+\newenvironment{rmdNote}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Note}},colback=MPIRed!10!white, colframe=MPIRed,boxrule=0.2mm]}{
+    \end{tcolorbox}}
+\newtcolorbox{rmdnote}{colback=MPIRed!10!white,colframe=MPIRed,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
+
+% Tip
+\newenvironment{rmdTip}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Tip}},colback=MPILightGreen!10!white, colframe=MPILightGreen,boxrule=0.2mm]}{
+    \end{tcolorbox}}
+\newtcolorbox{rmdtip}{colback=MPILightGreen!10!white,colframe=MPILightGreen,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
+
+% warning
+\newenvironment{rmdWarning}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Warning}},colback=MPIOrange!10!white, colframe=MPIOrange,boxrule=0.2mm]}{
+    \end{tcolorbox}}
+\newtcolorbox{rmdwarning}{colback=MPIOrange!10!white,colframe=MPIOrange,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
+
+% todo
+\newenvironment{rmdTodo}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}To Do}},colback=MPIBlue!10!white, colframe=MPIBlue,boxrule=0.2mm]}{
+    \end{tcolorbox}}
+\newtcolorbox{rmdtodo}{colback=MPIBlue!10!white,colframe=MPIBlue,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
+
+\newtcbtheorem[auto counter,number within=section]{Theorem}{Theorem}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPIGreen!10!white,colframe=MPIGreen,
+                colbacktitle=MPIGreen, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{thm}
+
+\newtcbtheorem[auto counter,number within=section]{Definition}{Definition}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPILightGreen!10!white,colframe=MPILightGreen,
+                colbacktitle=MPILightGreen, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{defn}
+
+\newtcbtheorem[auto counter,number within=section]{Lemma}{Lemma}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPILightBlue!10!white,colframe=MPILightBlue,
+                colbacktitle=MPILightBlue, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{lem}
+
+\newtcbtheorem[auto counter,number within=section]{Corollary}{Corollary}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPIBlue!10!white,colframe=MPIBlue,
+                colbacktitle=MPIBlue, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{cor}
+
+\newtcbtheorem[auto counter,number within=section]{Proposition}{Proposition}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPIYellow!10!white,colframe=MPIYellow,
+                colbacktitle=MPIYellow, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{prop}
+
+\newtcbtheorem[auto counter,number within=section]{Exercise}{Exercise}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPIRed!10!white,colframe=MPIRed,
+                colbacktitle=MPIRed, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{exer}
+
+\newtcbtheorem[auto counter,number within=section]{Example}{Example}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPIOrange!10!white,colframe=MPIOrange,
+                colbacktitle=MPIOrange, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{exam}
+
+\newtcbtheorem[auto counter,number within=section]{Remark}{Remark}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPIPink!10!white,colframe=MPIPink,
+                colbacktitle=MPIPink, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{rmk}
+
+
+\newtcbtheorem[auto counter,number within=section]{Proof}{Proof}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPILivingCoral!10!white,colframe=MPILivingCoral,
+                colbacktitle=MPILivingCoral, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{pr}
+
+\newtcbtheorem[auto counter,number within=section]{Solution}{Solution}{%
+                lower separated=false,boxrule=0.2mm,
+                colback=MPIPacificCoast!10!white,colframe=MPIPacificCoast,
+                colbacktitle=MPIPacificCoast, coltitle=white,
+                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                }{sol}
+
+
+% --------------------------- %
+%       Remove Navigate
+% --------------------------- %
+
+\beamertemplatenavigationsymbolsempty
+
+% ----------------------------------------------- %
+% End Customization
+% ----------------------------------------------- %
+
+
+\begin{document}
+$if(title)$
+\frame{\titlepage}
+$endif$
+
+$for(include-before)$
+$include-before$
+
+$endfor$
+$if(toc)$
+\begin{frame}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+$endif$
+$body$
+
+$if(natbib)$
+$if(bibliography)$
+$if(biblio-title)$
+$if(book-class)$
+\renewcommand\bibname{$biblio-title$}
+$else$
+\renewcommand\refname{$biblio-title$}
+$endif$
+$endif$
+\begin{frame}[allowframebreaks]{$biblio-title$}
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+\end{frame}
+
+$endif$
+$endif$
+$if(biblatex)$
+\begin{frame}[allowframebreaks]{$biblio-title$}
+\printbibliography[heading=none]
+\end{frame}
+
+$endif$
+$for(include-after)$
+$include-after$
+
+$endfor$
+
+\end{document}

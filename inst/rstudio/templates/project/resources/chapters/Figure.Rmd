@@ -1,0 +1,77 @@
+# Figure
+
+This package includes several ggplot themes and palettes for creating plots with
+MPI custom design.
+
+## Color Palette
+
+To find a color palette,  Some colors are chosen from the Pantone list that is different from the two main colors.  Color selection is a process in progress.
+
+```{r mpithemes_palette,out.width="50%"}
+scales::show_col(palette_mpi(),ncol = 3)
+```
+
+There are some examples here,
+
+```{r mpithemes_colors,echo=TRUE,out.width="100%",echo=FALSE}
+k = 9
+df1 = data.frame(x = rnorm(100*k), y = rnorm(100*k),type = letters[1:k]) %>% 
+  mutate(x = x+ as.integer(as.factor(type)))
+
+df2 = data.frame(y = abs(rnorm(k))+2,x = letters[1:k])
+
+
+point_plot <- ggplot(df1, aes(x=jitter(x), y=jitter(y), col=type)) + 
+  geom_point() + 
+  theme_void()+
+  theme(legend.position = "none")
+
+bar_plot <- ggplot(df2, aes(x=x, y=y, fill=x)) + 
+  geom_bar(stat="identity") + 
+  theme_void()+
+  theme(legend.position = "none")
+
+density_plot <- ggplot(df1, aes(x=x, fill=type)) + 
+  geom_density(alpha = 0.8,color = "transparent") +
+  theme_void()+
+  theme(legend.position = "none")
+
+box_plot <- ggplot(df1, aes(x=x, fill=type)) + 
+  geom_boxplot(alpha = 0.8,size = 0.1,color = "gray30") +
+  theme_void()+
+  theme(legend.position = "none")
+
+# Display this figure:
+gridExtra::grid.arrange(
+  point_plot,bar_plot,density_plot,box_plot,ncol = 2)
+                        
+```
+
+A continuous palette can be seen in the example below.  
+
+```{r continous_palette, out.height="50%",echo=FALSE}
+df <- data.frame(
+  x = rnorm(10000),
+  y = rnorm(10000)
+)
+ggplot(df, aes(x, y)) +
+  geom_hex() +
+  coord_fixed() +
+  theme_void()+
+  bottom_legend()
+```
+
+## Theme
+
+The major goal of the theme was to keep things simple so that you could concentrate 
+on the data. As a result, the chart's components, such as the axes, are smaller and less eye - catching.
+
+```{r mpithemes_theme_scientific,eval=TRUE,echo=TRUE}
+k = 5
+df1 = data.frame(x = rnorm(100*k), y = rnorm(100*k),type = letters[1:k]) %>% 
+  mutate(x = x+ as.integer(as.factor(type)))
+ggplot(df1,aes(x = x, fill = type)) + 
+  geom_density(col = "transparent",alpha = 0.7) + 
+  labs(x = "X Value",y = "Density")+
+  bottom_legend()
+```

@@ -1,0 +1,95 @@
+# Environment
+
+Block content can be useful for informing or alerting your readers about a specific topic.
+We use the `awesomebox` and `tcolorbox` Latex packages for colored block content.
+For supplemental information, you can use notes, tips, info, error, and warning elements. Each block serves a specific semantic purpose.
+
+:::: {.rmdNote data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+::::
+
+:::: {.rmdnote data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+::::
+
+:::: {.rmdTip data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+::::
+
+:::: {.rmdtip data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+::::
+
+:::: {.rmdThink data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+::::
+
+:::: {.rmdthink data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+::::
+
+:::: {.rmdWarning data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+::::
+
+:::: {.rmdwarning data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+::::
+
+:::: {.rmdTodo data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+::::
+
+:::: {.rmdtodo data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+::::
+
+
+::: {.Theorem data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Definition data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Lemma data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Corollary data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Proposition data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Exercise data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Example data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Remark data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Proof data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.Solution data-latex="{}{}"}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+
+::: {.rmdexer data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::
+
+::: {.rmdsol data-latex=""}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+:::

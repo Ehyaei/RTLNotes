@@ -1,0 +1,30 @@
+Package: RTLNotes
+Title: RMarkdown templates and ggplot themes for RTL Languages 
+Version: 0.1
+Authors@R: 
+    person(given = "Ahmad",
+           family = "Ehyaei",
+           role = c("aut", "cre"),
+           email = "ahmad.ehyaei@gmail.com")
+Description: This package contains Rmakdown templates for creating the report,
+  presentation, and other academic templates and ggplot themes for RTL langauges.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+URL: https://github.com/Ehyaei/RTLNotes
+BugReports: https://github.com/Ehyaei/RTLNotes/issues
+Imports: 
+    bookdown,
+    ggplot2,
+    gridExtra,
+    pagedown,
+    rmarkdown,
+    scales,
+    sysfonts
+Suggests: 
+    spelling
+Language: en-US
+Depends: 
+    R (>= 3.4)

@@ -1,0 +1,32 @@
+--- 
+title: "Statistical Analysis of Behavioral Data"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+author: [Ahmad Ehyaei, Sara Ershadmanesh]
+affiliation: Max Planck Institute for Biological Cybernetics 
+location: Tübingen
+titlepage: true
+book: true
+page-background-color: f6f6f6
+logo-primary: src/icon/MPILogoWhite.eps
+titlepage-top-color: f03e4c
+titlepage-text-color: FFFFFF
+chapter-title-color: E90649
+titlepage-author-text-color: f03e4c
+author-vjust: 80
+titlepage-bottom-background: src/img/bottom_background.png
+site: bookdown::bookdown_site
+bibliography: [chapters/bib/book.bib, chapters/bib/packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+```{r, include = FALSE}
+source("manuscript/global.R")
+```
+
+\frontmatter
+
+```{r, child="chapters/setup/main.Rmd",eval=TRUE}
+```
+
+\mainmatter

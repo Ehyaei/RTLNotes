@@ -1,0 +1,122 @@
+# Markdown
+
+Markdown is a basic syntax that allows you to format text using headers, lists, boldface, and other formatting options. This markup language is widely used, and you'll almost certainly find apps that support it. Here's a brief rundown of what Markdown syntax is, how to use it.
+
+## Headers
+
+```
+#    heading 1 
+##   heading 2 
+###  heading 3 
+#### heading 4
+#####  heading 5 
+###### heading 6
+```
+
+## Emphasis
+
+```
+_Emphasized text_ or *Emphasized text*
+
+~~Strikethrough text~~
+
+__Strong text__ or **Strong text**
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+___Strong emphasized text___ or ***Strong emphasized text***
+```
+
+_Emphasized text_ or *Emphasized text*
+
+~~Strikethrough text~~
+
+__Strong text__ or **Strong text**
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+___Strong emphasized text___ or ***Strong emphasized text***
+
+
+## Links
+
+```
+[My GitHub Repository](https://github.com/Ehyaei) or https://github.com/Ehyaei
+
+[heading-1](#heading-1 "Goto heading-1")
+```
+
+[My GitHub Repository](https://github.com/Ehyaei) or https://github.com/Ehyaei
+
+[Emphasis](#Emphasis "Goto Emphasis")
+
+
+## Blockquotes
+
+```
+> To be, or not to be, that is the question.
+
+>> To be, or not to be, that is the question.
+```
+
+> To be, or not to be, that is the question.
+
+>> To be, or not to be, that is the question.
+
+## Lists
+
+```markup
+* unordered list 
+* item 2`  
+     + sub-item 1  
+     + sub-item 2  
+
+1. ordered list`  
+2. item 2`  
+     + sub-item 1  
+     + sub-item 2  
+```
+
+* unordered list
+* item 2
+    + sub-item 1
+    + sub-item 2
+
+  
+1. ordered list
+2. item 2
+    + sub-item 1
+    + sub-item 2
+
+
+## Task List
+
+```
+- [x] task 1
+- [ ] task 2 
+
+- [ ] task 1
+  - [ ] subtask
+
+```
+
+- [x] task 1
+- [ ] task 2 
+
+- [ ] task 1
+  - [ ] subtask
+
+## Table
+
+```
+Header1 | Header2
+------ | ------
+Cell11 | Cell12
+Cell21 | Cell22 
+```
+
+Header1 | Header2
+:------ | :------
+Cell11 | Cell12
+Cell21 | Cell22 
+
