@@ -14,7 +14,7 @@
 latex_report <- function(..., keep_tex = TRUE, highlight = "tango",
                          latex_engine= "xelatex", fig_caption = TRUE) {
   template <- system.file("rmarkdown", "templates", "latex_report", "resources",
-                           package = "MPIThemes")
+                           package = "RTLNotes")
   template = paste0(template,"/template.tex")
   base <- inherit_pdf_document(..., template = template, keep_tex = keep_tex,
                                highlight = highlight,latex_engine = latex_engine,
@@ -55,7 +55,7 @@ latex_report <- function(..., keep_tex = TRUE, highlight = "tango",
 latex_presentation <- function(..., keep_tex = TRUE, highlight = "tango",
                          latex_engine= "xelatex", fig_caption = TRUE, slide_level = 2) {
   template <- system.file("rmarkdown", "templates", "beamer_presentation", "resources",
-                          package = "MPIThemes")
+                          package = "RTLNotes")
   template = paste0(template,"/template.tex")
   base <- inherit_pdf_presentation(..., template = template, keep_tex = keep_tex,
                                highlight = highlight,latex_engine = latex_engine,

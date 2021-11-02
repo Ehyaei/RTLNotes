@@ -7,7 +7,7 @@ options(knitr.kable.NA = '')
 #                                                          #
 ##%######################################################%##
 
-library(MPIThemes)
+library(RTLNotes)
 library(ggplot2)
 
 
