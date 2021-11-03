@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.20)  3 NOV 2021 10:51
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.20)  3 NOV 2021 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2276,7 +2276,10 @@ LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
 (Font)              scaled to size 20.74pt on input line 651.
 [1
 
-] (./interior_feature_pdf_report.toc
+]
+File: src/icon/Bismillah.png Graphic file (type bmp)
+<src/icon/Bismillah.png>
+(./interior_feature_pdf_report.toc
 
 LaTeX Font Warning: Font shape `TU/Parastoo-FD.ttf(0)/b/n' undefined
 (Font)              using `TU/Parastoo-FD.ttf(0)/m/n' instead on input line 1.
@@ -2333,25 +2336,25 @@ Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 734.
+(Font)              scaled to size 10.0pt on input line 737.
 File: figure/scatterPlot-1.pdf Graphic file (type pdf)
 <use figure/scatterPlot-1.pdf>
 File: src/icon/RWLogo.png Graphic file (type bmp)
 <src/icon/RWLogo.png>
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 760.
+(Font)              scaled to size 9.0pt on input line 763.
 Package microtype Info: Character `\AE ' is missing
 (microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 760.
+(Font)              scaled to size 9.0pt on input line 763.
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 760.
+(Font)              scaled to size 14.4pt on input line 763.
 [2]
 Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 
 LaTeX Font Warning: Font shape `TU/Parastoo-FD.ttf(0)/m/it' undefined
-(Font)              using `TU/Parastoo-FD.ttf(0)/m/n' instead on input line 774
+(Font)              using `TU/Parastoo-FD.ttf(0)/m/n' instead on input line 777
 .
 
 Missing character: There is no ‏ (U+200F) in font [src/fonts/Parastoo-FD.ttf]/O
@@ -2367,10 +2370,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 39207 strings out of 478472
- 782525 string characters out of 5861285
+ 39215 strings out of 478472
+ 782727 string characters out of 5861285
  1340205 words of memory out of 5000000
- 58790 multiletter control sequences out of 15000+600000
+ 58797 multiletter control sequences out of 15000+600000
  407671 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,11n,136p,4878b,1279s stack positions out of 5000i,500n,10000p,200000b,80000s

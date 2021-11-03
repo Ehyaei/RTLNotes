@@ -16,6 +16,7 @@ for(i in 1:length(examples_name)){
 
 ## Convert Interior page to PNG
 examples_name = "back_page_pdf_report"
+examples_name = "interior_feature_pdf_report"
 examples_path = paste0("examples/",examples_name,"/",examples_name,".pdf")
 pages <- magick::image_read_pdf(examples_path,density = 150)
 for(i in 2:3){

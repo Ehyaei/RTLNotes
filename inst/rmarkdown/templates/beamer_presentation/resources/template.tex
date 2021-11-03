@@ -4,6 +4,7 @@
 \usepackage[most]{tcolorbox}
 \usepackage{awesomebox}
 
+
 % Remode Defined Environments
 \let\Theorem\relax
 \let\endTheorem\relax
@@ -268,11 +269,11 @@ $endif$
 % feature: frametitle-bg-color
 
 $if(frametitle-fg-color)$
-\definecolor{frametitleFgColor}{HTML}{$frametitle-fg-color$}$else$\definecolor{frametitleFgColor}{HTML}{ffffff}
+\definecolor{frametitleFgColor}{HTML}{$frametitle-fg-color$}$else$\definecolor{frametitleFgColor}{HTML}{534B3E}
 $endif$
 
 $if(frametitle-bg-color)$
-\definecolor{frametitleBgColor}{HTML}{$frametitle-bg-color$}$else$\definecolor{frametitleBgColor}{HTML}{009EE2}
+\definecolor{frametitleBgColor}{HTML}{$frametitle-bg-color$}$else$\definecolor{frametitleBgColor}{HTML}{F8D940}
 $endif$
 
 \setbeamercolor{frametitle}{fg=frametitleFgColor, bg=frametitleBgColor}
@@ -282,25 +283,28 @@ $endif$
 % feature: section-title-bg-color
 
 $if(section-title-fg-color)$
-\definecolor{sectionTitleFgColor}{HTML}{$section-title-fg-color$}$else$\definecolor{sectionTitleFgColor}{HTML}{ffffff}
+\definecolor{sectionTitleFgColor}{HTML}{$section-title-fg-color$}$else$\definecolor{sectionTitleFgColor}{HTML}{534B3E}
 $endif$
 
 $if(section-title-bg-color)$
-\definecolor{sectionTitleBgColor}{HTML}{$section-title-bg-color$}$else$\definecolor{sectionTitleBgColor}{HTML}{009EE2}
+\definecolor{sectionTitleBgColor}{HTML}{$section-title-bg-color$}$else$\definecolor{sectionTitleBgColor}{HTML}{F8D940}
 $endif$
 
 \setbeamercolor{section title}{fg=sectionTitleFgColor,bg=sectionTitleBgColor}
 
 %......................................................................%
 % Add Main Fonts
-
+% https://tex.stackexchange.com/questions/12565/load-fonts-that-are-in-a-fonts-directory
 \usepackage{fontspec}
-% set main font univers
-\setmainfont[ Path = src/fonts/]{Univers-light-normal.ttf}[
-BoldFont = UniversBlack.ttf,
-ItalicFont = UniversLTStd.otf,
-BoldItalicFont = UniversLTStd-Bold.otf
-]
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+\usefonttheme{serif} % default family is serif
+\setmainfont[Path = src/fonts/, Scale=1]{Parastoo-FD.ttf}
+\fontspec [ Path = src/fonts/,
+UprightFont = Vazir-Light-FD.ttf,
+ BoldFont = Vazir-Medium-FD.ttf]
+{Vazir}
+
+\newfontfamily\VazirCode[Path = src/fonts/]{Vazir-Code.ttf}
 
 %......................................................................%
 %                                   Set Geometry                                %
@@ -333,22 +337,22 @@ BoldItalicFont = UniversLTStd-Bold.otf
 % feature: titlepage-bottom-color: Hex color witout #
 
 $if(titlepage-top-color)$
-\definecolor{titlepageTopColor}{HTML}{$titlepage-top-color$}$else$\definecolor{titlepageTopColor}{HTML}{DDDED6}
+\definecolor{titlepageTopColor}{HTML}{$titlepage-top-color$}$else$\definecolor{titlepageTopColor}{HTML}{534B3E}
 $endif$
 
 $if(titlepage-bottom-color)$
-\definecolor{titlepageBottomColor}{HTML}{$titlepage-bottom-color$}$else$\definecolor{titlepageBottomColor}{HTML}{009EE2}
+\definecolor{titlepageBottomColor}{HTML}{$titlepage-bottom-color$}$else$\definecolor{titlepageBottomColor}{HTML}{F8D940}
 $endif$
 
 % feature: titlepage-text-color
 % feature: titlepage-author-text-color
 
 $if(titlepage-text-color)$
-\definecolor{titlepageTextColor}{HTML}{$titlepage-text-color$}$else$\definecolor{titlepageTextColor}{HTML}{7F7F7F}
+\definecolor{titlepageTextColor}{HTML}{$titlepage-text-color$}$else$\definecolor{titlepageTextColor}{HTML}{F8D940}
 $endif$
 
 $if(titlepage-author-text-color)$
-\definecolor{titlepageAuthorTextColor}{HTML}{$titlepage-author-text-color$}$else$\definecolor{titlepageAuthorTextColor}{HTML}{7F7F7F}
+\definecolor{titlepageAuthorTextColor}{HTML}{$titlepage-author-text-color$}$else$\definecolor{titlepageAuthorTextColor}{HTML}{534B3E}
 $endif$
 
 
@@ -375,27 +379,28 @@ $endif$
 
 % feature: logo-primary
 % add main logo
-\node[inner sep=0pt] at (page cs:0.8,0.78){$if(logo-primary)$\includegraphics[height=0.17\paperheight]{$logo-primary$}$endif$};
+\node[inner sep=0pt] at (page cs:-0.8,0.78){$if(logo-primary)$\includegraphics[height=0.17\paperheight]{$logo-primary$}$endif$};
 
 % feature: logo-secondary
 % add secondary logo
-\node[inner sep=0pt] at (page cs:0.8,-0.78){$if(logo-secondary)$\includegraphics[height=0.17\paperheight]{$logo-secondary$}$endif$};
+\node[inner sep=0pt] at (page cs:-0.8,-0.78){$if(logo-secondary)$\includegraphics[height=0.17\paperheight]{$logo-secondary$}$endif$};
 
 % ------------------------ %
 %         Add Text         %
 % ------------------------ %
 
 % feature: title-vjust
-$if(title-vjust)$\def\titleVjust{$title-vjust$}$else$\def\titleVjust{-20}$endif$
+$if(title-vjust)$\def\titleVjust{$title-vjust$}$else$\def\titleVjust{0}$endif$
 % feature: title-hjust
 $if(title-hjust)$\def\titleHjust{$title-hjust$}$else$\def\titleHjust{115}$endif$
 % feature: author-vjust
-$if(author-vjust)$\def\authorVjust{$author-vjust$}$else$\def\authorVjust{-115}$endif$
+$if(author-vjust)$\def\authorVjust{$author-vjust$}$else$\def\authorVjust{-100}$endif$
 % feature: author-hjust
 $if(author-hjust)$\def\authorHjust{$author-hjust$}$else$\def\authorHjust{115}$endif$
 
 \node[below,text width=0.35\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\titleHjust,0.0+\titleVjust) {
-
+\begin{flushright}
+\begin{RTL}
   $if(title)$
   \large{\uppercase{$title$}}
   $endif$
@@ -410,20 +415,26 @@ $if(author-hjust)$\def\authorHjust{$author-hjust$}$else$\def\authorHjust{115}$en
   \normalsize{\uppercase{$date$}}
   $endif$
 
-  \vspace{1.3cm}
+  \vspace{0.6cm}
   $if(affiliation)$
-  \scriptsize{ $affiliation$}
+  \small{ $affiliation$}
   $endif$
 
   $if(location)$
   \small{$location$}
   $endif$
+  \end{RTL}
+  \end{flushright}
 };
 
 \node[below,text width=0.35\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\authorHjust,0.0+\authorVjust) {
+\begin{flushright}
+\begin{RTL}
   $if(author)$
   \scriptsize{$for(author)$\textcolor{titlepageAuthorTextColor}{$author$}$sep$\textcolor{titlepageAuthorTextColor}{,} $endfor$}
   $endif$
+  \end{RTL}
+  \end{flushright}
 };
 
 
@@ -454,25 +465,26 @@ $else$
 $endif$
 
 % add main logo
-\node[inner sep=0pt] at (page cs:0.8,0.78){$if(logo-primary)$\includegraphics[height=0.17\paperheight]{$logo-primary$}$endif$};
+\node[inner sep=0pt] at (page cs:-0.8,0.78){$if(logo-primary)$\includegraphics[height=0.17\paperheight]{$logo-primary$}$endif$};
 % add secondary logo
-\node[inner sep=0pt] at (page cs:0.8,-0.78){$if(logo-secondary)$\includegraphics[height=0.17\paperheight]{$logo-secondary$}$endif$};
+\node[inner sep=0pt] at (page cs:-0.8,-0.78){$if(logo-secondary)$\includegraphics[height=0.17\paperheight]{$logo-secondary$}$endif$};
 
 % ------------------------ %
 %         Add Text         %
 % ------------------------ %
 
 % feature: title-vjust
-$if(title-vjust)$\def\titleVjust{$title-vjust$}$else$\def\titleVjust{95}$endif$
+$if(title-vjust)$\def\titleVjust{$title-vjust$}$else$\def\titleVjust{110}$endif$
 % feature: title-hjust
 $if(title-hjust)$\def\titleHjust{$title-hjust$}$else$\def\titleHjust{0}$endif$
 % feature: author-vjust
-$if(author-vjust)$\def\authorVjust{$author-vjust$}$else$\def\authorVjust{-110}$endif$
+$if(author-vjust)$\def\authorVjust{$author-vjust$}$else$\def\authorVjust{-100}$endif$
 % feature: author-hjust
 $if(author-hjust)$\def\authorHjust{$author-hjust$}$else$\def\authorHjust{0}$endif$
 
 \node[below,text width=0.9\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\titleHjust,0.0+\titleVjust) {
-
+\begin{flushright}
+\begin{RTL}
   $if(title)$
   \Large{\uppercase{$title$}}
   $endif$
@@ -480,7 +492,6 @@ $if(author-hjust)$\def\authorHjust{$author-hjust$}$else$\def\authorHjust{0}$endi
   $if(subtitle)$
   \normalsize{$subtitle$}
   $endif$
-
   % add bodoni font to date
   $if(date)$
   \vspace{0.2cm}
@@ -495,13 +506,19 @@ $if(author-hjust)$\def\authorHjust{$author-hjust$}$else$\def\authorHjust{0}$endi
   $if(location)$
   \scriptsize{$location$}
   $endif$
+\end{RTL}
+\end{flushright}
 };
 
-\node[below,text width=0.9\paperwidth,align=left,font=\color{titlepageTextColor}] at (page cs:0.0+\authorHjust,0.0+\authorVjust) {
+\node[below,text width=0.9\paperwidth,align=left,font=\color{titlepageAuthorTextColor}] at (page cs:0.0+\authorHjust,0.0+\authorVjust) {
+\begin{flushright}
+\begin{RTL}
   $if(author)$
-  \small{$for(author)$\textcolor{titlepageAuthorTextColor}{$author$}$sep$\textcolor{titlepageAuthorTextColor}{,} $endfor$}
+  \textcolor{titlepageAuthorTextColor}{\small{$for(author)$$author $$sep${,} $endfor$}}
   \vspace{0.3cm}
   $endif$
+  \end{RTL}
+\end{flushright}
 };
 
 \end{tikzpicture}
@@ -513,7 +530,7 @@ $endif$
 
 % feature: footline-color
 $if(footline-color)$
-\definecolor{footlineColor}{HTML}{$footline-color$}$else$\definecolor{footlineColor}{HTML}{009EE2}
+\definecolor{footlineColor}{HTML}{$footline-color$}$else$\definecolor{footlineColor}{HTML}{534B3E}
 $endif$
 
 \setbeamercolor{footline}{fg=footlineColor}
@@ -577,105 +594,176 @@ $endif$
 
 % Think
 \newenvironment{rmdThink}{
-\begin{tcolorbox}[enhanced, title={\textbf{\color{white}Think}},colback=MPIGreen!10!white, colframe=MPIGreen,boxrule=0.2mm]}{
+\begin{tcolorbox}[enhanced, title={\textbf{\color{white}بیشتر بدانیم}},colback=MPIGreen!10!white, colframe=MPIGreen,boxrule=0.2mm]}{
 \end{tcolorbox}}
 
 \newtcolorbox{rmdthink}{colback=MPIGreen!10!white,colframe=MPIGreen,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
 
 % Note
 \newenvironment{rmdNote}{
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Note}},colback=MPIRed!10!white, colframe=MPIRed,boxrule=0.2mm]}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}توجه}},colback=MPIRed!10!white, colframe=MPIRed,boxrule=0.2mm]}{
     \end{tcolorbox}}
 \newtcolorbox{rmdnote}{colback=MPIRed!10!white,colframe=MPIRed,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
 
 % Tip
 \newenvironment{rmdTip}{
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Tip}},colback=MPILightGreen!10!white, colframe=MPILightGreen,boxrule=0.2mm]}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}نکته}},colback=MPILightGreen!10!white, colframe=MPILightGreen,boxrule=0.2mm]}{
     \end{tcolorbox}}
 \newtcolorbox{rmdtip}{colback=MPILightGreen!10!white,colframe=MPILightGreen,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
 
 % warning
 \newenvironment{rmdWarning}{
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Warning}},colback=MPIOrange!10!white, colframe=MPIOrange,boxrule=0.2mm]}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}هشدار}},colback=MPIOrange!10!white, colframe=MPIOrange,boxrule=0.2mm]}{
     \end{tcolorbox}}
 \newtcolorbox{rmdwarning}{colback=MPIOrange!10!white,colframe=MPIOrange,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
 
 % todo
 \newenvironment{rmdTodo}{
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}To Do}},colback=MPIBlue!10!white, colframe=MPIBlue,boxrule=0.2mm]}{
+    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}برای انجام}},colback=MPIBlue!10!white, colframe=MPIBlue,boxrule=0.2mm]}{
     \end{tcolorbox}}
 \newtcolorbox{rmdtodo}{colback=MPIBlue!10!white,colframe=MPIBlue,coltext=black,leftrule= 1mm,rightrule=0.1mm,bottomrule=0.1mm,toprule=0.1mm, boxsep=0.5pt,arc=2pt}
 
-\newtcbtheorem[auto counter,number within=section]{Theorem}{Theorem}{%
-                lower separated=false,boxrule=0.2mm,
+
+\newtcbtheorem[auto counter,number within=section]{Theorem}{قضیه}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPIGreen!10!white,colframe=MPIGreen,
                 colbacktitle=MPIGreen, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{thm}
 
-\newtcbtheorem[auto counter,number within=section]{Definition}{Definition}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Definition}{تعریف}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPILightGreen!10!white,colframe=MPILightGreen,
                 colbacktitle=MPILightGreen, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{defn}
 
-\newtcbtheorem[auto counter,number within=section]{Lemma}{Lemma}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Lemma}{لم}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPILightBlue!10!white,colframe=MPILightBlue,
                 colbacktitle=MPILightBlue, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{lem}
 
-\newtcbtheorem[auto counter,number within=section]{Corollary}{Corollary}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Corollary}{نتیجه}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPIBlue!10!white,colframe=MPIBlue,
                 colbacktitle=MPIBlue, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{cor}
 
-\newtcbtheorem[auto counter,number within=section]{Proposition}{Proposition}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Proposition}{گزاره}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPIYellow!10!white,colframe=MPIYellow,
                 colbacktitle=MPIYellow, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{prop}
 
-\newtcbtheorem[auto counter,number within=section]{Exercise}{Exercise}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Exercise}{تمرین}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPIRed!10!white,colframe=MPIRed,
                 colbacktitle=MPIRed, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{exer}
 
-\newtcbtheorem[auto counter,number within=section]{Example}{Example}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Example}{مثال}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPIOrange!10!white,colframe=MPIOrange,
                 colbacktitle=MPIOrange, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{exam}
 
-\newtcbtheorem[auto counter,number within=section]{Remark}{Remark}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Remark}{تذکر}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPIPink!10!white,colframe=MPIPink,
                 colbacktitle=MPIPink, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{rmk}
 
 
-\newtcbtheorem[auto counter,number within=section]{Proof}{Proof}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Proof}{اثبات}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPILivingCoral!10!white,colframe=MPILivingCoral,
                 colbacktitle=MPILivingCoral, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{pr}
 
-\newtcbtheorem[auto counter,number within=section]{Solution}{Solution}{%
-                lower separated=false,boxrule=0.2mm,
+\newtcbtheorem[auto counter,number within=section]{Solution}{جواب}{%
+                lower separated=false,fonttitle=\bfseries,
                 colback=MPIPacificCoast!10!white,colframe=MPIPacificCoast,
                 colbacktitle=MPIPacificCoast, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{sol}
+
+% --------------------------- %
+%       Code Environments
+% --------------------------- %
+
+\definecolor{rcolor}{HTML}{2165B6}
+\definecolor{rconsole}{HTML}{7E7E7E}
+
+\newtcolorbox{rmdconsole}{
+  enhanced,
+  boxrule=0pt,
+  colframe=rconsole,
+  borderline west={4pt}{0pt}{rconsole},
+  colback=rconsole!5!white,
+  sharp corners
+  }
+\newtcolorbox{rmdcode}{
+  enhanced,
+  boxrule=0pt,
+  colframe=rcolor,
+  borderline west={4pt}{0pt}{rcolor},
+  colback=rcolor!5!white,
+  sharp corners
+  }
+
+\BeforeBeginEnvironment{verbatim}{
+\begin{rmdconsole}
+\begin{LTR}
+\small
+}
+\AfterEndEnvironment{verbatim}{
+\end{LTR}
+\end{rmdconsole}
+}
+
+\BeforeBeginEnvironment{Highlighting}{
+\begin{rmdcode}
+\begin{LTR}
+\VazirCode
+\footnotesize
+}
+\AfterEndEnvironment{Highlighting}{
+\end{LTR}
+\end{rmdcode}
+}
+
+
+% for reverse decimal in xepersian
+\newcommand{\subhead}[1]{\multicolumn{1}{c}{#1}}% to format sub-headings of d-type columns
+
+
+% ------------------- itemize bullets pixelated ------------------
+
+\setbeamertemplate{itemize item}{
+	\tikz{
+		\draw[fill=titlepageTopColor,draw=none] (0, 0) rectangle(0.1, 0.1);
+		\draw[fill=titlepageTopColor,draw=none] (0.1, 0.1) rectangle(0.2, 0.2);
+		\draw[fill=titlepageTopColor,draw=none] (0, 0.2) rectangle(0.1, 0.3);
+	}
+}
+
+\setbeamertemplate{itemize subitem}{
+	\tikz{
+		\draw[fill=titlepageBottomColor,draw=none] (0, 0) rectangle(0.075, 0.075);
+		\draw[fill=titlepageBottomColor,draw=none] (0.075, 0.075) rectangle(0.15, 0.15);
+		\draw[fill=titlepageBottomColor,draw=none] (0, 0.15) rectangle(0.075, 0.225);
+	}
+}
+
+
 
 
 % --------------------------- %
@@ -683,6 +771,35 @@ $endif$
 % --------------------------- %
 
 \beamertemplatenavigationsymbolsempty
+
+
+
+\usepackage{newunicodechar}
+
+% Solve Half Space in Latex
+\newunicodechar{‌}{\hskip 0pt}  % U+200c THIN SPACE
+
+
+\usepackage[%
+inlinemathdigits=persian,%
+displaymathdigits=persian%
+]{xepersian}
+\settextfont[Path = src/fonts/, Scale=1]{Vazir-Light-FD.ttf}
+
+% ----------------------------------------
+% set text to right
+\rightskip\rightmargin
+
+% RTl Item & subItem
+
+\usepackage{xpatch}
+
+\makeatletter
+\newcommand{\RTList}{\raggedleft\rightskip\@totalleftmargin}
+\makeatother
+
+\xapptocmd{\enumerate}{\RTList}{}{}
+\xapptocmd{\itemize}{\RTList}{}{}
 
 % ----------------------------------------------- %
 % End Customization

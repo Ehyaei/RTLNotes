@@ -13,6 +13,7 @@ banner-color: F8D940
 banner-text: تحلیل داده بیماران کرونایی
 banner-text-color: 534B3E
 banner-logo: src/icon/RWLogo.png
+preface-logo: src/icon/Bismillah.png
 output:
   RTLNotes::latex_report
 ...
