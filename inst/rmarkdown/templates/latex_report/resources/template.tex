@@ -995,14 +995,15 @@ $endif$
 
 % ---------------------------------------------------------------------------- %
 % Add Page Background Color
-
+$if(page-background)$
+$else$
 \usepackage{eso-pic}
 \newcommand\BackPage{%
 \begin{tikzpicture}[remember picture,overlay]
 \fill[pageBackgroundColor](current page.south west) rectangle (\paperwidth,\paperheight);
 \end{tikzpicture}%
 }
-
+$endif$
 %......................................................................%
 % Remove Blank Page after Table of Contents and between chapter
 
@@ -1068,14 +1069,15 @@ $endif$
 %......................................................................%
 \usepackage{newunicodechar}
 
-% \setlength\parindent{0pt}
-% \newcommand*\x{\rule{1cm}{1cm}}
-% \newunicodechar{‌}{~}   % U+202F NARROW NO-BREAK SPACE
-\newunicodechar{‌}{~}  % U+200c THIN SPACE
+% Solve Half Space in Latex
+\newunicodechar{‌}{\hskip 0pt}  % U+200c THIN SPACE
 
-\usepackage{xepersian}
-\settextfont[Path = src/fonts/, Scale=1.5]{XB Niloofar-Regular.ttf}
-\settextfont[Path = src/fonts/, Scale=1.1]{XB Niloofar-Regular.ttf}
+\usepackage[%
+fontsizescale=1,%
+latinfontsizescale=0.9,%
+mathfontsizescale=1.1%
+]{xepersian}
+\settextfont[Path = src/fonts/, Scale=1]{Parastoo-FD.ttf}
 
 
 

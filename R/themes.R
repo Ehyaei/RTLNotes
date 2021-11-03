@@ -13,15 +13,15 @@
 #'   theme_scientific()+
 #'   scale_fill_mpi()
 #'   }
-theme_scientific <- function(base_size = 12, base_family = "Vazir FD"){
+theme_scientific <- function(base_size = 12, base_family = "Parastoo FD-WOL"){
 
   fontPath <- system.file("rmarkdown", "templates",
                           "latex_report", "skeleton","src","fonts",
                           package = "RTLNotes")
 
-  sysfonts::font_add(family = "Vazir FD",
-                     regular = paste0(fontPath,"/Vazir-Light-FD.ttf"),
-                     bold = paste0(fontPath,"/Vazir-Medium-FD.ttf")
+  sysfonts::font_add(family = "Parastoo",
+                     regular = paste0(fontPath,"/Parastoo-FD-WOL.ttf"),
+                     bold = paste0(fontPath,"/Parastoo-Bold-FD-WOL.ttf")
   )
 
   theme_bw(base_size = base_size, base_family = base_family) +
@@ -36,7 +36,7 @@ theme_scientific <- function(base_size = 12, base_family = "Vazir FD"){
       axis.line.x = element_line(color = "gray40",size = .4),
       axis.line.y = element_line(color = "gray40",size = .4),
       axis.ticks = element_line(color = "gray20"),
-      legend.title = element_text(size = rel(0.8), color = "gray20", vjust = 0),
+      legend.title = element_text(size = rel(0.8), color = "gray20", vjust = 0,hjust = 0.5),
       legend.key = element_rect(fill = NA, color = NA),
       legend.text = element_text(size = rel(.7), color = "black"),
       plot.title = element_text(color = "gray20", size = rel(1.2),face = "bold", hjust = .5),
