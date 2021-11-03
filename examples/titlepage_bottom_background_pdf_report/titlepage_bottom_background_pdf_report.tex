@@ -1,0 +1,769 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{setspace} % add line to default template
+\setstretch{1.2}      % add line to default template
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+%% Support for zero-width non-joiner characters.
+\makeatletter
+\def\zerowidthnonjoiner{%
+  % Prevent ligatures and adjust kerning, but still support hyphenating.
+  \texorpdfstring{%
+    \textormath{\nobreak\discretionary{-}{}{\kern.03em}%
+      \ifvmode\else\nobreak\hskip\z@skip\fi}{}%
+  }{}%
+}
+\makeatother
+\ifPDFTeX
+  \DeclareUnicodeCharacter{200C}{\zerowidthnonjoiner}
+\else
+  \catcode`^^^^200c=\active
+  \protected\def ^^^^200c{\zerowidthnonjoiner}
+\fi
+%% End of ZWNJ support
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={تحلیل داده بیماران کرونایی},
+  pdfauthor={احمدرضا احیائی},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{تحلیل داده بیماران کرونایی}
+\author{احمدرضا احیائی}
+\date{اول مهرماه، ۱۴۰۰}
+
+% ...................................................................... %
+%
+%               Add MPI Custom Template For Long Reprt
+%
+% ...................................................................... %
+\usepackage{float}
+
+% ...................................................................... %
+% Load Packages
+% tables requirement kableExtra packages2
+% TODO: table striped dont work
+
+% ...................................................................... %
+% Add MPI Colors
+
+% Colors extract from Max-Planck Society CD Manula
+% https://docplayer.org/2328711-Max-planck-institut-das-erscheinungsbild-der-max-planck-gesellschaft-4-ueberarbeitete-auflage.html
+\usepackage{xcolor}
+
+\definecolor{MPIGreen}{HTML}{116656}
+\definecolor{MPIGray}{HTML}{DDDED6}
+\definecolor{MPIBlue}{HTML}{009EE2}
+\definecolor{MPIRed}{HTML}{E90649}
+\definecolor{MPILightBlue}{HTML}{40BDE8}
+\definecolor{MPIOrange}{HTML}{FF7300}
+\definecolor{MPIYellow}{HTML}{FFCE09}
+\definecolor{MPIPink}{HTML}{FA9FCC}
+\definecolor{MPILightGreen}{HTML}{62BD19}
+\definecolor{MPILivingCoral}{HTML}{FC766A}
+\definecolor{MPIPacificCoast}{HTML}{5B84B1}
+
+% set titlepage top, bottom, text and rule color
+
+\definecolor{titlepageTopColor}{HTML}{f03e4c}
+
+
+\definecolor{titlepageBottomColor}{HTML}{F8D940}
+
+
+\definecolor{titlepageTextColor}{HTML}{FFFFFF}
+
+\definecolor{titlepageAuthorTextColor}{HTML}{534B3E}
+
+
+\definecolor{titlePageColor}{HTML}{009EE2}
+
+\definecolor{titlePageRuleColor}{HTML}{ffffff}
+
+\definecolor{pageBackgroundColor}{HTML}{ffffff}
+
+\definecolor{bannerColor}{HTML}{40BDE8}
+
+\definecolor{bannerTextColor}{HTML}{000000}
+
+\definecolor{chapterTitleColor}{HTML}{000000}
+
+% Set Initial Values
+
+\def\titlepageRuleHeight{10}
+
+
+\def\titleVjust{260}
+
+\def\titleHjust{-40}
+
+
+\def\authorVjust{-320}
+
+\def\authorHjust{-40}
+
+
+\def\logoPrimarySize{0.126}
+
+\def\logoSecondarySize{0.126}
+
+\def\bannerLogoSize{0.06}
+
+
+% end of color and value definition
+%......................................................................%
+
+%......................................................................%
+% set default hold position of figure and table
+\makeatletter
+  \providecommand*\setfloatlocations[2]{\@namedef{fps@#1}{#2}}
+\makeatother
+\setfloatlocations{figure}{H}
+\setfloatlocations{table}{H}
+%......................................................................%
+
+
+%......................................................................%
+% Add Main Fonts
+
+\usepackage{fontspec}
+
+
+% define Vazir font for title
+\newfontfamily\Vazir[
+  Path=src/fonts/,
+  LetterSpace=2.0,
+  WordSpace={10,0,0},
+  HyphenChar=None,
+  PunctuationSpace=WordSpace
+  ]{Vazir-Light-FD.ttf}
+\newfontfamily\VazirCode[Path = src/fonts/]{Vazir-Code.ttf}
+
+
+%......................................................................%
+% add colored box environments
+
+\usepackage[most]{tcolorbox}
+\usepackage{awesomebox}
+
+\newtcolorbox{info-box}{colback=cyan!5!white,arc=0pt,outer arc=0pt,colframe=cyan!60!black}
+\newtcolorbox{warning-box}{colback=orange!5!white,arc=0pt,outer arc=0pt,colframe=orange!80!black}
+\newtcolorbox{error-box}{colback=red!5!white,arc=0pt,outer arc=0pt,colframe=red!75!black}
+
+% Think
+\newenvironment{rmdThink}{
+	\vspace*{0.5\baselineskip}
+    \par\noindent
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}بیشتر بدانیم }},colback=MPIGreen!10!white, colframe=MPIGreen]
+    \itshape
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+\newtcolorbox{rmdthink}{colback=MPIGreen!10!white,colframe=MPIGreen,coltext=black,leftrule= 2mm,rightrule=0.5mm,bottomrule=0.5mm,toprule=0.5mm, boxsep=0.5pt,arc=2pt}
+
+% Note
+\newenvironment{rmdNote}{
+	\vspace*{0.5\baselineskip}
+    \par\noindent
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}توجه}},colback=MPIRed!10!white, colframe=MPIRed]
+    \itshape
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+\newtcolorbox{rmdnote}{colback=MPIRed!10!white,colframe=MPIRed,coltext=black,leftrule= 2mm,rightrule=0.5mm,bottomrule=0.5mm,toprule=0.5mm, boxsep=0.5pt,arc=2pt}
+
+% Tip
+\newenvironment{rmdTip}{
+	\vspace*{0.5\baselineskip}
+    \par\noindent
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}نکته}},colback=MPILightGreen!10!white, colframe=MPILightGreen]
+    \itshape
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+\newtcolorbox{rmdtip}{colback=MPILightGreen!10!white,colframe=MPILightGreen,coltext=black,leftrule= 2mm,rightrule=0.5mm,bottomrule=0.5mm,toprule=0.5mm, boxsep=0.5pt,arc=2pt}
+
+% warning
+\newenvironment{rmdWarning}{
+	\vspace*{0.5\baselineskip}
+    \par\noindent
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}هشدار}},colback=MPIOrange!10!white, colframe=MPIOrange]
+    \itshape
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+\newtcolorbox{rmdwarning}{colback=MPIOrange!10!white,colframe=MPIOrange,coltext=black,leftrule= 2mm,rightrule=0.5mm,bottomrule=0.5mm,toprule=0.5mm, boxsep=0.5pt,arc=2pt}
+
+% todo
+\newenvironment{rmdTodo}{
+	\vspace*{0.5\baselineskip}
+    \par\noindent
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}برای انجام}},colback=MPIBlue!10!white, colframe=MPIBlue]
+    \itshape
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+\newtcolorbox{rmdtodo}{colback=MPIBlue!10!white,colframe=MPIBlue,coltext=black,leftrule= 2mm,rightrule=0.5mm,bottomrule=0.5mm,toprule=0.5mm, boxsep=0.5pt,arc=2pt}
+
+
+
+\newtcbtheorem[auto counter,number within=section]{Theorem}{قضیه}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPIGreen!10!white,colframe=MPIGreen,
+                colbacktitle=MPIGreen, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{thm}
+
+\newtcbtheorem[auto counter,number within=section]{Definition}{تعریف}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPILightGreen!10!white,colframe=MPILightGreen,
+                colbacktitle=MPILightGreen, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{defn}
+
+\newtcbtheorem[auto counter,number within=section]{Lemma}{لم}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPILightBlue!10!white,colframe=MPILightBlue,
+                colbacktitle=MPILightBlue, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{lem}
+
+\newtcbtheorem[auto counter,number within=section]{Corollary}{نتیجه}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPIBlue!10!white,colframe=MPIBlue,
+                colbacktitle=MPIBlue, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{cor}
+
+\newtcbtheorem[auto counter,number within=section]{Proposition}{گزاره}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPIYellow!10!white,colframe=MPIYellow,
+                colbacktitle=MPIYellow, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{prop}
+
+\newtcbtheorem[auto counter,number within=section]{Exercise}{تمرین}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPIRed!10!white,colframe=MPIRed,
+                colbacktitle=MPIRed, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{exer}
+
+\newtcbtheorem[auto counter,number within=section]{Example}{مثال}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPIOrange!10!white,colframe=MPIOrange,
+                colbacktitle=MPIOrange, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{exam}
+
+\newtcbtheorem[auto counter,number within=section]{Remark}{تذکر}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPIPink!10!white,colframe=MPIPink,
+                colbacktitle=MPIPink, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{rmk}
+
+
+\newtcbtheorem[auto counter,number within=section]{Proof}{اثبات}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPILivingCoral!10!white,colframe=MPILivingCoral,
+                colbacktitle=MPILivingCoral, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{pr}
+
+\newtcbtheorem[auto counter,number within=section]{Solution}{جواب}{%
+                lower separated=false,fonttitle=\bfseries,
+                colback=MPIPacificCoast!10!white,colframe=MPIPacificCoast,
+                colbacktitle=MPIPacificCoast, coltitle=white,
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
+                }{sol}
+
+
+\newenvironment{rmdexer}{
+    \par\noindent
+    \textbf{\color{MPIRed}Exercise} \itshape
+}{\par}
+
+\newenvironment{rmdsol}{
+    \par\noindent
+    \textbf{\color{MPIPacificCoast}Solution} \itshape
+}{\par}
+
+
+%......................................................................%
+% add packages for title page
+
+\definecolor{rcolor}{HTML}{2165B6}
+\definecolor{rconsole}{HTML}{7E7E7E}
+
+\newtcolorbox{rmdconsole}{
+  enhanced,
+  boxrule=0pt,
+  colframe=rconsole,
+  borderline west={4pt}{0pt}{rconsole},
+  colback=rconsole!5!white,
+  sharp corners
+  }
+\newtcolorbox{rmdcode}{
+  enhanced,
+  boxrule=0pt,
+  colframe=rcolor,
+  borderline west={4pt}{0pt}{rcolor},
+  colback=rcolor!5!white,
+  sharp corners
+  }
+
+\BeforeBeginEnvironment{verbatim}{
+\begin{rmdconsole}
+\begin{LTR}
+}
+\AfterEndEnvironment{verbatim}{
+\end{LTR}
+\end{rmdconsole}
+}
+
+\BeforeBeginEnvironment{Highlighting}{
+\begin{rmdcode}
+\begin{LTR}
+\VazirCode
+}
+\AfterEndEnvironment{Highlighting}{
+\end{LTR}
+\end{rmdcode}
+}
+
+
+\definecolor{shadecolor}{HTML}{ffffff}
+
+% Add quote section
+\definecolor{quotecolor}{HTML}{989898}
+
+\newtcolorbox{rmdquote}{
+  enhanced,
+  boxrule=0pt,
+  colframe=quotecolor,
+  borderline west={4pt}{0pt}{quotecolor},
+  colback=quotecolor!15!white,
+  sharp corners
+  }
+\BeforeBeginEnvironment{quote}{\begin{rmdquote}}
+\AfterEndEnvironment{quote}{\end{rmdquote}}
+
+% prevent vertically justifying the contents
+\raggedbottom
+
+
+%......................................................................%
+% add packages for title page
+
+\usepackage{tikz}
+
+\usepackage[margin=1.5cm,includehead=true,includefoot=true,centering]{geometry}
+
+% ----------------------------------------------------------------------------- %
+%                                   Set Geometry                                %
+% ----------------------------------------------------------------------------- %
+
+\makeatletter
+\def\parsecomma#1,#2\endparsecomma{\def\page@x{#1}\def\page@y{#2}}
+\tikzdeclarecoordinatesystem{page}{
+    \parsecomma#1\endparsecomma
+    \pgfpointanchor{current page}{north east}
+    % Save the upper right corner
+    \pgf@xc=\pgf@x%
+    \pgf@yc=\pgf@y%
+    % save the lower left corner
+    \pgfpointanchor{current page}{south west}
+    \pgf@xb=\pgf@x%
+    \pgf@yb=\pgf@y%
+    % Transform to the correct placement
+    \pgfmathparse{(\pgf@xc-\pgf@xb)/2.*\page@x+(\pgf@xc+\pgf@xb)/2.}
+    \expandafter\pgf@x\expandafter=\pgfmathresult pt
+    \pgfmathparse{(\pgf@yc-\pgf@yb)/2.*\page@y+(\pgf@yc+\pgf@yb)/2.}
+    \expandafter\pgf@y\expandafter=\pgfmathresult pt
+}
+\makeatother
+
+
+% ---------------------------------------------------------------------------- %
+% header and footer
+% ---------------------------------------------------------------------------- %
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\leftmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+% \renewcommand{\footrulewidth}{0.25pt}
+
+
+% TODO: Add header and footer options
+% \lhead{}
+% \chead{}
+% \rhead{}
+% \lfoot{}
+% \cfoot{}
+% \rfoot{}
+
+
+% ---------------------------------------------------------------------------- %
+% Banner Page Header and Footer Style
+
+
+
+% ---------------------------------------------------------------------------- %
+% Add Page Background
+
+
+% ---------------------------------------------------------------------------- %
+% Add Page Background Color
+\usepackage{eso-pic}
+\newcommand\BackPage{%
+\begin{tikzpicture}[remember picture,overlay]
+\fill[pageBackgroundColor](current page.south west) rectangle (\paperwidth,\paperheight);
+\end{tikzpicture}%
+}
+%......................................................................%
+% Remove Blank Page after Table of Contents and between chapter
+
+
+%----------------------------------------------------------------------------------------
+% Chapter Design
+\usepackage{titlesec}
+
+\titleformat{\section}[block]
+  {\huge\color{chapterTitleColor}}
+  {\filright \textbf{\thesection}\vspace{1ex}}{12pt}
+  {}
+  [\titlerule]
+
+\titleformat{\subsection}[block]
+  {\Large\color{chapterTitleColor}}
+  {\filright \textbf{\thesubsection}\vspace{1ex}}{12pt}
+  {}
+  []
+
+
+
+%----------------------------------------------------------------------------------------
+% Remove page number in toc and strange white first page
+
+%......................................................................%
+%
+%               End of Modifications
+%
+%......................................................................%
+\usepackage{newunicodechar}
+
+% Solve Half Space in Latex
+\newunicodechar{‌}{\hskip 0pt}  % U+200c THIN SPACE
+
+\usepackage[%
+fontsizescale=1,%
+latinfontsizescale=0.9,%
+mathfontsizescale=1.1%
+]{xepersian}
+\settextfont[Path = src/fonts/, Scale=1]{Parastoo-FD.ttf}
+
+
+
+\begin{document}
+%......................................................................%
+%               Add Titlepage
+%......................................................................%
+
+
+\begin{titlepage}
+
+%......................................................................%
+%                         Max-Planck Society Design
+
+\begin{tikzpicture}[remember picture,overlay]
+
+
+
+% add title page top color
+\fill[titlepageTopColor] (page cs:-1,0.25) rectangle (current page.north east);
+
+
+
+% add white rule
+
+
+\node[inner sep=0pt] at (page cs:0,-0.38){\includegraphics[width=\paperwidth]{src/img/bottom\_background.png}};
+
+%......................................................................%
+
+
+%......................................................................%
+%                         FullCover Color Page Design
+
+%......................................................................%
+
+
+
+
+% add main logo % TODO: add else
+\node[inner sep=0pt] at (page cs:-0.672,0.795){\includegraphics[height=\logoPrimarySize\paperheight]{src/icon/RWLogo.png}};
+% add secondary logo % TODO: add else
+\node[inner sep=0pt] at (page cs:-0.672,-0.795){};
+
+% add title and subtitle
+\node[below,text width=\paperwidth,font=\color{titlepageTextColor}] at (page cs:0.0+\titleHjust,0.0+\titleVjust) {
+\begin{flushright}
+\begin{RTL}
+    \Huge{تحلیل داده بیماران کرونایی}
+  \vspace{0.3cm}
+  
+  
+  % add bodoni font to date
+    \vspace{0.3cm}
+  \Large{اول مهرماه، ۱۴۰۰}
+  \vspace{0.3cm}
+  
+  \vspace{0.3cm}
+    \Large{ یک تحلیل‌گر داده مستقل}
+  \vspace{0.1cm}
+  
+    \large{توبینگن، آلمان}
+    \end{RTL}
+  \end{flushright}
+};
+
+\node[below,text width=\paperwidth,font=\color{titlepageTextColor}] at (page cs:0.0+\authorHjust,0.0+\authorVjust) {
+
+\begin{flushright}
+\begin{RTL}
+    \huge{\textcolor{titlepageAuthorTextColor}{احمدرضا احیائی}}
+  \vspace{0.3cm}
+  \end{RTL}
+\end{flushright}
+
+};
+
+\end{tikzpicture}
+\end{titlepage}
+% \restoregeometry
+
+% end design titlepage
+%......................................................................%
+
+%......................................................................%
+% Add Page Background
+
+
+
+% add these lines for simple report template
+% end add
+
+
+
+% add from eisvogel template
+
+
+
+% Add Table of Contents
+\thispagestyle{empty}
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+}
+
+
+
+
+\hypertarget{rmarkdown-ux644ux627ux62aux6a9}{%
+\section{RMarkdown + لاتک}\label{rmarkdown-ux644ux627ux62aux6a9}}
+
+این یک متن RMarkdown ساده برای نشان دادن ویژگی‌های بسته‌ی RTLNotes است.
+برای ایجاد فصل و زیر فصل می‌توانید از ‍‍‍‍‍‍\texttt{\#} و \texttt{\#\#}
+در ابتدای خط با ذکر عنوان استفاده کنید.
+
+\hypertarget{ux627ux633ux62aux641ux627ux62fux647-ux627ux632-ux62fux633ux62aux648ux631ux647ux627ux6cc-ux628ux631ux646ux627ux645ux647ux646ux648ux6ccux633ux6cc}{%
+\subsection{استفاده از دستورهای
+برنامه‌نویسی}\label{ux627ux633ux62aux641ux627ux62fux647-ux627ux632-ux62fux633ux62aux648ux631ux647ux627ux6cc-ux628ux631ux646ux627ux645ux647ux646ux648ux6ccux633ux6cc}}
+
+کدهای خود را دو صورت می‌توانید در متن نمایش دهید و یا اجرا کنید. اول به
+صورت یک جعبه رنگی مستقل،
+
+\begin{verbatim}
+     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  
+\end{verbatim}
+
+و به صورت برخط 1024 \texttt{2\^{}10=}.
+
+\hypertarget{markdown}{%
+\subsection{Markdown}\label{markdown}}
+
+برای نوشتن متن به راحتی از دستورهای Markdown می‌توانید بهره ببرید. به
+طور مثال برای ایجاد یک فهرست مانند زیر عمل می‌کنیم:
+
+\begin{itemize}
+\tightlist
+\item
+  فهرست یک
+\item
+  فهرست دو
+
+  \begin{itemize}
+  \tightlist
+  \item
+    زیرفهرست
+  \end{itemize}
+\end{itemize}
+
+برای بیان نقل قول هم می‌توانید از علامت \texttt{\textgreater{}} در
+ابتدای متن خود استفاده کنید
+
+\begin{quote}
+بر این رواق زبر جد نوشته اند به زر که جز نکویی اهل کرم نخواهد ماند
+\end{quote}
+
+\hypertarget{ux644ux627ux62aux6a9}{%
+\subsection{لاتک}\label{ux644ux627ux62aux6a9}}
+
+در محیط RMarkdown می‌توانید مشابه لاتک فرمول‌های خود را به صورت مستقل و
+برخط بنویسید. برای این‌ کار باید فرمول خود را در میان ‍‍ ‍‍\texttt{\$\$}
+و یا \texttt{\$} بگذارید.
+
+\[f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k}\]
+
+\hypertarget{ux646ux645ux648ux62fux627ux631}{%
+\subsection{نمودار}\label{ux646ux645ux648ux62fux627ux631}}
+
+با استفاده از بسته ggplot می‌توان نمودارهای زیبا با قالب فارسی را رسم
+کرد.
+
+\begin{center}\includegraphics{figure/scatterPlot-1} \end{center}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(iris, }\FunctionTok{aes}\NormalTok{(Sepal.Length, Petal.Length)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{color=}\NormalTok{Species, }\AttributeTok{size=}\NormalTok{Sepal.Width),}\AttributeTok{alpha =} \FloatTok{0.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_smooth}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{col=}\NormalTok{Species), }\AttributeTok{method=}\StringTok{"lm"}\NormalTok{, }\AttributeTok{se=}\NormalTok{F)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux645ux62dux6ccux637ux647ux627ux6cc-ux631ux646ux6afux6cc}{%
+\subsection{محیط‌های
+رنگی}\label{ux645ux62dux6ccux637ux647ux627ux6cc-ux631ux646ux6afux6cc}}
+
+\begin{rmdThink}
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.
+
+\end{rmdThink}
+
+\begin{rmdthink}
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.
+
+\end{rmdthink}
+
+\begin{Theorem}{قضیه فیثاغورث}
+قضیهٔ فیثاغورس در هندسه اقلیدسی است که بر اساس آن، در یک مثلث راست‌گوشه
+(قائم‌الزاویه)، همواره مجموع مربع‌های دو ضلع برابر با مربع وتر است.
+\[x^2 + y^2 = z^2\]
+
+\end{Theorem}
+
+\end{document}

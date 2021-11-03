@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.20)  3 NOV 2021 10:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.3)  3 NOV 2021 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -391,6 +391,25 @@ rdSpace={10,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
 (fontspec)             3\font =0\fontdimen 3\font \fontdimen 4\font
 (fontspec)             =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen
 (fontspec)             2\font \tex_hyphenchar:D \font =-1\scan_stop: 
+
+
+Package fontspec Info: Vazir-Code scale = 0.9431051752921536.
+
+
+Package fontspec Info: Vazir-Code scale = 0.9431051752921536.
+
+
+Package fontspec Info: Font family 'Vazir-Code.ttf(0)' created for font
+(fontspec)             'Vazir-Code.ttf' with options
+(fontspec)             [Scale=MatchLowercase,Path = src/fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9431051752921536]"[src/fonts/Vazir-Code.ttf]/OT:
+script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2021/06/14 version 4.51 text color boxes
@@ -1234,47 +1253,47 @@ uage=dflt;mapping=persian-tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 551.
+(Font)              scaled to size 10.0pt on input line 553.
 (./two_color_pdf_report.aux)
 \openout1 = `two_color_pdf_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 554.
-LaTeX Font Info:    ... okay on input line 554.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  OT1/lmr/m/n --> TU/Parastoo-FD.ttf(0)/m/n on input line
- 554.
+ 556.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/lmr/m/it --> TU/Parastoo-FD.ttf(0)/m/it on input li
-ne 554.
+ne 556.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/lmr/bx/n --> TU/Parastoo-FD.ttf(0)/b/n on input lin
-e 554.
+e 556.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 554.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 556.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 554.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 556.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 554.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 556.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 554.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 556.
 
 Package fontspec Info: latinmodern-math scale = 1.225797543731701.
 
@@ -1303,7 +1322,7 @@ t=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 12.258pt on input line 554.
+(Font)              scaled to size 12.258pt on input line 556.
 
 Package fontspec Info: latinmodern-math scale = 1.225797543731701.
 
@@ -1342,18 +1361,18 @@ t=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.258pt on input line 554.
+(Font)              scaled to size 12.258pt on input line 556.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 554.
+(Font)              `operators' in the math version `normal' on input line 556.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 554.
+ line 556.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 554.
+(Font)              `operators' in the math version `bold' on input line 556.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 554.
+t line 556.
 
 Package fontspec Info: latinmodern-math scale = 1.225797543731701.
 
@@ -1440,15 +1459,15 @@ t=math;language=dflt;"
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 554.
+(Font)              `symbols' in the math version `normal' on input line 556.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 554.
+t line 556.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 554.
+(Font)              `symbols' in the math version `bold' on input line 556.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 554.
+t line 556.
 
 Package fontspec Info: latinmodern-math scale = 1.225797543731701.
 
@@ -1518,22 +1537,22 @@ t=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 5
-54.
+56.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 554.
+t line 556.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 554
+(Font)              `largesymbols' in the math version `bold' on input line 556
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 554.
-LaTeX Info: Redefining \microtypecontext on input line 554.
-Package microtype Info: Applying patch `item' on input line 554.
-Package microtype Info: Applying patch `toc' on input line 554.
-Package microtype Info: Applying patch `eqnum' on input line 554.
+t line 556.
+LaTeX Info: Redefining \microtypecontext on input line 556.
+Package microtype Info: Applying patch `item' on input line 556.
+Package microtype Info: Applying patch `toc' on input line 556.
+Package microtype Info: Applying patch `eqnum' on input line 556.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 554.
+Package microtype Warning: Unable to apply patch `footnote' on input line 556.
 
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -2198,7 +2217,7 @@ Package microtype Warning: Unknown slot number of character
 Package microtype Info: Character `\AE ' is missing
 (microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-Package hyperref Info: Link coloring OFF on input line 554.
+Package hyperref Info: Link coloring OFF on input line 556.
 (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -2209,9 +2228,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count405
 )
-LaTeX Info: Redefining \ref on input line 554.
-LaTeX Info: Redefining \pageref on input line 554.
-LaTeX Info: Redefining \nameref on input line 554.
+LaTeX Info: Redefining \ref on input line 556.
+LaTeX Info: Redefining \pageref on input line 556.
+LaTeX Info: Redefining \nameref on input line 556.
 \c@lstlisting=\count406
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2254,16 +2273,16 @@ File: src/icon/RTLNotes.png Graphic file (type bmp)
 File: src/icon/RWLogo.png Graphic file (type bmp)
 <src/icon/RWLogo.png>
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 600.
+(Font)              scaled to size 24.88pt on input line 602.
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 606.
+(Font)              scaled to size 14.4pt on input line 608.
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 613.
+(Font)              scaled to size 12.0pt on input line 615.
 Package microtype Info: Character `\AE ' is missing
 (microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 622.
+(Font)              scaled to size 20.74pt on input line 624.
 [1
 
 ] (./two_color_pdf_report.toc
@@ -2323,14 +2342,16 @@ Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 703.
+(Font)              scaled to size 10.0pt on input line 705.
 File: figure/scatterPlot-1.pdf Graphic file (type pdf)
 <use figure/scatterPlot-1.pdf>
 [2]
+LaTeX Font Info:    Font shape `TU/Vazir-Code.ttf(0)/m/n' will be
+(Font)              scaled to size 9.431pt on input line 734.
 Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
 
 LaTeX Font Warning: Font shape `TU/Parastoo-FD.ttf(0)/m/it' undefined
-(Font)              using `TU/Parastoo-FD.ttf(0)/m/n' instead on input line 743
+(Font)              using `TU/Parastoo-FD.ttf(0)/m/n' instead on input line 745
 .
 
 Missing character: There is no ‏ (U+200F) in font [src/fonts/Parastoo-FD.ttf]/O
@@ -2341,11 +2362,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 38984 strings out of 478472
- 776019 string characters out of 5861285
- 1335604 words of memory out of 5000000
- 58579 multiletter control sequences out of 15000+600000
- 407606 words of font info for 75 fonts, out of 8000000 for 9000
+ 39006 strings out of 478472
+ 776670 string characters out of 5861286
+ 1335985 words of memory out of 5000000
+ 58595 multiletter control sequences out of 15000+600000
+ 407866 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,11n,136p,4871b,1275s stack positions out of 5000i,500n,10000p,200000b,80000s
 

@@ -4,27 +4,27 @@ date: "اول مهرماه، ۱۴۰۰"
 author: احمدرضا احیائی
 affiliation: "یک تحلیل‌گر داده مستقل"
 location: "توبینگن، آلمان"
-titlepage: true
-toc: true
-content-has-page: true
-logo-primary: src/icon/RWLogo.png
-titlepage-top-color: f03e4c
-titlepage-text-color: FFFFFF
-titlepage-bottom-background: src/img/bottom_background.png
+fontsize: 10pt
+titlepate-portrait: false
+logo-primary: src/icon/RTLNotes.png
+logo-secondary: src/icon/RWLogo.png
+titlepage-bottom-background: src/img/clouds.png
+titlepage-author-text-color: F8D940
+frametitle-logo: src/icon/RTLNotes.png
 output:
-  RTLNotes::latex_report
+  RTLNotes::latex_presentation
 ...
 
 ```{r,include=FALSE}
 source("manuscript/global.R")
 ```
 
-# RMarkdown + لاتک
+#  آشنایی با  Beamer
 
+## نوشتن متن
 
 این یک متن RMarkdown ساده برای نشان دادن ویژگی‌های بسته‌ی RTLNotes است.
 برای ایجاد فصل و زیر فصل می‌توانید از ‍‍‍‍‍‍`#` و `##` در ابتدای خط با ذکر عنوان استفاده کنید.
-
 
 ## استفاده از دستورهای برنامه‌نویسی
 
@@ -92,9 +92,10 @@ ggplot(iris, aes(Sepal.Length, Petal.Length)) +
 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد. 
 ::::
 
+## محیط‌های ریاضی
+
 :::: {.Theorem data-latex="{قضیه فیثاغورث}"}
 قضیهٔ فیثاغورس در هندسه اقلیدسی است که بر اساس آن، در یک مثلث راست‌گوشه (قائم‌الزاویه)، همواره مجموع مربع‌های دو ضلع برابر با مربع وتر است.
 $$x^2 + y^2 = z^2$$
 ::::
-
 

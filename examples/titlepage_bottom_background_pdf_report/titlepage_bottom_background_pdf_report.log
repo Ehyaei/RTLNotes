@@ -1,0 +1,2373 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.3)  3 NOV 2021 20:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**titlepage_bottom_background_pdf_report.tex
+(./titlepage_bottom_background_pdf_report.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-10-18> (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/ba
+se/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen139
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count186
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count187
+\leftroot@=\count188
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count189
+\DOTSCASE@=\count190
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count191
+\c@MaxMatrixCols=\count192
+\dotsspace@=\muskip16
+\c@parentequation=\count193
+\dspbrk@lvl=\count194
+\tag@help=\toks17
+\row@=\count195
+\column@=\count196
+\maxfields@=\count197
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/ho
+me/ahmad/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-10-18 L3 programming layer (loader) 
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2021-10-18 L3 backend support: XeTeX
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count198
+\l__color_backend_stack_int=\count199
+\g__color_backend_stack_int=\count266
+\g__graphics_track_int=\count267
+\l__pdf_internal_box=\box52
+\g__pdf_backend_object_int=\count268
+\g__pdf_backend_annotation_int=\count269
+\g__pdf_backend_link_int=\count270
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2021-08-27 L3 Experimental document command parser
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-08-27 LaTeX2e option processing using LaTeX3 keys
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count271
+\l__fontspec_language_int=\count272
+\l__fontspec_strnum_int=\count273
+\l__fontspec_tmp_int=\count274
+\l__fontspec_tmpa_int=\count275
+\l__fontspec_tmpb_int=\count276
+\l__fontspec_tmpc_int=\count277
+\l__fontspec_em_int=\count278
+\l__fontspec_emdef_int=\count279
+\l__fontspec_strong_int=\count280
+\l__fontspec_strongdef_int=\count281
+\l__fontspec_tmpa_dim=\dimen148
+\l__fontspec_tmpb_dim=\dimen149
+\l__fontspec_tmpc_dim=\dimen150
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/home/ah
+mad/.TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count282
+\g__um_fonts_used_int=\count283
+\l__um_primecount_int=\count284
+\g__um_primekern_muskip=\muskip17
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2021/10/31 v3.0 Micro-typographical refinements (RS)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count285
+)
+\MT@toks=\toks22
+\MT@count=\count286
+\MT@tempbox=\box53
+\MT@leftmarginkern=\dimen151
+\MT@rightmarginkern=\dimen152
+LaTeX Info: Redefining \textls on input line 1114.
+\MT@outer@kern=\dimen153
+LaTeX Info: Redefining \textmicrotypecontext on input line 1700.
+\MT@listname@count=\count287
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2021/10/31 v3.0 Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 250.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/10/31 v3.0 microtype main configuration file (RS)
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2020/12/30 v 0.09a modify URL breaks
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen154
+\Hy@linkcounter=\count288
+\Hy@pagecounter=\count289
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count290
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count291
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen155
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count292
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count293
+\c@Item=\count294
+\c@Hfootnote=\count295
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box54
+\c@Hy@AnnotLevel=\count296
+\HyField@AnnotCount=\count297
+\Fld@listcount=\count298
+\c@bookmark@seq@number=\count299
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
+\BKM@id=\count300
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/10/15 v3.9 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count301
+\FV@InFile=\read2
+\FV@TabBox=\box55
+\c@FancyVerbLine=\count302
+\FV@StepNumber=\count303
+\FV@OutFile=\write3
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip53
+\fb@frw=\dimen158
+\fb@frh=\dimen159
+\FrameRule=\dimen160
+\FrameSep=\dimen161
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count304
+\float@exts=\toks23
+\float@box=\box56
+\@float@everytoks=\toks24
+\@floatcapt=\box57
+)
+
+Package fontspec Info: Vazir-Light-FD scale = 0.8157901577225113.
+
+
+Package fontspec Info: Vazir-Light-FD scale = 0.8157901577225113.
+
+
+Package fontspec Info: Font family 'Vazir-Light-FD.ttf(0)' created for font
+(fontspec)             'Vazir-Light-FD.ttf' with options
+(fontspec)             [Scale=MatchLowercase,Path=src/fonts/,LetterSpace=2.0,Wo
+rdSpace={10,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.8157901577225113]"[src/fonts/Vazir-Light-FD.ttf]
+/OT:script=latn;language=dflt;letterspace=2.0;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =10\fontdimen 2\font \fontdimen
+(fontspec)             3\font =0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen
+(fontspec)             2\font \tex_hyphenchar:D \font =-1\scan_stop: 
+
+
+Package fontspec Info: Vazir-Code scale = 0.9431051752921536.
+
+
+Package fontspec Info: Vazir-Code scale = 0.9431051752921536.
+
+
+Package fontspec Info: Font family 'Vazir-Code.ttf(0)' created for font
+(fontspec)             'Vazir-Code.ttf' with options
+(fontspec)             [Scale=MatchLowercase,Path = src/fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9431051752921536]"[src/fonts/Vazir-Code.ttf]/OT:
+script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2021/06/14 version 4.51 text color boxes
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/home/ahmad/
+.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/home/ahmad/.TinyTeX/te
+xmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists
+.tex)) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex
+.def
+\pgfutil@abb=\box58
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/
+home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/home/ah
+mad/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/home/
+ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code
+.tex
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count305
+\c@pgf@countb=\count306
+\c@pgf@countc=\count307
+\c@pgf@countd=\count308
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+\pgf@sys@id@count=\count309
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-xetex.def
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.de
+f
+File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.
+def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)
+\pgfsys@objnum=\count310
+)))
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.cod
+e.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count311
+\pgfsyssoftpath@bigbuffer@items=\count312
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.cod
+e.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/home/a
+hmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/home/ahmad
+/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/ahmad/.T
+inyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count313
+\pgfmath@box=\box59
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.co
+de.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonom
+etric.code.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.c
+ode.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparis
+on.code.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.cod
+e.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.co
+de.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.cod
+e.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integera
+rithmetics.code.tex))) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pg
+fmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count314
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.
+tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruc
+t.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.co
+de.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.
+tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count315
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate
+.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen195
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformati
+ons.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.t
+ex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code
+.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessi
+ng.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.
+tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen199
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.t
+ex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count316
+\pgf@shadingcount=\count317
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.t
+ex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.cod
+e.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box63
+))
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.
+tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency
+.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.cod
+e.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.t
+ex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box64
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-
+65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen257
+\pgf@nodesepend=\dimen258
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-
+18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks35
+\verbatim@line=\toks36
+\verbatim@in@stream=\read4
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box65
+\tcb@upperbox=\box66
+\tcb@lowerbox=\box67
+\tcb@phantombox=\box68
+\c@tcbbreakpart=\count318
+\c@tcblayer=\count319
+\c@tcolorbox@number=\count320
+\tcb@temp=\box69
+\tcb@temp=\box70
+\tcb@temp=\box71
+\tcb@temp=\box72
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.51'
+\c@tcbrastercolumn=\count321
+\c@tcbrasterrow=\count322
+\c@tcbrasternum=\count323
+\c@tcbraster=\count324
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.51'
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/home/ah
+mad/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/home/ahmad/.TinyTe
+X/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/home/ahmad/.TinyTeX/texmf-di
+st/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/home/ahmad/.TinyTeX/texmf-dis
+t/tex/latex/pgf/math/pgfmath.sty (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/p
+gf/math/pgfmath.code.tex)) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/uti
+lities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.t
+ex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandle
+rs.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count325
+\pgfplotmarksize=\dimen261
+)
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikz@lastmovetox=\dimen266
+\tikz@lastmovetoy=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
+\tikz@figbox=\box73
+\tikz@figbox@bg=\box74
+\tikz@tempbox=\box75
+\tikz@tempbox@bg=\box76
+\tikztreelevel=\count326
+\tikznumberofchildren=\count327
+\tikznumberofcurrentchild=\count328
+\tikz@fig@count=\count329
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.t
+ex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count330
+\pgfmatrixcurrentcolumn=\count331
+\pgf@matrix@numberofcolumns=\count332
+)
+\tikz@expandcount=\count333
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/t
+ikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+\tcb@waterbox=\box77
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.51'
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.51'
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/oberdiek/pdfcol.sty
+Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box78
+\tcb@totalupperbox=\box79
+\tcb@totallowerbox=\box80
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.51'
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.51'
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.51'
+\tcbfitdim=\dimen270
+\tcb@lowerfitdim=\dimen271
+\tcb@upperfitdim=\dimen272
+\tcb@cur@hbadness=\count334
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.51'
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.51'
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.51'
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count335
+\lst@gtempboxa=\box81
+\lst@token=\toks39
+\lst@length=\count336
+\lst@currlwidth=\dimen273
+\lst@column=\count337
+\lst@pos=\count338
+\lst@lostspace=\dimen274
+\lst@width=\dimen275
+\lst@newlines=\count339
+\lst@lineno=\count340
+\lst@maxwidth=\dimen276
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count341
+\lst@skipnumbers=\count342
+\lst@framebox=\box82
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.51'
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.51'
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count343
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.51'
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '4.51'
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '4.51'
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/t
+ikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.co
+de.tex
+File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '4.51'
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/awesomebox/awesomebox.sty
+Package: awesomebox 2019/07/27 v0.6
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+Package: fontawesome5 2021/06/04 v5.15.3 Font Awesome 5
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5-utex-helpe
+r.sty
+Package: fontawesome5-utex-helper 2021/06/04 v5.15.3 uTeX helper for fontawesom
+e5
+LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on i
+nput line 69.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomefree.fd)
+LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on
+ input line 70.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomebrands.fd)
+))
+\aweboxleftmargin=\skip54
+\aweboxcontentwidth=\skip55
+\aweboxvskip=\skip56
+\aweboxsignraise=\skip57
+\aweboxrulewidth=\skip58
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen277
+\ar@mcellbox=\box83
+\extrarowheight=\dimen278
+\NC@list=\toks40
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box84
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\aweboxlinewidthvar=\skip61
+\aweboxlinewidthref=\skip62
+)
+\c@tcb@cnt@Theorem=\count344
+\c@tcb@cnt@Definition=\count345
+\c@tcb@cnt@Lemma=\count346
+\c@tcb@cnt@Corollary=\count347
+\c@tcb@cnt@Proposition=\count348
+\c@tcb@cnt@Exercise=\count349
+\c@tcb@cnt@Example=\count350
+\c@tcb@cnt@Remark=\count351
+\c@tcb@cnt@Proof=\count352
+\c@tcb@cnt@Solution=\count353
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count354
+\Gm@cntv=\count355
+\c@Gm@tempcnt=\count356
+\Gm@bindingoffset=\dimen279
+\Gm@wd@mp=\dimen280
+\Gm@odd@mp=\dimen281
+\Gm@even@mp=\dimen282
+\Gm@layoutwidth=\dimen283
+\Gm@layoutheight=\dimen284
+\Gm@layouthoffset=\dimen285
+\Gm@layoutvoffset=\dimen286
+\Gm@dimlist=\toks41
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen287
+\ESO@tempdimb=\dimen288
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box85
+\beforetitleunit=\skip72
+\aftertitleunit=\skip73
+\ttl@plus=\dimen289
+\ttl@minus=\dimen290
+\ttl@toksa=\toks42
+\titlewidth=\dimen291
+\titlewidthlast=\dimen292
+\titlewidthfirst=\dimen293
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/xepersian.sty
+Package: xepersian 2020/05/17 v23.1 Persian typesetting in XeLaTeX
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/xepersian-persiancal.sty
+Package: xepersian-persiancal 2012/07/25 v0.2 provides Persian calendar
+\XePersian@i=\count357
+\XePersian@y=\count358
+\XePersian@m=\count359
+\XePersian@d=\count360
+\XePersian@latini=\count361
+\XePersian@persiani=\count362
+\XePersian@latinii=\count363
+\XePersian@persianii=\count364
+\XePersian@latiniii=\count365
+\XePersian@persianiii=\count366
+\XePersian@latiniv=\count367
+\XePersian@persianiv=\count368
+\XePersian@latinv=\count369
+\XePersian@persianv=\count370
+\XePersian@latinvi=\count371
+\XePersian@persianvi=\count372
+\XePersian@latinvii=\count373
+\XePersian@persianvii=\count374
+\XePersian@latinviii=\count375
+\XePersian@persianviii=\count376
+\XePersian@latinix=\count377
+\XePersian@persianix=\count378
+\XePersian@latinx=\count379
+\XePersian@persianx=\count380
+\XePersian@latinxi=\count381
+\XePersian@persianxi=\count382
+\XePersian@latinxii=\count383
+\XePersian@persianxii=\count384
+\XePersian@persianxiii=\count385
+\XePersian@temp=\count386
+\XePersian@temptwo=\count387
+\XePersian@tempthree=\count388
+\XePersian@yModHundred=\count389
+\XePersian@thirtytwo=\count390
+\XePersian@dn=\count391
+\XePersian@sn=\count392
+\XePersian@mminusone=\count393
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/xepersian-mathsdigitspec
+.sty
+Package: xepersian-mathsdigitspec 2018/12/16 v1.1.7 Unicode Persian maths digit
+s in XeLaTeX
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/bidi.sty
+Package: bidi 2020/05/17 v36.3 Bidirectional typesetting in plain TeX and LaTeX
+
+****************************************************
+* 
+* bidi package (Bidirectional typesetting in
+* plain TeX and LaTeX, using XeTeX engine)
+* 
+* Description: A convenient interface for
+* typesetting bidirectional texts in plain TeX
+* and LaTeX. The package includes adaptations
+* for use with many other commonly-used packages.
+* 
+* Copyright (c) 2007--2020 Vafa Khalighi
+* Copyright (c) 2018--2020 bidi-tex GitHub organization
+* 
+* v36.3, 2020/05/17
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/bidi
+* 
+* Issue tracker: https://github.com/persiantex/bidi/issues
+* 
+* Primary author of bidi package: Vafa Khalighi.
+* 
+****************************************************
+(/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/biditools.sty
+Package: biditools 2020/05/13 v2 Programming tools for bidi package
+\@bidi@envbody=\toks43
+\@bidi@emptytoks=\toks44
+\bidi@poscount=\count394
+
+Package biditools Warning: Patching `\enddocument' failed on input line 916.
+
+\bidi@tempcountb=\count395
+\bidi@temptoksa=\toks45
+\bidi@temptoksb=\toks46
+\bidi@dummies=\count396
+\bidi@are@these@correct=\toks47
+\bidi@toks@lista=\toks48
+\bidi@toks@listb=\toks49
+\bidi@stack@length=\count397
+\bidi@empty@stack=\toks50
+\bidi@looprepeat@depth=\count398
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+\c@abspage=\count399
+Package zref Info: New property: abspage on input line 66.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/home/ahmad/.
+TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
+)
+\XKV@depth=\count400
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\@bidi@copyins@=\insert252
+(/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/latex-xetex-bidi.def
+File: latex-xetex-bidi.def 2019/03/03 v1.3.7 bidi adaptations for `latex.ltx' f
+or XeTeX engine
+\bidi@n@everypar=\toks53
+\bidi@column@check@number=\count401
+(/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/footnote-xetex-bidi.def
+File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
+gine
+\c@footdir@label=\count402
+\footdir@toks=\toks54
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/article-xetex-bidi.def
+File: article-xetex-bidi.def 2017/06/09 v0.6 bidi adaptations for standard arti
+cle class for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/amsmath-xetex-bidi.def
+File: amsmath-xetex-bidi.def 2020/05/16 v1.2 bidi adaptations for amsmath packa
+ge for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/amstext-xetex-bidi.def
+File: amstext-xetex-bidi.def 2016/09/12 v0.2 bidi adaptations for amstext packa
+ge for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/color-xetex-bidi.def
+File: color-xetex-bidi.def 2013/04/08 v0.2 bidi adaptations for color package f
+or XeTeX engine
+LaTeX Info: Redefining \color on input line 47.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/xcolor-xetex-bidi.def
+File: xcolor-xetex-bidi.def 2013/04/08 v0.2 bidi adaptations for xcolor package
+ for XeTeX engine
+LaTeX Info: Redefining \color on input line 46.
+LaTeX Info: Redefining \bidicolor on input line 89.
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/float-xetex-bidi.def
+File: float-xetex-bidi.def 2013/04/04 v0.2 bidi adaptations for float package f
+or XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/graphicx-xetex-bidi.def
+File: graphicx-xetex-bidi.def 2017/06/17 v0.5 bidi adaptations for graphicx pac
+kage for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/geometry-xetex-bidi.def
+File: geometry-xetex-bidi.def 2017/01/14 v0.2 bidi adaptations for geometry pac
+kage for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/hyperref-xetex-bidi.def
+File: hyperref-xetex-bidi.def 2018/11/11 v1.1 bidi adaptations for hyperref pac
+kage for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/fancyhdr-xetex-bidi.def
+File: fancyhdr-xetex-bidi.def 2018/02/15 v0.7 bidi adaptations for fancyhdr pac
+kage for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/eso-pic-xetex-bidi.def
+File: eso-pic-xetex-bidi.def 2013/04/10 v0.2 bidi adaptations for eso-pic packa
+ge for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/framed-xetex-bidi.def
+File: framed-xetex-bidi.def 2012/06/05 v0.3 bidi adaptations for framed package
+ for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/listings-xetex-bidi.def
+File: listings-xetex-bidi.def 2018/09/15 v1.5 bidi adaptations for listings pac
+kage for XeTeX engine
+)
+(/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/pgfcorescopes.code-xetex-bidi
+.def
+File: pgfcorescopes.code-xetex-bidi.def 2015/11/14 v0.1 bidi adaptations for pg
+f package for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/titlesec-xetex-bidi.def
+File: titlesec-xetex-bidi.def 2010/07/25 v0.1 bidi adaptations for titlesec pac
+kage for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/array-xetex-bidi.def
+File: array-xetex-bidi.def 2015/11/07 v0.3 bidi adaptations for array package f
+or XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/tcolorbox-xetex-bidi.def
+File: tcolorbox-xetex-bidi.def 2018/11/11 v0.2 bidi adaptations for tcolorbox p
+ackage for XeTeX engine
+)) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/bidi/loadingorder-xetex-bidi.de
+f
+File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
+ last package loaded
+)
+\bidi@digits=\count403
+\bidi@digits@charclass=\XeTeXcharclass1
+\bidi@sepmark@charclass=\XeTeXcharclass2
+)
+****************************************************
+* 
+* xepersian package (Persian for LaTeX, using XeTeX engine)
+* 
+* Description: The package supports Persian
+* typesetting, using fonts provided in the
+* distribution.
+* 
+* Copyright (c) 2008--2020 Vafa Khalighi
+* Copyright (c) 2018--2020 bidi-tex GitHub Organization
+* 
+* v23.1, 2020/05/17
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/xepersian
+* 
+* Issue tracker: https://github.com/persiantex/xepersian/issues
+* 
+* Primary author of xepersian package: Vafa Khalighi.
+* 
+****************************************************
+\xepersian@tcl=\count404
+\xepersian@ilg=\dimen294
+\xepersian@strutilg=\dimen295
+
+(/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/loadingorder-xepersian.d
+ef
+File: loadingorder-xepersian.def 2018/09/29 v0.5 making sure that xepersian is 
+the last package loaded
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/footnote-xepersian.def
+File: footnote-xepersian.def 2017/08/09 v0.6 footnote macros for xepersian pack
+age
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/listings-xepersian.def
+File: listings-xepersian.def 2014/07/17 v0.3 bilingual captions for listings pa
+ckage
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/framed-xepersian.def
+File: framed-xepersian.def 2012/06/05 v0.1 xepersian adaptations for framed pac
+kage for XeTeX engine
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/hyperref-xepersian.def
+File: hyperref-xepersian.def 2015/02/02 v0.6 bilingual captions for hyperref pa
+ckage
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/tikz.code-xepersian.de
+f
+File: tikz.code-xepersian.def 2020/05/17 v0.2 adaptations for tikz.code.tex fil
+e
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/xelatex/xepersian/article-xepersian.def
+File: article-xepersian.def 2010/07/25 v0.2 adaptations for standard article cl
+ass
+)
+
+Package fontspec Info: lmroman10-regular scale = 0.9999964596882403.
+
+
+Package fontspec Info: lmroman10-regular scale = 0.9999964596882403.
+
+
+Package fontspec Info: lmromancaps10-regular scale = 0.8385185361103854.
+
+
+Package fontspec Info: lmroman10-bold scale = 0.9707163010643308.
+
+
+Package fontspec Info: lmromancaps10-regular scale = 0.8385185361103854.
+
+
+Package fontspec Info: lmroman10-italic scale = 0.9999964596882403.
+
+
+Package fontspec Info: lmromancaps10-regular scale = 0.8385185361103854.
+
+
+Package fontspec Info: lmromanslant10-regular scale = 0.9999964596882403.
+
+
+Package fontspec Info: lmromancaps10-regular scale = 0.8385185361103854.
+
+
+Package fontspec Info: lmroman10-bolditalic scale = 0.9707163010643308.
+
+
+Package fontspec Info: lmromancaps10-regular scale = 0.8385185361103854.
+
+
+Package fontspec Info: lmromanslant10-bold scale = 0.9707163010643308.
+
+
+Package fontspec Info: lmromancaps10-regular scale = 0.8385185361103854.
+
+
+Package fontspec Info: Font family 'lmroman10-regular(0)' created for font
+(fontspec)             'lmroman10-regular' with options
+(fontspec)             [Scale=MatchLowercase,Ligatures=TeX,Path,BoldFont={lmrom
+an10-bold},BoldItalicFont={lmroman10-bolditalic},ItalicFont={lmroman10-italic},
+SmallCapsFont={lmromancaps10-regular},SlantedFont={lmromanslant10-regular},Bold
+SlantedFont={lmromanslant10-bold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[lmroman10-regular]/OT:script=
+latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8385185361103854]"[lmromancaps10-regular]/OT:scr
+ipt=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9707163010643308]"[lmroman10-bold]/OT:script=lat
+n;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8385185361103854]"[lmromancaps10-regular]/OT:scr
+ipt=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[lmroman10-italic]/OT:script=l
+atn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8385185361103854]"[lmromancaps10-regular]/OT:scr
+ipt=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[lmromanslant10-regular]/OT:sc
+ript=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[0.8385185361103854]"[lmromancaps10-regular]/OT:scr
+ipt=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.9707163010643308]"[lmroman10-bolditalic]/OT:scri
+pt=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8385185361103854]"[lmromancaps10-regular]/OT:scr
+ipt=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[0.9707163010643308]"[lmromanslant10-bold]/OT:scrip
+t=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[0.8385185361103854]"[lmromancaps10-regular]/OT:scr
+ipt=latn;language=dflt;mapping=tex-text;"
+
+)
+
+Package fontspec Info: Parastoo-FD scale = 0.8157901577225113.
+
+
+Package fontspec Info: Parastoo-FD scale = 0.8157901577225113.
+
+
+Package fontspec Info: Font family 'Parastoo-FD.ttf(0)' created for font
+(fontspec)             'Parastoo-FD.ttf' with options
+(fontspec)             [Scale=MatchLowercase,Script=Persian,Ligatures=PersianTe
+X,Path
+(fontspec)             = src/fonts/,Scale=1].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[src/fonts/Parastoo-FD.ttf]/OT:script=arab;lang
+uage=dflt;mapping=persian-tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 553.
+(./titlepage_bottom_background_pdf_report.aux)
+\openout1 = `titlepage_bottom_background_pdf_report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 556.
+LaTeX Font Info:    ... okay on input line 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/Parastoo-FD.ttf(0)/m/n on input line
+ 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/Parastoo-FD.ttf(0)/m/it on input li
+ne 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/Parastoo-FD.ttf(0)/b/n on input lin
+e 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 556.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 556.
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.225797543731701]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.225797543731701]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 12.258pt on input line 556.
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.225797543731701]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.225797543731701]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.225797543731701]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.225797543731701]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.258pt on input line 556.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 556.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 556.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 556.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
+t line 556.
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225920123486074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225920123486074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225920123486074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225920123486074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225920123486074.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =8.29866pt\relax \fontdimen 9\font
+(fontspec)             =4.82965pt\relax \fontdimen 10\font =5.44255pt\relax
+(fontspec)             \fontdimen 11\font =8.40898pt\relax \fontdimen 12\font
+(fontspec)             =4.229pt\relax \fontdimen 13\font =4.44965pt\relax
+(fontspec)             \fontdimen 14\font =4.44965pt\relax \fontdimen 15\font
+(fontspec)             =3.54256pt\relax \fontdimen 16\font =3.02773pt\relax
+(fontspec)             \fontdimen 17\font =3.02773pt\relax \fontdimen 18\font
+(fontspec)             =3.0645pt\relax \fontdimen 19\font =2.4516pt\relax
+(fontspec)             \fontdimen 22\font =3.0645pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.225920123486074]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.225920123486074]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.225920123486074]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =8.29866pt\relax \fontdimen 9\font
+(fontspec)             =4.82965pt\relax \fontdimen 10\font =5.44255pt\relax
+(fontspec)             \fontdimen 11\font =8.40898pt\relax \fontdimen 12\font
+(fontspec)             =4.229pt\relax \fontdimen 13\font =4.44965pt\relax
+(fontspec)             \fontdimen 14\font =4.44965pt\relax \fontdimen 15\font
+(fontspec)             =3.54256pt\relax \fontdimen 16\font =3.02773pt\relax
+(fontspec)             \fontdimen 17\font =3.02773pt\relax \fontdimen 18\font
+(fontspec)             =3.0645pt\relax \fontdimen 19\font =2.4516pt\relax
+(fontspec)             \fontdimen 22\font =3.0645pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.225920123486074]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =8.29866pt\relax \fontdimen 9\font
+(fontspec)             =4.82965pt\relax \fontdimen 10\font =5.44255pt\relax
+(fontspec)             \fontdimen 11\font =8.40898pt\relax \fontdimen 12\font
+(fontspec)             =4.229pt\relax \fontdimen 13\font =4.44965pt\relax
+(fontspec)             \fontdimen 14\font =4.44965pt\relax \fontdimen 15\font
+(fontspec)             =3.54256pt\relax \fontdimen 16\font =3.02773pt\relax
+(fontspec)             \fontdimen 17\font =3.02773pt\relax \fontdimen 18\font
+(fontspec)             =3.0645pt\relax \fontdimen 19\font =2.4516pt\relax
+(fontspec)             \fontdimen 22\font =3.0645pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 556.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 556.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 556.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 556.
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225674963977328.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225674963977328.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225674963977328.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225674963977328.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225797543731701.
+
+
+Package fontspec Info: latinmodern-math scale = 1.225674963977328.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =0.49033pt\relax \fontdimen 9\font
+(fontspec)             =2.4516pt\relax \fontdimen 10\font =2.04709pt\relax
+(fontspec)             \fontdimen 11\font =1.36064pt\relax \fontdimen 12\font
+(fontspec)             =7.3548pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.225674963977328]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.225674963977328]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.225674963977328]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.49033pt\relax \fontdimen 9\font
+(fontspec)             =2.4516pt\relax \fontdimen 10\font =2.04709pt\relax
+(fontspec)             \fontdimen 11\font =1.36064pt\relax \fontdimen 12\font
+(fontspec)             =7.3548pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.225674963977328]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.49033pt\relax \fontdimen 9\font
+(fontspec)             =2.4516pt\relax \fontdimen 10\font =2.04709pt\relax
+(fontspec)             \fontdimen 11\font =1.36064pt\relax \fontdimen 12\font
+(fontspec)             =7.3548pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 5
+56.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 556.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 556
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 556.
+LaTeX Info: Redefining \microtypecontext on input line 556.
+Package microtype Info: Applying patch `item' on input line 556.
+Package microtype Info: Applying patch `toc' on input line 556.
+Package microtype Info: Applying patch `eqnum' on input line 556.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 556.
+
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Parastoo-FD.ttf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v D'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+Package microtype Info: Character `\DH ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v d'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+Package microtype Info: Character `\dj ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u G'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u g'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+Package microtype Info: Character `\i ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\L ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+Package microtype Info: Character `\l ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+Package microtype Info: Character `\O ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+Package microtype Info: Character `\o ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'Y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"Y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/406(protrusion)'.
+
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package hyperref Info: Link coloring OFF on input line 556.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.st
+y
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count405
+)
+LaTeX Info: Redefining \ref on input line 556.
+LaTeX Info: Redefining \pageref on input line 556.
+LaTeX Info: Redefining \nameref on input line 556.
+\c@lstlisting=\count406
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=528.93675pt
+* \textheight=642.61174pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-29.59087pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: src/img/bottom_background.png Graphic file (type bmp)
+<src/img/bottom_background.png>
+File: src/icon/RWLogo.png Graphic file (type bmp)
+<src/icon/RWLogo.png>
+LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 601.
+LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 607.
+LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 614.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/Parastoo-FD.ttf(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/m/n' will be
+(Font)              scaled to size 20.74pt on input line 623.
+[1
+
+] (./titlepage_bottom_background_pdf_report.toc
+
+LaTeX Font Warning: Font shape `TU/Parastoo-FD.ttf(0)/b/n' undefined
+(Font)              using `TU/Parastoo-FD.ttf(0)/m/n' instead on input line 1.
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 13.48386pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.4387pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.74193pt on input line 2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 13.4852pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.43964pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.7426pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 13.48251pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.43776pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.74126pt on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+(/home/ahmad/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/home/ahmad/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+))
+\tf@toc=\write5
+\openout5 = `titlepage_bottom_background_pdf_report.toc'.
+
+[1]
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+LaTeX Font Info:    Font shape `TU/Parastoo-FD.ttf(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 704.
+File: figure/scatterPlot-1.pdf Graphic file (type pdf)
+<use figure/scatterPlot-1.pdf>
+[2]
+LaTeX Font Info:    Font shape `TU/Vazir-Code.ttf(0)/m/n' will be
+(Font)              scaled to size 9.431pt on input line 733.
+Missing character: There is no ‏ (U+200F) in font [lmmono10-regular]:!
+
+LaTeX Font Warning: Font shape `TU/Parastoo-FD.ttf(0)/m/it' undefined
+(Font)              using `TU/Parastoo-FD.ttf(0)/m/n' instead on input line 744
+.
+
+Missing character: There is no ‏ (U+200F) in font [src/fonts/Parastoo-FD.ttf]/O
+T:script=arab;language=dflt;mapping=persian-tex-text;!
+[3] [4] (./titlepage_bottom_background_pdf_report.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 39005 strings out of 478472
+ 776955 string characters out of 5861286
+ 1336037 words of memory out of 5000000
+ 58593 multiletter control sequences out of 15000+600000
+ 407866 words of font info for 79 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 101i,11n,136p,4889b,1275s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on titlepage_bottom_background_pdf_report.pdf (5 pages).

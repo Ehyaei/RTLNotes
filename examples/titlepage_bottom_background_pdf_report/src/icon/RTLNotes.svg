@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 735 852"
+   style="enable-background:new 0 0 735 852;"
+   xml:space="preserve"
+   sodipodi:docname="RTLNotes.svg"
+   inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><defs
+   id="defs1118"><filter
+     style="color-interpolation-filters:sRGB;"
+     inkscape:label="Colorize"
+     id="filter5467"
+     x="0"
+     y="0"
+     width="1"
+     height="1"><feComposite
+       in2="SourceGraphic"
+       operator="arithmetic"
+       k1="0"
+       k2="0"
+       result="composite1"
+       id="feComposite5453" /><feColorMatrix
+       in="composite1"
+       values="1"
+       type="saturate"
+       result="colormatrix1"
+       id="feColorMatrix5455" /><feFlood
+       flood-opacity="1"
+       flood-color="rgb(255,255,255)"
+       result="flood1"
+       id="feFlood5457" /><feBlend
+       in="flood1"
+       in2="colormatrix1"
+       mode="multiply"
+       result="blend1"
+       id="feBlend5459" /><feBlend
+       in2="blend1"
+       mode="screen"
+       result="blend2"
+       id="feBlend5461" /><feColorMatrix
+       in="blend2"
+       values="1"
+       type="saturate"
+       result="colormatrix2"
+       id="feColorMatrix5463" /><feComposite
+       in="colormatrix2"
+       in2="SourceGraphic"
+       operator="in"
+       k2="1"
+       result="composite2"
+       id="feComposite5465" /></filter></defs><sodipodi:namedview
+   id="namedview1116"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="0.87441315"
+   inkscape:cx="323.07382"
+   inkscape:cy="426"
+   inkscape:window-width="1848"
+   inkscape:window-height="1016"
+   inkscape:window-x="72"
+   inkscape:window-y="27"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#DB1F26;}
+	.st1{opacity:0.25;fill:url(#SVGID_1_);enable-background:new    ;}
+	.st2{fill:#A51D21;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;}
+	.st5{fill:#231F20;}
+	.st6{fill:#E6B35A;}
+</style>
+<polygon
+   class="st0"
+   points="367.5,826.9 715.1,626.2 715.1,224.7 367.5,24 19.8,224.7 19.8,626.2 "
+   id="polygon4"
+   transform="translate(9.6,6.3)" />
+<title
+   id="title6">rvest</title>
+<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="366.9651"
+   y1="973.1201"
+   x2="368.2551"
+   y2="509.6001"
+   gradientTransform="matrix(1,0,0,-1,2.4e-6,852.00001)">
+	<stop
+   offset="0"
+   style="stop-color:#FFFFFF;stop-opacity:0.83"
+   id="stop8" />
+	<stop
+   offset="0.56"
+   style="stop-color:#FFFFFF;stop-opacity:0.37"
+   id="stop10" />
+	<stop
+   offset="1"
+   style="stop-color:#FFFFFF;stop-opacity:0"
+   id="stop12" />
+</linearGradient>
+<path
+   class="st1"
+   d="m 368,341.70001 c 128.5,0 239,-57.2 288.1,-139.30001 L 367.5,35.8 v 0 L 79.600002,202 C 128.6,284.30001 239.3,341.70001 368,341.70001 Z"
+   id="path15"
+   style="fill:url(#SVGID_1_)" />
+<path
+   class="st2"
+   d="M734.9,637.4V213.1l-29.3-16.9L427.8,35.8L367.5,1l-60.3,34.8L29.4,196.2L0.1,213.1v424.2l29.3,16.9  l281.3,162.4l56.9,32.8l56.9-32.8l281.3-162.4L734.9,637.4z M29.4,621.5V231l50.3-29L367.5,35.8l0,0l288.6,166.6l49.5,28.6v390.5  L367.5,816.7L29.4,621.5z"
+   id="path17" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path
+   class="st6"
+   d="M367,633.9c0.3-0.3,0.6-0.6,0.9-0.9h-0.3C367.5,633.3,367.3,633.6,367,633.9z"
+   id="path69" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<metadata
+   id="metadata5391"><rdf:RDF><cc:Work
+       rdf:about=""><dc:title>rvest</dc:title></cc:Work></rdf:RDF></metadata><g
+   id="g6"
+   transform="matrix(5.2994171,0,0,5.2994171,1411.7501,-1805.4521)"
+   style="fill:#ffffff"><path
+     d="m -163.8,451.2 h -62.6 l 7.7,-7.6 c 1,-1 1,-2.6 0,-3.5 -1,-1 -2.6,-1 -3.5,0 l -12.9,13 c -0.4,0.4 -0.4,1 0,1.4 l 12.9,13 c 1,1 2.6,1 3.5,0 1,-1 1,-2.6 0,-3.5 l -7.7,-7.6 h 62.6 c 1.4,0 2.5,-1.1 2.5,-2.5 0,-1.6 -1.1,-2.7 -2.5,-2.7 z"
+     id="path2"
+     style="fill:#ffffff" /><path
+     d="m -161.1,373.9 h -43.2 v 0 c -12,0.2 -21.7,10 -21.7,22 0,11.3 8.6,20.7 19.5,21.9 v 22.7 c 0,1.4 1.1,2.5 2.5,2.5 1.4,0 2.5,-1.1 2.5,-2.5 v -61.7 h 15 v 61.7 c 0,1.4 1.1,2.5 2.5,2.5 1.4,0 2.5,-1.1 2.5,-2.5 v -61.7 h 20.3 c 1.4,0 2.5,-1.1 2.5,-2.5 0,-1.4 -1.1,-2.4 -2.4,-2.4 z m -45.4,38.9 c -8.2,-1.2 -14.5,-8.3 -14.5,-16.8 0,-8.5 6.3,-15.6 14.5,-16.8 z"
+     id="path4"
+     style="fill:#ffffff" /></g></svg>
