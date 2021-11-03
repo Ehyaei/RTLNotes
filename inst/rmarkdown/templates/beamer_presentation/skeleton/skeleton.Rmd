@@ -6,7 +6,6 @@ affiliation: "یک تحلیل‌گر داده مستقل"
 location: "توبینگن، آلمان"
 fontsize: 10pt
 titlepate-portrait: false
-titlepage-author-text-color: ffffff
 logo-primary: src/icon/RTLNotes.png
 logo-secondary: src/icon/RWLogo.png
 output:
