@@ -492,25 +492,25 @@ $endif$
 $if(titlepage-top-color)$
 \definecolor{titlepageTopColor}{HTML}{$titlepage-top-color$}
 $else$
-\definecolor{titlepageTopColor}{HTML}{DDDED6}
+\definecolor{titlepageTopColor}{HTML}{534B3E}
 $endif$
 
 $if(titlepage-bottom-color)$ % when we use titlepage-background do not set this!
 \definecolor{titlepageBottomColor}{HTML}{$titlepage-bottom-color$}
 $else$
-\definecolor{titlepageBottomColor}{HTML}{009EE2}
+\definecolor{titlepageBottomColor}{HTML}{F8D940}
 $endif$
 
 $if(titlepage-text-color)$
 \definecolor{titlepageTextColor}{HTML}{$titlepage-text-color$}
 $else$
-\definecolor{titlepageTextColor}{HTML}{706d6e}
+\definecolor{titlepageTextColor}{HTML}{F8D940}
 $endif$
 
 $if(titlepage-author-text-color)$
 \definecolor{titlepageAuthorTextColor}{HTML}{$titlepage-author-text-color$}
 $else$
-\definecolor{titlepageAuthorTextColor}{HTML}{FFFFFF}
+\definecolor{titlepageAuthorTextColor}{HTML}{534B3E}
 $endif$
 
 
@@ -569,26 +569,26 @@ $endif$
 $if(title-vjust)$
 \def\titleVjust{$title-vjust$}
 $else$
-\def\titleVjust{250}
+\def\titleVjust{260}
 $endif$
 
 $if(title-hjust)$
 \def\titleHjust{$title-hjust$}
 $else$
-\def\titleHjust{30}
+\def\titleHjust{-40}
 $endif$
 
 
 $if(author-vjust)$
 \def\authorVjust{$author-vjust$}
 $else$
-\def\authorVjust{-345}
+\def\authorVjust{-320}
 $endif$
 
 $if(author-hjust)$
 \def\authorHjust{$author-hjust$}
 $else$
-\def\authorHjust{30}
+\def\authorHjust{-40}
 $endif$
 
 
@@ -628,23 +628,17 @@ $endif$
 % Add Main Fonts
 
 \usepackage{fontspec}
-% set main font univers
-\setmainfont[ Path = src/fonts/]{Univers-light-normal.ttf}[
-BoldFont = UniversBlack.ttf,
-ItalicFont = UniversLTStd.otf,
-BoldItalicFont = UniversLTStd-Bold.otf
-]
-% define Bodoni font for title
-\newfontfamily\Bodoni[
+
+
+% define Vazir font for title
+\newfontfamily\Vazir[
   Path=src/fonts/,
   LetterSpace=2.0,
   WordSpace={10,0,0},
   HyphenChar=None,
   PunctuationSpace=WordSpace
-  ]{BodoniFLF-Roman.ttf}
-% \newfontfamily\BodoniBold[Path=src/fonts/]{BodoniFLF-Bold.ttf}
-% \newfontfamily\BodoniBoldItalic[Path=src/fonts/]{BodoniFLF-BoldItalic.ttf}
-% \newfontfamily\BodoniItalic[Path=src/fonts/]{BodoniFLF-Italic.ttf}
+  ]{Vazir-Light-FD.ttf}
+\newfontfamily\VazirCode[Path = src/fonts/]{Vazir-Code.ttf}
 
 
 %......................................................................%
@@ -657,12 +651,11 @@ BoldItalicFont = UniversLTStd-Bold.otf
 \newtcolorbox{warning-box}{colback=orange!5!white,arc=0pt,outer arc=0pt,colframe=orange!80!black}
 \newtcolorbox{error-box}{colback=red!5!white,arc=0pt,outer arc=0pt,colframe=red!75!black}
 
-
 % Think
 \newenvironment{rmdThink}{
 	\vspace*{0.5\baselineskip}
     \par\noindent
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Think}},colback=MPIGreen!10!white, colframe=MPIGreen]
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}بیشتر بدانیم }},colback=MPIGreen!10!white, colframe=MPIGreen]
     \itshape
 }{
     \end{tcolorbox}
@@ -674,7 +667,7 @@ BoldItalicFont = UniversLTStd-Bold.otf
 \newenvironment{rmdNote}{
 	\vspace*{0.5\baselineskip}
     \par\noindent
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Note}},colback=MPIRed!10!white, colframe=MPIRed]
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}توجه}},colback=MPIRed!10!white, colframe=MPIRed]
     \itshape
 }{
     \end{tcolorbox}
@@ -686,7 +679,7 @@ BoldItalicFont = UniversLTStd-Bold.otf
 \newenvironment{rmdTip}{
 	\vspace*{0.5\baselineskip}
     \par\noindent
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Tip}},colback=MPILightGreen!10!white, colframe=MPILightGreen]
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}نکته}},colback=MPILightGreen!10!white, colframe=MPILightGreen]
     \itshape
 }{
     \end{tcolorbox}
@@ -698,7 +691,7 @@ BoldItalicFont = UniversLTStd-Bold.otf
 \newenvironment{rmdWarning}{
 	\vspace*{0.5\baselineskip}
     \par\noindent
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}Warning}},colback=MPIOrange!10!white, colframe=MPIOrange]
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}هشدار}},colback=MPIOrange!10!white, colframe=MPIOrange]
     \itshape
 }{
     \end{tcolorbox}
@@ -710,7 +703,7 @@ BoldItalicFont = UniversLTStd-Bold.otf
 \newenvironment{rmdTodo}{
 	\vspace*{0.5\baselineskip}
     \par\noindent
-    \begin{tcolorbox}[enhanced, title={\textbf{\color{white}To Do}},colback=MPIBlue!10!white, colframe=MPIBlue]
+    \begin{tcolorbox}[enhanced, title={\large{\color{white}برای انجام}},colback=MPIBlue!10!white, colframe=MPIBlue]
     \itshape
 }{
     \end{tcolorbox}
@@ -720,75 +713,75 @@ BoldItalicFont = UniversLTStd-Bold.otf
 
 
 
-\newtcbtheorem[auto counter,number within=section]{Theorem}{Theorem}{%
+\newtcbtheorem[auto counter,number within=section]{Theorem}{قضیه}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPIGreen!10!white,colframe=MPIGreen,
                 colbacktitle=MPIGreen, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{thm}
 
-\newtcbtheorem[auto counter,number within=section]{Definition}{Definition}{%
+\newtcbtheorem[auto counter,number within=section]{Definition}{تعریف}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPILightGreen!10!white,colframe=MPILightGreen,
                 colbacktitle=MPILightGreen, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{defn}
 
-\newtcbtheorem[auto counter,number within=section]{Lemma}{Lemma}{%
+\newtcbtheorem[auto counter,number within=section]{Lemma}{لم}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPILightBlue!10!white,colframe=MPILightBlue,
                 colbacktitle=MPILightBlue, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{lem}
 
-\newtcbtheorem[auto counter,number within=section]{Corollary}{Corollary}{%
+\newtcbtheorem[auto counter,number within=section]{Corollary}{نتیجه}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPIBlue!10!white,colframe=MPIBlue,
                 colbacktitle=MPIBlue, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{cor}
 
-\newtcbtheorem[auto counter,number within=section]{Proposition}{Proposition}{%
+\newtcbtheorem[auto counter,number within=section]{Proposition}{گزاره}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPIYellow!10!white,colframe=MPIYellow,
                 colbacktitle=MPIYellow, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{prop}
 
-\newtcbtheorem[auto counter,number within=section]{Exercise}{Exercise}{%
+\newtcbtheorem[auto counter,number within=section]{Exercise}{تمرین}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPIRed!10!white,colframe=MPIRed,
                 colbacktitle=MPIRed, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{exer}
 
-\newtcbtheorem[auto counter,number within=section]{Example}{Example}{%
+\newtcbtheorem[auto counter,number within=section]{Example}{مثال}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPIOrange!10!white,colframe=MPIOrange,
                 colbacktitle=MPIOrange, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{exam}
 
-\newtcbtheorem[auto counter,number within=section]{Remark}{Remark}{%
+\newtcbtheorem[auto counter,number within=section]{Remark}{تذکر}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPIPink!10!white,colframe=MPIPink,
                 colbacktitle=MPIPink, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{rmk}
 
 
-\newtcbtheorem[auto counter,number within=section]{Proof}{Proof}{%
+\newtcbtheorem[auto counter,number within=section]{Proof}{اثبات}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPILivingCoral!10!white,colframe=MPILivingCoral,
                 colbacktitle=MPILivingCoral, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{pr}
 
-\newtcbtheorem[auto counter,number within=section]{Solution}{Solution}{%
+\newtcbtheorem[auto counter,number within=section]{Solution}{جواب}{%
                 lower separated=false,fonttitle=\bfseries,
                 colback=MPIPacificCoast!10!white,colframe=MPIPacificCoast,
                 colbacktitle=MPIPacificCoast, coltitle=white,
-                enhanced,attach boxed title to top left={xshift=0.5cm,yshift=-2mm}
+                enhanced,attach boxed title to top right={xshift=-0.5cm,yshift=-2mm}
                 }{sol}
 
 
@@ -811,25 +804,64 @@ BoldItalicFont = UniversLTStd-Bold.otf
 
 \newtcolorbox{rmdconsole}{
   enhanced,
-  boxrule=0pt,frame hidden,
+  boxrule=0pt,
+  colframe=rconsole,
   borderline west={4pt}{0pt}{rconsole},
   colback=rconsole!5!white,
   sharp corners
   }
 \newtcolorbox{rmdcode}{
   enhanced,
-  boxrule=0pt,frame hidden,
+  boxrule=0pt,
+  colframe=rcolor,
   borderline west={4pt}{0pt}{rcolor},
   colback=rcolor!5!white,
   sharp corners
   }
 
-\BeforeBeginEnvironment{verbatim}{\begin{rmdconsole}}
-\AfterEndEnvironment{verbatim}{\end{rmdconsole}}
+\BeforeBeginEnvironment{verbatim}{
+\begin{rmdconsole}
+\begin{LTR}
+}
+\AfterEndEnvironment{verbatim}{
+\end{LTR}
+\end{rmdconsole}
+}
 
-\BeforeBeginEnvironment{Highlighting}{\begin{rmdcode}}
-\AfterEndEnvironment{Highlighting}{\end{rmdcode}}
+\BeforeBeginEnvironment{Highlighting}{
+\begin{rmdcode}
+\begin{LTR}
+\VazirCode
+}
+\AfterEndEnvironment{Highlighting}{
+\end{LTR}
+\end{rmdcode}
+}
+
+
+$if(page-background-color)$
+\definecolor{shadecolor}{HTML}{$page-background-color$}
+$else$
 \definecolor{shadecolor}{HTML}{ffffff}
+$endif$
+
+% Add quote section
+\definecolor{quotecolor}{HTML}{989898}
+
+\newtcolorbox{rmdquote}{
+  enhanced,
+  boxrule=0pt,
+  colframe=quotecolor,
+  borderline west={4pt}{0pt}{quotecolor},
+  colback=quotecolor!15!white,
+  sharp corners
+  }
+\BeforeBeginEnvironment{quote}{\begin{rmdquote}}
+\AfterEndEnvironment{quote}{\end{rmdquote}}
+
+% prevent vertically justifying the contents
+\raggedbottom
+
 
 %......................................................................%
 % add packages for title page
@@ -839,7 +871,7 @@ BoldItalicFont = UniversLTStd-Bold.otf
 $if(geometry)$
 $else$
 $if(book)$
-\usepackage[left=42.5mm,right=42.5mm,top=54.5mm,bottom=53.5mm]{geometry}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
 $else$
 \usepackage[margin=1.5cm,includehead=true,includefoot=true,centering]{geometry}
 $endif$
@@ -917,19 +949,20 @@ $if(banner-color)$
 \newcommand\BannerPageHeader{%
 \begin{tikzpicture}[remember picture,overlay]
 \fill[bannerColor]
-  (current page.north west) -- (current page.north east) --
-  ([yshift=20pt]current page.north east|-current page text area.north east) --
-  ([yshift=20pt,xshift=5cm]current page.north|-current page text area.north) --
-  ([yshift=40pt,xshift=3cm]current page.north|-current page text area.north) --
-  ([yshift=40pt]current page.north west|-current page text area.north west) -- cycle;
+  (current page.north east) -- (current page.north west) --
+  ([yshift=20pt]current page.north west|-current page text area.north west) --
+  ([yshift=20pt,xshift=-5cm]current page.north|-current page text area.north) --
+  ([yshift=40pt,xshift=-3cm]current page.north|-current page text area.north) --
+  ([yshift=40pt]current page.north east|-current page text area.north east) -- cycle;
 
-\node[inner sep=0pt] at (page cs:0.82,0.92){
+\node[inner sep=0pt] at (page cs:-0.82,0.92){
 $if(banner-logo)$\includegraphics[height=\bannerLogoSize\paperheight]{$banner-logo$}$endif$
 };
-\node[font=\color{bannerTextColor},anchor=west,
-  xshift=1cm,yshift=-0.7cm] at (current page.north west)
+\node[font=\color{bannerTextColor},anchor=east,
+  xshift=-1cm,yshift=-0.7cm] at (current page.north east)
   {
-  \small{\textbf{$if(banner-text)$ \Large\textbf{$banner-text$} \\$endif$}}
+
+  \small{\textbf{$if(banner-text)$ \Large\textbf{\rl{$banner-text$}} \\$endif$}}
   };
 \end{tikzpicture}%
 }
@@ -964,14 +997,15 @@ $endif$
 
 % ---------------------------------------------------------------------------- %
 % Add Page Background Color
-
+$if(page-background)$
+$else$
 \usepackage{eso-pic}
 \newcommand\BackPage{%
 \begin{tikzpicture}[remember picture,overlay]
 \fill[pageBackgroundColor](current page.south west) rectangle (\paperwidth,\paperheight);
 \end{tikzpicture}%
 }
-
+$endif$
 %......................................................................%
 % Remove Blank Page after Table of Contents and between chapter
 
@@ -1035,6 +1069,18 @@ $endif$
 %               End of Modifications
 %
 %......................................................................%
+\usepackage{newunicodechar}
+
+% Solve Half Space in Latex
+\newunicodechar{‌}{\hskip 0pt}  % U+200c THIN SPACE
+
+\usepackage[%
+fontsizescale=1,%
+latinfontsizescale=0.9,%
+mathfontsizescale=1.1%
+]{xepersian}
+\settextfont[Path = src/fonts/, Scale=1]{Parastoo-FD.ttf}
+
 
 
 \begin{document}
@@ -1104,17 +1150,16 @@ $endif$
 
 
 % add main logo % TODO: add else
-\node[inner sep=0pt] at (page cs:0.672,0.795){$if(logo-primary)$\includegraphics[height=\logoPrimarySize\paperheight]{$logo-primary$}$endif$};
+\node[inner sep=0pt] at (page cs:-0.672,0.795){$if(logo-primary)$\includegraphics[height=\logoPrimarySize\paperheight]{$logo-primary$}$endif$};
 % add secondary logo % TODO: add else
-\node[inner sep=0pt] at (page cs:0.672,-0.795){$if(logo-secondary)$\includegraphics[height=\logoSecondarySize\paperheight]{$logo-secondary$}$endif$};
+\node[inner sep=0pt] at (page cs:-0.672,-0.795){$if(logo-secondary)$\includegraphics[height=\logoSecondarySize\paperheight]{$logo-secondary$}$endif$};
 
 % add title and subtitle
-% TODO: use bodoni font in title
-% \node[below,text width=\paperwidth,font=\color{titlepageTextColor}] at (page cs:0.15+\titleHjust,0.57+\titleVjust) {
 \node[below,text width=\paperwidth,font=\color{titlepageTextColor}] at (page cs:0.0+\titleHjust,0.0+\titleVjust) {
-
+\begin{flushright}
+\begin{RTL}
   $if(title)$
-  \Huge{\uppercase{$title$}}
+  \Huge{$title$}
   \vspace{0.3cm}
   $endif$
 
@@ -1125,11 +1170,12 @@ $endif$
 
   % add bodoni font to date
   $if(date)$
-  \huge{\uppercase{$date$}}
+  \vspace{0.3cm}
+  \Large{$date$}
   \vspace{0.3cm}
   $endif$
 
-  \vspace{0.6cm}
+  \vspace{0.3cm}
   $if(affiliation)$
   \Large{ $affiliation$}
   \vspace{0.1cm}
@@ -1138,13 +1184,21 @@ $endif$
   $if(location)$
   \large{$location$}
   $endif$
+  \end{RTL}
+  \end{flushright}
 };
 
 \node[below,text width=\paperwidth,font=\color{titlepageTextColor}] at (page cs:0.0+\authorHjust,0.0+\authorVjust) {
+
+\begin{flushright}
+\begin{RTL}
   $if(author)$
-  \huge{\textsf{$for(author)$\textcolor{titlepageAuthorTextColor}{$author$}$sep$\textcolor{titlepageAuthorTextColor}{,} $endfor$}}
+  \huge{$for(author)$\textcolor{titlepageAuthorTextColor}{$author$}$sep$\textcolor{titlepageAuthorTextColor}{,} $endfor$}
   \vspace{0.3cm}
   $endif$
+\end{RTL}
+\end{flushright}
+
 };
 
 \end{tikzpicture}
