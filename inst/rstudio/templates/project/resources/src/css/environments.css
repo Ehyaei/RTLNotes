@@ -80,6 +80,12 @@
 }
 
 
+blockquote {
+  border: 1px solid #DCDCDC;
+  background: #FCFCFC;
+}
+
+
 /* ------------------------------------------ */
 /*               Math Enviroments             */
 /* ------------------------------------------ */
