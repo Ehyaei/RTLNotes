@@ -25,7 +25,7 @@ pretty_number <- function(x) {
 
 book_skeleton <- function(path) {
   resources <- system.file("rstudio", "templates", "project", "resources","",
-                           package = "MPIThemes", mustWork = TRUE)
+                           package = "RTLNotes", mustWork = TRUE)
 
   sub_dirs <- list.dirs(resources, recursive = TRUE,  full.names = FALSE)
   sub_dirs <- sub_dirs[-which(sub_dirs == "")]

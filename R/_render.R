@@ -17,6 +17,7 @@ for(i in 1:length(examples_name)){
 ## Convert Interior page to PNG
 examples_name = "back_page_pdf_report"
 examples_name = "interior_feature_pdf_report"
+examples_name = "titlepage_bottom_pdf_presentation"
 examples_path = paste0("examples/",examples_name,"/",examples_name,".pdf")
 pages <- magick::image_read_pdf(examples_path,density = 150)
 for(i in 2:3){
@@ -24,4 +25,7 @@ for(i in 2:3){
   image_write(pages[i], path = paste0("examples/",examples_name,"/",examples_name,"_",i,".png"), format = "png")
 
 }
+
+file.copy("inst/rmarkdown/templates/latex_report/resources/template.tex","inst/rstudio/templates/project/resources/src/tex/template.tex")
+
 

@@ -1,95 +1,103 @@
-# Environment
+# محیط‌های رنگی
 
-Block content can be useful for informing or alerting your readers about a specific topic.
-We use the `awesomebox` and `tcolorbox` Latex packages for colored block content.
-For supplemental information, you can use notes, tips, info, error, and warning elements. Each block serves a specific semantic purpose.
+محیط‌های رنگی می تواند برای اطلاع رسانی یا هشدار دادن به خوانندگان در طول متن مفید باشد.
+برای ایجاد این محیط‌ها، از بسته‌های لاتک 
+`wesomebox` 
+و 
+`tcolorbox` 
+و پیش‌فرض‌های آن استفاده می‌کنیم.
+
 
 :::: {.rmdNote data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdnote data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdTip data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdtip data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdThink data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdthink data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdWarning data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdwarning data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdTodo data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
 
 :::: {.rmdtodo data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 ::::
+
+## محیط‌های رنگی ریاضی‌نویسی
+
+علاوه بر آن محیط‌های نوشتن گزاره‌های ریاضی هم قابل استفاده هستند.
 
 
 ::: {.Theorem data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Definition data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Lemma data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Corollary data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Proposition data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Exercise data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Example data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Remark data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Proof data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.Solution data-latex="{}{}"}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 
 ::: {.rmdexer data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::
 
 ::: {.rmdsol data-latex=""}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.
 :::

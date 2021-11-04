@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  css:  [src/css/style.css,src/css/environments.css]
+  css:  [src/css/style.css, src/css/rtl.css,src/css/environments.css]
   inludes:
     in_header: src/html/mathjax-number.html
   config:
@@ -9,8 +9,8 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li class="toc-logo"><a href="./"><img src="src/icon/MPIBCGreen.png"></a></li>
-        <li class="toc-title"><a style="color: #116656;" href="./">Max-Planck Institute</a></li>
+        <li class="toc-logo"><a href="./"><img src="src/icon/RTLNotes.png"></a></li>
+        <li class="toc-title"><a style="color: #116656;" href="./">بسته‌ی گزارش‌نویسی فارسی</a></li>
       scroll_highlight: yes
     download: ["pdf"]
 bookdown::pdf_book:

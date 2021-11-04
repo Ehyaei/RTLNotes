@@ -1,46 +1,155 @@
+/* Style sheet for Reveal.js Presentations
+Author : Ahmad Ehyaei
+*/
+
+:root {
+  --background: #f6f6f6;
+  --gray: #DDDED6;
+  --blue: #009EE2;
+  --chapter: #DB1F26;
+  --lightgray: #F6F6F6;
+  --logo: url(../img/RTLNotes.png);
+  --secondlogo: url();
+}
+
+/* -------------------------------------- */
+/*               Add Font                 */
+
 @font-face {
-    font-family: "Univers";
-    src: url("../fonts/Univers-light-normal.ttf");
+    font-family: "Vazir";
+    src: url("../fonts/Vazir-Light-FD.ttf");
 }
 @font-face {
-    font-family: "Univers";
-    src: url("../fonts/UniversBlack.ttf");
+    font-family: "Vazir";
+    src: url("../fonts/Vazir-Regular-FD.ttf");
     font-weight: bold;
 }
 @font-face {
-    font-family: "Univers";
-    src: url("../fonts/UniversLTStd.otf");
-    font-style: italic, oblique;
+    font-family: "VazirCode";
+    src: url("../fonts/Vazir-Code.ttf");
 }
-@font-face {
-    font-family: "Univers";
-    src: url("../fonts/UniversLTStd-Bold.otf");
-    font-weight: bold;
-    font-style: italic, oblique;
+
+body, html {
+  overflow-x: hidden;
+  font-family: "Vazir";
+  direction: rtl;
+}
+
+.book.font-family-0, .book.font-family-1, .book-summary, .book-header {
+    font-family: "Vazir"!important;
+}
+
+/* -------------------------------------- */
+/*               Body Config              */
+
+body, .body-inner, .page-inner section.normal,.navigation,.book-body.fixed {
+  background-color: var(--background) !important;
 }
 
 body {
-  font-family: 'Univers', Arial, Helvetica, sans-serif !important;
-  background-color: #f6f6f6 !important;
   margin-top: 0;
-}
-.body-inner, .page-inner section.normal,.navigation,.book-body.fixed {
-  background-color: #f6f6f6 !important;
-}
-.book.font-family-1,.book-summary, {
-  font-family: 'Univers', Arial, Helvetica, sans-serif !important;
 }
 
 .book.font-size-1 .book-body .page-inner section {
     font-size: 1.8rem;
 }
 
+/* Content */
+
+.markdown-section ol, .markdown-section ul {
+  padding: 0 2em 0 0;
+}
+
+code {
+  direction: ltr;
+}
+
+.markdown-section li {
+  line-height: 2em;
+}
+
+.markdown-section blockquote {
+  border-left: 0;
+  border-right: 4px solid #e5e5e5;
+}
+
+/* Sidebar */
+
+.book.with-summary .book-summary {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  margin-top: 40px;
+}
+
+@media (max-width:600px) {
+  .book.with-summary .book-body {
+    -webkit-transform: translate(calc(60px - 100%),0);
+    -moz-transform: translate(calc(60px - 100%),0);
+    -ms-transform: translate(calc(60px - 100%),0);
+    -o-transform: translate(calc(60px - 100%),0);
+    transform: translate(calc(60px - 100%),0);
+  }
+}
+
+@media (min-width:600px) {
+  .book.with-summary .book-body {
+    right:300px;
+    left: 0;
+  }
+}
+
+
+/* Next & Prev */
+
+.fa-angle-left:before {
+  content: "\f105";
+}
+
+.fa-angle-right:before {
+  content: "\f104";
+}
+
+.pull-right {
+  float: left;
+}
+
+.pull-left {
+  float: right;
+}
+
+/* Dropdowns */
+.dropdown-menu.dropdown-left {
+  left: 4%;
+  right: auto;
+}
+
+.dropdown-menu.dropdown-left .dropdown-caret {
+  left: 10px;
+  right: auto;
+}
+
+.dropdown-menu.dropdown-right {
+  right: 4%;
+  left: auto;
+}
+
+.dropdown-menu.dropdown-right .dropdown-caret {
+  right: 10px;
+  left: auto;
+}
+
+.dropdown-menu .dropdown-caret .caret-outer {
+  margin: 0 -1px 0 0;
+}
+
+
 /* ------------------------------------------ */
 /*                First Page Style            */
 /* ------------------------------------------ */
 
 .title, .subtitle,.author,.date {
-  color: #116656;
+  color: var(--chapter);
   text-align: center;
 }
 .title {
@@ -80,8 +189,8 @@ body {
 .section h5 {
   padding-top: 3rem !important; /*adding so much padding because theme adds a margin-top: -65px by default */
   margin-bottom: 0.75rem;
-  color:#E90649;
-  border-bottom-color: #E90649;
+  color:var(--chapter);
+  border-bottom-color: var(--chapter);
   border-bottom-style: solid;
   padding-bottom: 0.5rem;
 }
@@ -108,12 +217,12 @@ body {
   font-weight: bold;
 }
 .book-header.fixed {
-    background-color: #f6f6f6 !important;
+    background-color: var(--background) !important;
     border-bottom: 0px !important;
 }
 
 .book-summary {
-  background: #f6f6f6 !important;
+  background: var(--background) !important;
   font-size: 1.8rem;
 
 }

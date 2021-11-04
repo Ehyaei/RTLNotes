@@ -36,7 +36,7 @@
 
 .rmdWarning::before {
   display: block;
-  content: "Warning";
+  content: "هشدار";
   color: #FF7300;
   font-size: 1.1em;
   font-weight: bold;
@@ -45,7 +45,7 @@
 
 .rmdNote::before {
   display: block;
-  content: "Note";
+  content: "توجه";
   color: #E90649;
   font-size: 1.1em;
   font-weight: bold;
@@ -54,7 +54,7 @@
 
 .rmdTip::before {
   display: block;
-  content: "Tip";
+  content: "نکته";
   color: #62BD19;
   font-size: 1.1em;
   font-weight: bold;
@@ -63,7 +63,7 @@
 
 .rmdThink::before {
   display: block;
-  content: "Think";
+  content: "بیشتر بیندیشیم";
   color: #116656;
   font-size: 1.1em;
   font-weight: bold;
@@ -72,7 +72,7 @@
 
 .rmdTodo::before {
   display: block;
-  content: "To Do";
+  content: "برای انجام";
   color: #009EE2;
   font-size: 1.1em;
   font-weight: bold;
@@ -86,16 +86,16 @@
 
 
 :root {
-    --thm: "Theorem ";
-    --defn: "Definition ";
-    --lem: "Lemma ";
-    --cor: "Corollary ";
-    --prop: "Proposition ";
-    --exer: "Exercise ";
-    --exam: "Example ";
-    --rmk: "Remark ";
-    --pr: "Proof ";
-    --sol: "Solution ";
+    --thm: "قضیه ";
+    --defn: "تعریف ";
+    --lem: "لم ";
+    --cor: "نتیجه ";
+    --prop: "گزاره ";
+    --exer: "تمرین ";
+    --exam: "مثال ";
+    --rmk: "یادآوری ";
+    --pr: "اثبات ";
+    --sol: "جواب ";
 }
 
 /* ------------------------------------------ */
@@ -144,7 +144,7 @@ body {
     display: block;
     font-weight: bold;
     font-style: normal;
-    float: left;
+    float: right;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;

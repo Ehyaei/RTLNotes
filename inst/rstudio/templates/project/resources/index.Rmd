@@ -1,13 +1,13 @@
 --- 
-title: "Statistical Analysis of Behavioral Data"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-affiliation: Max Planck Institute for Biological Cybernetics 
-location: Tübingen
+title: "تحلیل داده بیماران کرونایی"
+date: "اول مهرماه، ۱۴۰۰"
+author: احمدرضا احیائی
+affiliation: "یک تحلیل‌گر داده مستقل"
+location: "توبینگن، آلمان"
 titlepage: true
 book: true
 page-background-color: f6f6f6
-logo-primary: src/icon/MPILogoWhite.eps
+logo-primary: src/icon/RTLNotes.png
 titlepage-top-color: f03e4c
 titlepage-text-color: FFFFFF
 chapter-title-color: E90649

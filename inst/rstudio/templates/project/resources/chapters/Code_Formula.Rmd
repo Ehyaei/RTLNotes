@@ -1,17 +1,24 @@
-# Code and Formula
+# نوشتن کدهای برنامه‌نویسی و فرمول‌های ریاضی
 
-We can simply execute R codes among text in chunk contexts using RMakrdown. There are several possibilities in each chunk. Set `echo=TRUE`, for example, if you want to show the code.
+## استفاده از دستورهای برنامه‌نویسی
 
+کدهای خود را دو صورت می‌توانید در متن نمایش دهید و یا اجرا کنید. اول به صورت یک جعبه رنگی مستقل،
 ```{r cars}
 summary(cars)
 ```
+و به صورت برخط
+`r 2^10` `2^10=`.
 
-We can run inline R code `2^10=` `r 2^10`
 
-## Math Formula
+## لاتک
 
-We can easily write math expressions by latex syntax. 
-Inline LateX equations can be written in a pair of dollar signs
+در محیط RMarkdown می‌توانید مشابه لاتک فرمول‌های خود را به صورت مستقل و برخط بنویسید. برای این‌ کار باید فرمول خود را در میان ‍‍ ‍‍`$$` و یا `$` بگذارید.
+
+
 
 $$f\left(k\right)=\binom{n}{k}p^k\left(1-p\right)^{n-k}$$
-Also, we can write formulas by using dollar signs. For example, if we write `$\beta$` then we see $\beta$.
+علاوه بر آن می‌توان به صورت برخط هم از کدهای لاتک استفاده کرد. به طور مثال
+`$\beta$` 
+بعد از اجرا به صورت 
+$\beta$.
+دیده می‌شود.
