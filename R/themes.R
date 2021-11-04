@@ -11,7 +11,7 @@
 #' ggplot(data = mtcars, aes(x = cyl)) +
 #'   geom_bar(aes(y = ..count..,fill = as.character(cyl)))+
 #'   theme_scientific()+
-#'   scale_fill_mpi()
+#'   scale_fill_RTLNotes()
 #'   }
 theme_scientific <- function(base_size = 12, base_family = "Parastoo FD-WOL"){
 
@@ -126,7 +126,6 @@ bottom_legend = function(){
 #'   geom_bar(aes(y = ..count..,fill = as.character(cyl)))
 #'   }
 set_color_theme <- function(base_size = 12) {
-  # continuous_color = c(lighten(MPIBlue,0.6),MPIBlue,MPIYellow,MPIRed,darken(MPIRed,0.4),darken(MPIRed,0.8))
   continuous_color = c("#B5E6FF", "#40BDE8", "#FFCE09", "#E90649",  "#900129", "#41000C")
   ggplot2::theme_set(RTLNotes::theme_scientific(base_size=base_size))
   assign("scale_colour_discrete", function(..., values = RTLNotes::palette_colors$HTML) scale_colour_manual(..., values = values), globalenv())
@@ -135,12 +134,10 @@ set_color_theme <- function(base_size = 12) {
   assign("scale_colour_continuous", function(..., values = continuous_color) scale_colour_gradientn(..., colours = values), globalenv())
   update_geom_defaults("point",   list(colour = RTLNotes::palette_colors$HTML[1]))
   update_geom_defaults("line",   list(colour = RTLNotes::palette_colors$HTML[1]))
-  # update_stat_defaults("jitter",   list(colour = RTLNotes::palette_colors$HTML[1]))
   update_geom_defaults("bar",   list(fill = RTLNotes::palette_colors$HTML[1]))
   update_geom_defaults("bar",   list(colour = "transparent"))
   update_geom_defaults("col",   list(fill = RTLNotes::palette_colors$HTML[1]))
   update_geom_defaults("col",   list(colour = "transparent"))
-  # update_geom_defaults("histogram",   list(colour = RTLNotes::palette_colors$HTML[1]))
   update_geom_defaults("area",   list(colour = RTLNotes::palette_colors$HTML[1],fill = RTLNotes::palette_colors$HTML[1]))
   update_geom_defaults("boxplot",   list(colour = RTLNotes::palette_colors$HTML[1]))
   update_geom_defaults("density",   list(colour = RTLNotes::palette_colors$HTML[1]))

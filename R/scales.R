@@ -1,19 +1,18 @@
-#' Max-Planck institute palette
+#' RTLNotes palette
 #'
-#' This palette was inspired by the CD manual (available \href{https://docplayer.org/2328711-Max-planck-institut-das-erscheinungsbild-der-max-planck-gesellschaft-4-ueberarbeitete-auflage.html}{here} )
-#'  of the Max Planck Society.
+#' This palette contains nine colors for plotting eye-catching graphs.
 #'
 #' @return a vector containing the colors.
 #' @export
 #'
 #' @examples
-#' library(MPIThemes)
-#' scales::show_col(palette_mpi())
-palette_mpi <- function() {
-MPIThemes::palette_colors$HTML
+#' library(RTLNotes)
+#' scales::show_col(palette_RTLNotes())
+palette_RTLNotes <- function() {
+RTLNotes::palette_colors$HTML
 }
 
-#' Color scale constructor for MPI palette
+#' Color scale constructor for RTLNotes palette
 #'
 #' @param ... Additional arguments passed to ggplot2::discrete_scale()
 #'
@@ -24,14 +23,14 @@ MPIThemes::palette_colors$HTML
 #' library(ggplot2)
 #' ggplot(data = mtcars, aes(x = cyl)) +
 #'   geom_bar(aes(y = ..count..,fill = as.character(cyl)))+
-#'   scale_fill_mpi()
-scale_fill_mpi <- function(...){
-  ggplot2::discrete_scale("fill","mpi",
-                          scales::manual_pal(values = MPIThemes::palette_colors$HTML), ...)
+#'   scale_fill_RTLNotes()
+scale_fill_RTLNotes <- function(...){
+  ggplot2::discrete_scale("fill","RTLNotes",
+                          scales::manual_pal(values = RTLNotes::palette_colors$HTML), ...)
 }
 
 
-#' Fill scale constructor for MPI palette
+#' Fill scale constructor for RTLNotes palette
 #'
 #' @param ... Additional arguments passed to discrete_scale()
 #'
@@ -41,7 +40,7 @@ scale_fill_mpi <- function(...){
 #' @examples
 #' library(ggplot2)
 #' ggplot(data = mtcars, aes(x = wt, y= mpg,color = as.character(cyl))) +
-#'   geom_point()+scale_color_mpi()
-scale_color_mpi <- function(...){
-  ggplot2::discrete_scale("color","mpi",scales::manual_pal(values =   MPIThemes::palette_colors$HTML), ...)
+#'   geom_point()+scale_color_RTLNotes()
+scale_color_RTLNotes <- function(...){
+  ggplot2::discrete_scale("color","RTLNotes",scales::manual_pal(values =   RTLNotes::palette_colors$HTML), ...)
 }
