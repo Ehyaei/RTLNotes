@@ -1,5 +1,5 @@
 ---
-title: "Getting started with MPIThemes"
+title: "Getting started with RTLNotes"
 ---
 
 ```{r, include = FALSE}
@@ -27,18 +27,19 @@ install.packages("tinytex")
 tinytex::install_tinytex()
 ```
 
-The MPITheme package requires additional LaTeX dependencies that tinytex does not install by default. If you are online, these dependencies will be installed automatically.
+The RTLNotes package requires additional LaTeX dependencies that tinytex does not install by default. If you are online, these dependencies will be installed automatically.
 
 3. **Install X11**:  X11 is no longer included with Mac, but X11 server and client libraries are available from the [XQuartz](https://www.xquartz.org/) project. For more information see [CRAN](https://cran.r-project.org/bin/macosx/) instructions. 
 
-4. **Install Fonts**: Before render templates, `Univers` and `FontAesome` fonts must be installed on your machine.
+4. **Install Fonts**: Before render templates, `Vazir` and `Nahid` fonts must be installed on your machine.
+You can find source of fonts in path `src/fonts/` in document template.
 
-5. **MPITheme**: Install the `MPITheme` package from GitHub. 
+5. **RTLNotes**: Install the `RTLNotes` package from GitHub. 
 This package is not (yet) available on CRAN.
 
 ```r
 if(!require(devtools)) install.packages("devtools") 
-devtools::install_github("lcreteig/MPIThemes") 
+devtools::install_github("lcreteig/RTLNotes") 
 ```
 
 After installing the package, you may need to restart RStudio in order to add
@@ -66,23 +67,26 @@ or its better to use keyboard shortcut for knitr,
 
 ```
 ---
-title: Statistical analysis of behavioral data
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-affiliation: Max Planck Institute for Biological Cybernetics 
-location: Tübingen
+---
+title: تحلیل داده بیماران کرونایی
+date: اول مهرماه، ۱۴۰۰
+author: احمدرضا احیائی
+affiliation: یک تحلیل‌گر داده مستقل
+location: توبینگن، آلمان
 titlepage: true
 toc: true
 content-has-page: true
-logo-primary: src/icon/MPILogoGray.eps
-logo-secondary: src/icon/MPIBCWhite.eps
+logo-primary: src/icon/RTLNotes.png
+logo-secondary: src/icon/RWLogo.png
 output:
-  MPIThemes::latex_report
+  RTLNotes::latex_report
+...
+
 ---
 ```
 
 Fill in these YAML options with your information.
-There are plenty of other YAML options; see the [PDF Report Template Customization](https://ehyaei.github.io/MPIThemes/articles/articles/pdf_report_template_customization.html) article.
+There are plenty of other YAML options; see the [PDF Report Template Customization](https://ehyaei.github.io/RTLNotes/articles/articles/pdf_report_template_customization.html) article.
 
 5: Fill in your report's content. For a pdf template, you can use the markdown command or tex.
 

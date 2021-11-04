@@ -22,7 +22,7 @@
   }
 </script>
 
-<title>Theme 'scientific' — theme_scientific • MPIThemes</title>
+<title>Theme 'scientific' — theme_scientific • RTLNotes</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -74,7 +74,6 @@
 
 <meta property="og:title" content="Theme 'scientific' — theme_scientific" />
 <meta property="og:description" content="Theme 'scientific'" />
-<meta property="og:image" content="/logo.png" />
 
 
 
@@ -108,7 +107,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">MPIThemes</a>
+        <a class="navbar-link" href="../index.html">RTLNotes</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1</span>
       </span>
     </div>
@@ -122,7 +121,7 @@
   </a>
 </li>
 <li>
-  <a href="../articles/articles/MPIThemes.html">Get started</a>
+  <a href="../articles/articles/RTLNotes.html">Get started</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -146,30 +145,6 @@
     <li>
       <a href="../articles/articles/04_pdf_presentation.html">PDF Presentation with Beamer</a>
     </li>
-    <li>
-      <a href="../articles/articles/05_editable_report.html">Editable Report witn Word</a>
-    </li>
-    <li>
-      <a href="../articles/articles/06_editable_presentation.html">Editable Presentation By Powerpoint</a>
-    </li>
-    <li>
-      <a href="../articles/articles/07_revealJS_presentation.html">HTML Presentation By RevealJS</a>
-    </li>
-    <li>
-      <a href="../articles/articles/08_remarkJS_presentation.html">HTML Presentation By RemarklJS</a>
-    </li>
-    <li>
-      <a href="../articles/articles/11_ggplot2_themes.html">GGPLOT2 Themes &amp; Palettes</a>
-    </li>
-    <li>
-      <a href="../articles/articles/12_Add-Table-to-PDF-Reports.html">Add Table to Reports</a>
-    </li>
-    <li>
-      <a href="../articles/articles/13_Latex-Environments.html">Colored Box Latex Environments</a>
-    </li>
-    <li>
-      <a href="../articles/articles/21_python_rmarkdown.html">Use Python To Generate PDF Report</a>
-    </li>
   </ul>
 </li>
 <li>
@@ -179,7 +154,7 @@
       <ul class="nav navbar-nav navbar-right">
         
         <li>
-  <a href="https://github.com/Ehyaei/MPIThemes/">
+  <a href="https://github.com/Ehyaei/RTLNotes/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -202,7 +177,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Theme 'scientific'</h1>
-    <small class="dont-index">Source: <a href='https://github.com/Ehyaei/MPIThemes/blob/master/R/themes.R'><code>R/themes.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/Ehyaei/RTLNotes/blob/master/R/themes.R'><code>R/themes.R</code></a></small>
     <div class="hidden name"><code>theme_scientific.Rd</code></div>
     </div>
 
@@ -210,7 +185,7 @@
     <p>Theme 'scientific'</p>
     </div>
 
-    <pre class="usage"><span class='fu'>theme_scientific</span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>12</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>theme_scientific</span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>12</span>, base_family <span class='op'>=</span> <span class='st'>"Parastoo FD-WOL"</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -231,7 +206,7 @@
 <span class='r-in'><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>mtcars</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>cyl</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span class='r-in'>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='va'>..count..</span>,fill <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/character.html'>as.character</a></span><span class='op'>(</span><span class='va'>cyl</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span></span>
 <span class='r-in'>  <span class='fu'>theme_scientific</span><span class='op'>(</span><span class='op'>)</span><span class='op'>+</span></span>
-<span class='r-in'>  <span class='fu'><a href='scale_fill_mpi.html'>scale_fill_mpi</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span class='r-in'>  <span class='fu'>scale_fill_mpi</span><span class='op'>(</span><span class='op'>)</span></span>
 <span class='r-in'>  <span class='op'>}</span></span>
 </pre>
   </div>
