@@ -1,2 +1,21 @@
+navbar:
+  structure:
+    left:  [home, intro ,articles]
+    right: [reference,news,issue,github]
+  components:
+    reference:
+      icon: fa-file-code-o
+      text: "Functions"
+      href: https://ehyaei.github.io/RTLNotes/reference/
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/ehyaei/RTLNotes
+    issue:
+      icon: fas fa-question-circle fa-lg
+      href: https://github.com/ehyaei/RTLNotes/issues/
+    news:
+      icon: fa-newspaper-o
+      href: https://github.com/ehyaei/RTLNotes/news/
+
 template:
   package: preferably
