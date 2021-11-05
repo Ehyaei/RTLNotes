@@ -41,10 +41,14 @@ PDF, HTML, Office formats. In the articles area, you’ll find an
 introduction to each template as well as instructions on how to config
 it. The templates that have been implemented so far are as follows:
 
--   [PDF Report (LaTeX)]()
--   [Short PDF note (LaTeX)]()
--   [Long Document (Gitbook/Bookdown)]()
--   [Beamer Presentation (LaTeX)]()
+-   [PDF Report
+    (LaTeX)](https://ehyaei.github.io/RTLNotes/articles/articles/01_pdf_report_template_customization.html)
+-   [Short PDF note
+    (LaTeX)](https://ehyaei.github.io/RTLNotes/articles/articles/02_short_pdf_report.html)
+-   [Long Document
+    (Gitbook/Bookdown)](https://ehyaei.github.io/RTLNotes/articles/articles/03_bookdown_document.html)
+-   [Beamer Presentation
+    (LaTeX)](https://ehyaei.github.io/RTLNotes/articles/articles/04_pdf_presentation.html)
 
 The template’ default format is based on the Maxi-Planck theme. We
 weren’t, however, constrained by this theme. Reports in various styles
@@ -58,8 +62,8 @@ Customization](https://ehyaei.github.io/MPIThemes/articles/articles/pdf_report_t
 version from GitHub via the `devtools` or `remotes` packages.
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("Ehyaei/RTLNotes")
+# install.packages("remotes")
+remotes::install_github("Ehyaei/RTLNotes")
 ```
 
 For find more details of package dependencies, you can see [Get
