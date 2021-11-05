@@ -131,19 +131,20 @@
 
     
     
-<p>In Latex settings, the <strong>Beamer</strong> is a well-known class for making slides. In the <em>pdf presentation</em> template, this class was modified with the MPI theme. To build a presentation from R Markdown, you specify the <code>latex_presentation</code> output format and configure YAML metadata to use template features. Using the <code>#</code> and <code>##</code> heading tags, you may construct a slide show that is divided into chapters and sections. Here’s an example of YAML and output presentation.</p>
+<p>In Latex settings, the <strong>Beamer</strong> is a well-known class for making slides. In the <em>pdf presentation</em> template, this class was modified with the RTLNotes theme. To build a presentation from R Markdown, you specify the <code>latex_presentation</code> output format and configure YAML metadata to use template features. Using the <code>#</code> and <code>##</code> heading tags, you may construct a slide show that is divided into chapters and sections. Here’s an example of YAML and output presentation.</p>
 <pre><code>--- 
-title: Daily Report
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-date: "2012-01-19"
-affiliation: Max-Planck Institute 
+title: "تحلیل داده بیماران کرونایی"
+date: "اول مهرماه، ۱۴۰۰"
+author: احمدرضا احیائی
+affiliation: "یک تحلیل‌گر داده مستقل"
+location: "توبینگن، آلمان"
 fontsize: 10pt
 titlepate-portrait: false
-titlepage-author-text-color: ffffff
-logo-primary: src/icon/MPILogoGray.eps
-frametitle-logo: src/icon/MPIBCNNWhite.eps
+logo-primary: src/icon/RTLNotes.png
+logo-secondary: src/icon/RWLogo.png
+frametitle-logo: src/icon/RTLNotes.png
 output:
-  MPIThemes::latex_presentation
+  RTLNotes::latex_presentation
 ---</code></pre>
 <p align="center">
 <img src="../../man/figures/simple_pdf_presentation.png" width="100%"></p>
@@ -151,18 +152,18 @@ output:
 <table class="table">
 <tr>
 <td>
-<a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/simple_pdf_presentation"> <img src="../../man/figures/simple_pdf_presentation.png" align="left"></a>
+<a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/simple_pdf_presentation"> <img src="../../man/figures/simple_pdf_presentation.png" align="left"></a>
 </td>
 <td>
-<a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/simple_portrait_pdf_presentation"> <img src="../../man/figures/simple_portrait_pdf_presentation.png" align="center"></a>
+<a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/simple_portrait_pdf_presentation"> <img src="../../man/figures/simple_portrait_pdf_presentation.png" align="center"></a>
 </td>
 </tr>
 <tr>
 <td>
-<a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/titlepage_bottom_pdf_presentation"> <img src="../../man/figures/titlepage_bottom_pdf_presentation.png" align="left"></a>
+<a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/titlepage_bottom_pdf_presentation"> <img src="../../man/figures/titlepage_bottom_pdf_presentation.png" align="left"></a>
 </td>
 <td>
-<a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/basic_pdf_report"> <img src="../../man/figures/titlepage_bottom_portrait_pdf_presentation.png" align="center"></a>
+<a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/basic_pdf_report"> <img src="../../man/figures/titlepage_bottom_portrait_pdf_presentation.png" align="center"></a>
 </td>
 </tr>
 </table>
@@ -199,20 +200,6 @@ output:
 <li>
 <code>author-hjust</code>: An integer number used to determine the horizontal position of the first page’s author text like as <code>title-vjust</code>.</li>
 </ul>
-<p>Below is an example of using the titlepage settings.</p>
-<pre><code>--- 
-title: Daily Report
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-date: "2012-01-19"
-affiliation: Max-Planck Institute 
-fontsize: 10pt
-titlepate-portrait: true
-titlepage-bottom-background: src/img/damavand.png
-logo-primary: src/icon/MPILogoGray.eps
-frametitle-logo: src/icon/MPIBCNNWhite.eps
-output:
-  MPIThemes::latex_presentation
----</code></pre>
 <p align="center">
 <img src="../../man/figures/presentation_title.svg" width="100%"></p>
 </div>

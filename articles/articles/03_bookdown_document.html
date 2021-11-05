@@ -131,11 +131,11 @@
 
     
     
-<p>Using the MPI Book Template, you could create complex documents in HTML and PDF. This template is built using the <code>bookdown</code> package. <code>bookdown</code>’s primary goal is to generate books and ebooks from R Markdown files, which is simpler than LaTeX. Another benefit of using this template is that it is well-structured for producing documents with several chapters and handling a big number of files.</p>
+<p>Using the RTLNotes Book Template, you could create complex documents in HTML and PDF. This template is built using the <code>bookdown</code> package. <code>bookdown</code>’s primary goal is to generate books and ebooks from R Markdown files, which is simpler than LaTeX. Another benefit of using this template is that it is well-structured for producing documents with several chapters and handling a big number of files.</p>
 <p>To open this template, you first go to <code>Projects &gt; New Project &gt; New Directory</code></p>
 <p align="center">
 <img src="../../man/figures/new_project.png" width="50%"></p>
-<p>This will lead you to the list of projects. scrol list and find the MPI Book Template. Click on it.</p>
+<p>This will lead you to the list of projects. scrol list and find the RTLNotes Book Template. Click on it.</p>
 <p align="center">
 <img src="../../man/figures/select_project.png" width="50%"></p>
 <p>After that, enter the name of the directory and set path and click “Create Project”. This will generate a new directory with an.Rproj file and the name you specified in the directory name.</p>
@@ -147,32 +147,29 @@
 <p>Each component of this project is required to set up one of the bookdown’s features, which we shall detail below.</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>index.Rmd</strong> The primary document information, such as the title, author’s name, and data, are entered in this file.You can also use the PDF report features to design a book PDF output format. For more information, you can see (PDF Report Template Customization)[<a href="https://ehyaei.github.io/MPIThemes/articles/articles/01_pdf_report_template_customization.html" class="uri">https://ehyaei.github.io/MPIThemes/articles/articles/01_pdf_report_template_customization.html</a>]</li>
+<strong>index.Rmd</strong> The primary document information, such as the title, author’s name, and data, are entered in this file.You can also use the PDF report features to design a book PDF output format. For more information, you can see (PDF Report Template Customization)[<a href="https://ehyaei.github.io/RTLNotes/articles/articles/01_pdf_report_template_customization.html" class="uri">https://ehyaei.github.io/RTLNotes/articles/articles/01_pdf_report_template_customization.html</a>]</li>
 </ol>
 <pre><code>--- 
-title: "Statistical Analysis of Behavioral Data"
-date: "04 November, 2021"
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-affiliation: Max Planck Institute for Biological Cybernetics 
-location: Tübingen
+title: تحلیل داده بیماران کرونایی
+date: اول مهرماه، ۱۴۰۰
+author: احمدرضا احیائی
+affiliation: یک تحلیل‌گر داده مستقل
+location: توبینگن، آلمان
 titlepage: true
 book: true
 page-background-color: f6f6f6
-logo-primary: src/icon/MPILogoWhite.eps
+logo-primary: src/icon/RTLNotes.png
 titlepage-top-color: f03e4c
 titlepage-text-color: FFFFFF
+chapter-title-color: E90649
 titlepage-author-text-color: f03e4c
 author-vjust: 80
-chapter-title-color: E90649
 titlepage-bottom-background: src/img/bottom_background.png
 site: bookdown::bookdown_site
 bibliography: [chapters/bib/book.bib, chapters/bib/packages.bib]
 biblio-style: apalike
 link-citations: yes
 ---</code></pre>
-<p>The following figure illustrates the important features of the title page.</p>
-<p align="center">
-<img src="../../man/figures/bookdown_manual.svg" width="100%"></p>
 <ol start="2" style="list-style-type: decimal">
 <li><strong>output.yml</strong></li>
 </ol>
@@ -187,7 +184,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        &lt;li class="toc-logo"&gt;&lt;a href="./"&gt;&lt;img src="src/icon/MPIBCGreen.png"&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="toc-logo"&gt;&lt;a href="./"&gt;&lt;img src="src/icon/RTLNotes.png"&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class="toc-title"&gt;&lt;a style="color: #116656;" href="./"&gt;Max-Planck Institute&lt;/a&gt;&lt;/li&gt;
       scroll_highlight: yes
     download: ["pdf"]
