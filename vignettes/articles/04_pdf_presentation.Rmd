@@ -3,7 +3,7 @@ title: "PDF Presentation with Beamer"
 ---
 
 In Latex settings, the **Beamer** is a well-known class for making slides. 
-In the *pdf presentation* template, this class was modified with the MPI theme.
+In the *pdf presentation* template, this class was modified with the RTLNotes theme.
 To build a presentation from R Markdown, you specify the `latex_presentation` output 
 format and configure YAML metadata to use template features.
 Using the `#` and `##` heading tags, you may construct a slide show that is divided
@@ -12,17 +12,18 @@ Here's an example of YAML and output presentation.
 
 ```
 --- 
-title: Daily Report
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-date: "2012-01-19"
-affiliation: Max-Planck Institute 
+title: "تحلیل داده بیماران کرونایی"
+date: "اول مهرماه، ۱۴۰۰"
+author: احمدرضا احیائی
+affiliation: "یک تحلیل‌گر داده مستقل"
+location: "توبینگن، آلمان"
 fontsize: 10pt
 titlepate-portrait: false
-titlepage-author-text-color: ffffff
-logo-primary: src/icon/MPILogoGray.eps
-frametitle-logo: src/icon/MPIBCNNWhite.eps
+logo-primary: src/icon/RTLNotes.png
+logo-secondary: src/icon/RWLogo.png
+frametitle-logo: src/icon/RTLNotes.png
 output:
-  MPIThemes::latex_presentation
+  RTLNotes::latex_presentation
 ---
 ```
 
@@ -38,24 +39,24 @@ For more details, click on the image and see the full document for each example.
 <table width="100%" border="0">
   <tr>    
   <td>
-  <a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/simple_pdf_presentation">
+  <a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/simple_pdf_presentation">
   <img src="../../man/figures/simple_pdf_presentation.png" align="left" />
   </a>
   </td>
   <td>
-  <a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/simple_portrait_pdf_presentation">
+  <a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/simple_portrait_pdf_presentation">
   <img src="../../man/figures/simple_portrait_pdf_presentation.png" align="center" />
   </a>
   </td>
   </tr>
     <tr>    
   <td>
-  <a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/titlepage_bottom_pdf_presentation">
+  <a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/titlepage_bottom_pdf_presentation">
   <img src="../../man/figures/titlepage_bottom_pdf_presentation.png" align="left" />
   </a>
   </td>
   <td>
-  <a href="https://github.com/Ehyaei/MPIThemes/tree/master/examples/basic_pdf_report">
+  <a href="https://github.com/Ehyaei/RTLNotes/tree/master/examples/basic_pdf_report">
   <img src="../../man/figures/titlepage_bottom_portrait_pdf_presentation.png" align="center" />
   </a>
   </td>
@@ -80,24 +81,6 @@ For best output customization, there are many features for the title page and se
 - `titlepage-author-text-color`: Hex color code without # for the author in title page.
 - `author-vjust`: An integer number used to determine the vertical position of the first page's author text like as `title-vjust`.
 - `author-hjust`: An integer number used to determine the horizontal position of the first page's author text like as `title-vjust`.
-
-Below is an example of using the titlepage settings.
-
-```
---- 
-title: Daily Report
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-date: "2012-01-19"
-affiliation: Max-Planck Institute 
-fontsize: 10pt
-titlepate-portrait: true
-titlepage-bottom-background: src/img/damavand.png
-logo-primary: src/icon/MPILogoGray.eps
-frametitle-logo: src/icon/MPIBCNNWhite.eps
-output:
-  MPIThemes::latex_presentation
----
-```
 
 <p align="center">
 <img src="../../man/figures/presentation_title.svg" width="100%"/>

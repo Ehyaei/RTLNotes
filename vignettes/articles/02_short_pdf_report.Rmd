@@ -8,18 +8,21 @@ Below is an example of a short report with its output displayed and its YAML set
 
 ```
 --- 
-title: "Statistical analysis of behavioral data "
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-affiliation: Max Planck Institute for Biological Cybernetics 
-location: Tübingen
+title: تحلیل داده بیماران کرونایی
+date: اول مهرماه، ۱۴۰۰
+author: احمدرضا احیائی
+affiliation: یک تحلیل‌گر داده مستقل
+location: توبینگن، آلمان
 titlepage: false
-titlepage-text-color: 000000
 toc: true
-content-has-page: false
-logo-primary: src/icon/MPILogoGray.eps
-logo-secondary: src/icon/MPIBCGray.eps
-
+logo-primary: src/icon/RTLNotes.png
+logo-secondary: src/icon/RWLogo.png
+disable-header-and-footer: true
+titlepage-author-text-color: 000000 
+titlepage-text-color: 000000
+page-background-color: f8f8f8
+output:
+  RTLNotes::latex_report
 ---
 ```
 
@@ -31,17 +34,22 @@ Colors and text may be assigned to the header, footer, and chapters to make the 
 
 ```
 --- 
-title: "Statistical analysis of behavioral data"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-affiliation: Max Planck Institute for Biological Cybernetics 
-location: Tübingen
-titlepage-text-color: 009EE2
-banner-color: CDC9C4
-banner-logo: src/icon/MPIBCNNWhite.png
-banner-text: Weekly Report
-banner-text-color: ffffff
-chapter-title-color: 009EE2
+title: تحلیل داده بیماران کرونایی
+date: اول مهرماه، ۱۴۰۰
+author: احمدرضا احیائی
+affiliation: یک تحلیل‌گر داده مستقل
+location: توبینگن، آلمان
+titlepage: false
+toc: false
+content-has-page: true
+titlepage-text-color: 534B3E
+banner-color: F8D940
+banner-logo: src/icon/RTLNotes.png
+banner-text: گزارش هفتگی
+banner-text-color: 534B3E
+chapter-title-color: 534B3E
+output:
+  RTLNotes::latex_report
 ---
 ```
 

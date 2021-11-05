@@ -2,7 +2,7 @@
 title: "Write Book and long-form Report with Bookdown"
 ---
 
-Using the MPI Book Template, you could create complex documents in HTML and PDF.
+Using the RTLNotes Book Template, you could create complex documents in HTML and PDF.
 This template is built using the `bookdown` package. `bookdown`'s primary goal is to generate books and ebooks from R Markdown files, which is simpler than LaTeX.
 Another benefit of using this template is that it is well-structured for producing documents with several chapters and handling a big number of files.
 
@@ -12,7 +12,7 @@ To open this template, you first go to `Projects > New Project > New Directory`
 <img src="../../man/figures/new_project.png" width="50%"/>
 </p>
 
-This will lead you to the list of projects. scrol list and find the MPI Book Template. Click on it.
+This will lead you to the list of projects. scrol list and find the RTLNotes Book Template. Click on it.
 
 <p align="center">
 <img src="../../man/figures/select_project.png" width="50%"/>
@@ -34,23 +34,23 @@ Each component of this project is required to set up one of the bookdown's featu
 
 1. **index.Rmd**
 The primary document information, such as the title, author's name, and data, are entered in this file.You can also use the PDF report features to design a book PDF output format. For more information, you can see
-(PDF Report Template Customization)[https://ehyaei.github.io/MPIThemes/articles/articles/01_pdf_report_template_customization.html]
+(PDF Report Template Customization)[https://ehyaei.github.io/RTLNotes/articles/articles/01_pdf_report_template_customization.html]
 ```
 --- 
-title: "Statistical Analysis of Behavioral Data"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-author: [Ahmad Ehyaei, Sara Ershadmanesh]
-affiliation: Max Planck Institute for Biological Cybernetics 
-location: Tübingen
+title: تحلیل داده بیماران کرونایی
+date: اول مهرماه، ۱۴۰۰
+author: احمدرضا احیائی
+affiliation: یک تحلیل‌گر داده مستقل
+location: توبینگن، آلمان
 titlepage: true
 book: true
 page-background-color: f6f6f6
-logo-primary: src/icon/MPILogoWhite.eps
+logo-primary: src/icon/RTLNotes.png
 titlepage-top-color: f03e4c
 titlepage-text-color: FFFFFF
+chapter-title-color: E90649
 titlepage-author-text-color: f03e4c
 author-vjust: 80
-chapter-title-color: E90649
 titlepage-bottom-background: src/img/bottom_background.png
 site: bookdown::bookdown_site
 bibliography: [chapters/bib/book.bib, chapters/bib/packages.bib]
@@ -58,12 +58,6 @@ biblio-style: apalike
 link-citations: yes
 ---
 ```
-
-The following figure illustrates the important features of the title page.
-
-<p align="center">
-<img src="../../man/figures/bookdown_manual.svg" width="100%"/>
-</p>
 
 
 2. **output.yml**
@@ -83,7 +77,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li class="toc-logo"><a href="./"><img src="src/icon/MPIBCGreen.png"></a></li>
+        <li class="toc-logo"><a href="./"><img src="src/icon/RTLNotes.png"></a></li>
         <li class="toc-title"><a style="color: #116656;" href="./">Max-Planck Institute</a></li>
       scroll_highlight: yes
     download: ["pdf"]
