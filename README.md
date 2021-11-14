@@ -61,13 +61,17 @@ Customization](https://ehyaei.github.io/MPIThemes/articles/articles/pdf_report_t
 `RTLNotes` is not (yet) available on CRAN, so install development
 version from GitHub via the `devtools` or `remotes` packages.
 
+:stop_sign: :construction: Before installing the package, you should
+check that you have X11 plotting device, Parastoo, Vazie and Vazir-Code
+fonts on your machine. The fonts source can be found
+[here](https://github.com/Ehyaei/RTLNotes/tree/master/inst/rmarkdown/templates/latex_report/skeleton/src/fonts).
+For more details on package dependencies, see [Get
+Started](https://ehyaei.github.io/RTLNotes/articles/articles/RTLNotes.html).
+
 ``` r
 # install.packages("remotes")
 remotes::install_github("Ehyaei/RTLNotes")
 ```
-
-For find more details of package dependencies, you can see [Get
-Started](https://ehyaei.github.io/RTLNotes/articles/articles/RTLNotes.html).
 
 ## Attribution
 
