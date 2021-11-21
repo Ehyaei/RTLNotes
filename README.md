@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<a href={https://github.com/Ehyaei/MPIThemes}><img src="man/figures/RTLNotes.svg" alt="RTLNotes logo" align="right" width="160" style="padding: 0 15px; float: right;"/>
+<a href={https://github.com/Ehyaei/RTLNotes}><img src="man/figures/RTLNotes.svg" alt="RTLNotes logo" align="right" width="160" style="padding: 0 15px; float: right;"/>
 
 # RTLNotes
 
@@ -14,10 +14,9 @@ status](https://github.com/Ehyaei/RTLNotes/workflows/R-CMD-check/badge.svg)](htt
 RMarkdown enables you to write reproducible academic publications such
 as articles, PhD thesis, lab reports, posters, presentations, and a
 variety of other fascinating documents using the lightweight and
-plain-text Markdown syntax.
-
-In the Rmarkdown environment, you can write text, insert images,
-formulas and simultaneously R and Python scripts.
+plain-text Markdown syntax. There are several packages for RMarkdown
+themes, but all of them are useful for left-to-right languages. RTLNotes
+package tries to create a right-to-left languages theme for RMarkdown.
 
 > RTLNotes is not only for R users!. Python programmers can also run
 > codes in Rmarkdown. This
@@ -36,8 +35,8 @@ worrying about the lateX code.
 
 # Features
 
-The `RTLNotes` package contains report and presentation templates in
-PDF, HTML, Office formats. In the articles area, you’ll find an
+The `RTLNotes` package contains report and presentation templates in PDF
+and Gitbook formats. In the articles section, you’ll find an
 introduction to each template as well as instructions on how to config
 it. The templates that have been implemented so far are as follows:
 
@@ -50,19 +49,13 @@ it. The templates that have been implemented so far are as follows:
 -   [Beamer Presentation
     (LaTeX)](https://ehyaei.github.io/RTLNotes/articles/articles/04_pdf_presentation.html)
 
-The template’ default format is based on the Maxi-Planck theme. We
-weren’t, however, constrained by this theme. Reports in various styles
-can be created by defining the relevant parameters in YAML or templates.
-for more details see [PDF Report Template
-Customization](https://ehyaei.github.io/MPIThemes/articles/articles/pdf_report_template_customization.html)
-
 ## Installation
 
 `RTLNotes` is not (yet) available on CRAN, so install development
 version from GitHub via the `devtools` or `remotes` packages.
 
 :stop_sign: :construction: Before installing the package, you should
-check that you have X11 plotting device, Parastoo, Vazie and Vazir-Code
+check that you have X11 plotting device, Parastoo, Vazir and Vazir-Code
 fonts on your machine. The fonts source can be found
 [here](https://github.com/Ehyaei/RTLNotes/tree/master/inst/rmarkdown/templates/latex_report/skeleton/src/fonts).
 For more details on package dependencies, see [Get
@@ -79,3 +72,4 @@ The RMarkdown packages and latex resources that inspired this effort
 include:
 
 -   Ahmad Ehyaei’s [MPIThemes](https://ehyaei.github.io/MPIThemes/)
+-   Saber Rastikerdar’s [fonts](https://rastikerdar.github.io/)
