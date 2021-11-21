@@ -134,8 +134,7 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#rtlnotes" class="anchor"></a>RTLNotes</h1></div>
 <p><a href="https://github.com/Ehyaei/RTLNotes/actions"><img src="https://github.com/Ehyaei/RTLNotes/workflows/R-CMD-check/badge.svg" alt="R build status"></a> <a href="https://github.com/Ehyaei/RTLNotes"><img src="https://img.shields.io/badge/devel%20version-0.1-orange.svg"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"></a> <a href="https://github.com/Ehyaei/RTLNotes/commits/main"><img src="https://img.shields.io/github/last-commit/Ehyaei/RTLNotes.svg"></a></p>
-<p>RMarkdown enables you to write reproducible academic publications such as articles, PhD thesis, lab reports, posters, presentations, and a variety of other fascinating documents using the lightweight and plain-text Markdown syntax.</p>
-<p>In the Rmarkdown environment, you can write text, insert images, formulas and simultaneously R and Python scripts.</p>
+<p>RMarkdown enables you to write reproducible academic publications such as articles, PhD thesis, lab reports, posters, presentations, and a variety of other fascinating documents using the lightweight and plain-text Markdown syntax. There are several packages for RMarkdown themes, but all of them are useful for left-to-right languages. RTLNotes package tries to create a right-to-left languages theme for RMarkdown.</p>
 <blockquote>
 <p>RTLNotes is not only for R users!. Python programmers can also run codes in Rmarkdown. This <a href="https://ehyaei.github.io/MPIThemes/articles/articles/21_python_rmarkdown.html">article</a> has additional information.</p>
 </blockquote>
@@ -146,19 +145,18 @@
 <div id="features" class="section level1">
 <h1 class="hasAnchor">
 <a href="#features" class="anchor"></a>Features</h1>
-<p>The <code>RTLNotes</code> package contains report and presentation templates in PDF, HTML, Office formats. In the articles area, you’ll find an introduction to each template as well as instructions on how to config it. The templates that have been implemented so far are as follows:</p>
+<p>The <code>RTLNotes</code> package contains report and presentation templates in PDF and Gitbook formats. In the articles section, you’ll find an introduction to each template as well as instructions on how to config it. The templates that have been implemented so far are as follows:</p>
 <ul>
 <li><a href="https://ehyaei.github.io/RTLNotes/articles/articles/01_pdf_report_template_customization.html">PDF Report (LaTeX)</a></li>
 <li><a href="https://ehyaei.github.io/RTLNotes/articles/articles/02_short_pdf_report.html">Short PDF note (LaTeX)</a></li>
 <li><a href="https://ehyaei.github.io/RTLNotes/articles/articles/03_bookdown_document.html">Long Document (Gitbook/Bookdown)</a></li>
 <li><a href="https://ehyaei.github.io/RTLNotes/articles/articles/04_pdf_presentation.html">Beamer Presentation (LaTeX)</a></li>
 </ul>
-<p>The template’ default format is based on the Maxi-Planck theme. We weren’t, however, constrained by this theme. Reports in various styles can be created by defining the relevant parameters in YAML or templates. for more details see <a href="https://ehyaei.github.io/MPIThemes/articles/articles/pdf_report_template_customization.html">PDF Report Template Customization</a></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p><code>RTLNotes</code> is not (yet) available on CRAN, so install development version from GitHub via the <code>devtools</code> or <code>remotes</code> packages.</p>
-<p>:stop_sign: <span class="emoji" data-emoji="construction">🚧</span> Before installing the package, you should check that you have X11 plotting device, Parastoo, Vazie and Vazir-Code fonts on your machine. The fonts source can be found <a href="https://github.com/Ehyaei/RTLNotes/tree/master/inst/rmarkdown/templates/latex_report/skeleton/src/fonts">here</a>. For more details on package dependencies, see <a href="https://ehyaei.github.io/RTLNotes/articles/articles/RTLNotes.html">Get Started</a>.</p>
+<p>:stop_sign: <span class="emoji" data-emoji="construction">🚧</span> Before installing the package, you should check that you have X11 plotting device, Parastoo, Vazir and Vazir-Code fonts on your machine. The fonts source can be found <a href="https://github.com/Ehyaei/RTLNotes/tree/master/inst/rmarkdown/templates/latex_report/skeleton/src/fonts">here</a>. For more details on package dependencies, see <a href="https://ehyaei.github.io/RTLNotes/articles/articles/RTLNotes.html">Get Started</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
 <span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"Ehyaei/RTLNotes"</span><span class="op">)</span></code></pre></div>
@@ -169,6 +167,8 @@
 <p>The RMarkdown packages and latex resources that inspired this effort include:</p>
 <ul>
 <li>Ahmad Ehyaei’s <a href="https://ehyaei.github.io/MPIThemes/">MPIThemes</a>
+</li>
+<li>Saber Rastikerdar’s <a href="https://rastikerdar.github.io/">fonts</a>
 </li>
 </ul>
 </div>
@@ -203,7 +203,7 @@
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="%7Bhttps://github.com/Ehyaei/MPIThemes%7D"><img src="reference/figures/RTLNotes.svg" alt="RTLNotes logo" align="right" width="160" style="padding: 0 15px; float: right;"></a></li>
+<li><a href="%7Bhttps://github.com/Ehyaei/RTLNotes%7D"><img src="reference/figures/RTLNotes.svg" alt="RTLNotes logo" align="right" width="160" style="padding: 0 15px; float: right;"></a></li>
 </ul>
 </div>
 </div>
