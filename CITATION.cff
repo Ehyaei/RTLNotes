@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If you like, you can refer to the package."
+message: ""
 authors:
 - family-names: "Ehyaei"
   given-names: "Ahmad"
   orcid: "https://orcid.org/0000-0003-3892-4113"
-title: ""
+title: "RTLNotes"
 version: 0.1.4
 date-released: 2021-10-19
 url: "https://github.com/ehyaei/MPIThemes"
