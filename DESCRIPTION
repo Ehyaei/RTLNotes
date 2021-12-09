@@ -1,6 +1,6 @@
 Package: RTLNotes
 Title: RMarkdown templates and ggplot themes for RTL Languages 
-Version: 0.1
+Version: 0.1.01
 Authors@R: 
     person(given = "Ahmad",
            family = "Ehyaei",
